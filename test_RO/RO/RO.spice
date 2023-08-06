@@ -1,0 +1,60 @@
+** sch_path: /foss/designs/test_RO/RO/RO.sch
+**.subckt RO en en VSS VDD
+*.ipin en
+*.ipin en
+*.ipin VSS
+*.ipin VDD
+x1 en net11 net1 VDD VSS nand
+x2 VDD VSS net1 net2 inv
+x3 VDD VSS net2 net3 inv
+x4 VDD VSS net3 net4 inv
+x5 VDD VSS net4 net5 inv
+x6 VDD VSS net5 net6 inv
+x7 VDD VSS net6 net7 inv
+x8 VDD VSS net7 net8 inv
+x9 VDD VSS net8 net9 inv
+x10 VDD VSS net9 net10 inv
+x11 VDD VSS net10 net11 inv
+**.ends
+
+* expanding   symbol:  /foss/designs/test_RO/nand/nand.sym # of pins=5
+** sym_path: /foss/designs/test_RO/nand/nand.sym
+** sch_path: /foss/designs/test_RO/nand/nand.sch
+.subckt nand A B OUT VDD VSS
+*.ipin A
+*.opin OUT
+*.ipin B
+*.ipin VDD
+*.ipin VSS
+XM1 OUT A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT A net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/test_RO/inv/inv.sym # of pins=4
+** sym_path: /foss/designs/test_RO/inv/inv.sym
+** sch_path: /foss/designs/test_RO/inv/inv.sch
+.subckt inv VDD VSS IN OUT
+*.ipin VDD
+*.ipin VSS
+*.ipin IN
+*.opin OUT
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

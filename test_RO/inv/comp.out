@@ -1,0 +1,62 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: inv_xschem.spice                |Circuit 2: inv.spice                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property mult in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property sd in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property sb in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property sa in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property nrs in circuit1 has no matching property in circuit2
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property nrd in circuit1 has no matching property in circuit2
+ ps circuit1: (unresolved expression)   "2.26"  (property type mismatch)
+ pd circuit1: (unresolved expression)   "2.26"  (property type mismatch)
+ as circuit1: (unresolved expression)   "0.244"  (property type mismatch)
+ ad circuit1: (unresolved expression)   "0.244"  (property type mismatch)
+sky130_fd_pr__pfet_01v8:M2 vs. sky130_fd_pr__pfet_01v8:1:
+Property nf in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property mult in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property sd in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property sb in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property sa in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property nrs in circuit1 has no matching property in circuit2
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property nrd in circuit1 has no matching property in circuit2
+ ps circuit1: (unresolved expression)   "1.42"  (property type mismatch)
+ pd circuit1: (unresolved expression)   "1.42"  (property type mismatch)
+ as circuit1: (unresolved expression)   "0.122"  (property type mismatch)
+ ad circuit1: (unresolved expression)   "0.122"  (property type mismatch)
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:0:
+Property nf in circuit1 has no matching property in circuit2
+Cells have no pins;  pin matching not needed.
+Device classes inv_xschem.spice and inv.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ inv_xschem.spice
