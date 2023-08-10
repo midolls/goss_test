@@ -1,0 +1,71 @@
+scale 1000 1 500000
+rnode "VSS.n0" 0 0 526 44 0
+rnode "VSS.n1" 0 0 526 44 0
+rnode "VSS.n2" 0 0 368 212 0
+rnode "VSS.n3" 0 0 684 212 0
+rnode "VSS.n4" 0 0 684 212 0
+rnode "VSS.n5" 0 0 614 44 0
+rnode "VSS.n6" 0 0 522 61 0
+rnode "VSS.n7" 0 0 522 44 0
+rnode "VSS.n8" 0 0 526 380 0
+rnode "VSS.n9" 0 0 526 380 0
+rnode "VSS.n10" 0 0 368 212 0
+rnode "VSS.n11" 0 0 368 212 0
+rnode "VSS.n12" 0 0 368 212 0
+rnode "VSS.n13" 0 0 433 44 0
+rnode "VSS.n14" 0 0 433 44 0
+rnode "VSS" 0 0 314 -10 0
+resist "VSS.n7" "VSS.n6" 7.27006e-05
+resist "VSS.n5" "VSS.n1" 0.00316545
+resist "VSS.n1" "VSS.n0" 0.0034133
+resist "VSS.n7" "VSS.n5" 0.00640386
+resist "VSS.n3" "VSS.n2" 0.0480718
+resist "VSS.n11" "VSS.n10" 0.0480732
+resist "VSS.n4" "VSS.n3" 0.0939005
+resist "VSS.n12" "VSS.n11" 0.0939005
+resist "VSS.n9" "VSS.n8" 0.10906
+resist "VSS.n14" "VSS.n7" 0.11352
+resist "VSS" "VSS.n14" 0.151786
+resist "VSS.n14" "VSS.n13" 9.3
+resist "VSS.n13" "VSS.n12" 81.0458
+resist "VSS.n5" "VSS.n4" 90.2264
+resist "VSS.n12" "VSS.n9" 116.329
+rnode "Vout" 0 0 624 414 0
+rnode "VDD.n0" 0 0 527 487 0
+rnode "VDD.n1" 0 0 527 487 0
+rnode "VDD.n2" 0 0 369 702 0
+rnode "VDD.n3" 0 0 369 702 0
+rnode "VDD.n4" 0 0 369 702 0
+rnode "VDD.n5" 0 0 369 702 0
+rnode "VDD.n6" 0 0 685 702 0
+rnode "VDD.n7" 0 0 685 702 0
+rnode "VDD.n8" 0 0 527 917 0
+rnode "VDD.n9" 0 0 527 917 0
+rnode "VDD.n10" 0 0 527 917 0
+rnode "VDD.n11" 0 0 434 917 0
+rnode "VDD.n12" 0 0 434 917 0
+rnode "VDD" 0 0 316 932 0
+resist "VDD.n10" "VDD.n9" 0.000923023
+resist "VDD.n9" "VDD.n8" 0.00330159
+resist "VDD.n5" "VDD.n4" 0.0110798
+resist "VDD.n6" "VDD.n5" 0.0135829
+resist "VDD.n4" "VDD.n3" 0.0135831
+resist "VDD.n7" "VDD.n6" 0.018123
+resist "VDD.n3" "VDD.n2" 0.018123
+resist "VDD.n1" "VDD.n0" 0.0344892
+resist "VDD.n12" "VDD.n10" 0.117144
+resist "VDD" "VDD.n12" 0.1475
+resist "VDD.n12" "VDD.n11" 9.3
+resist "VDD.n10" "VDD.n7" 106.049
+resist "VDD.n7" "VDD.n1" 134.024
+rnode "Vin.t0" 0 0 527 738 0
+rnode "Vin" 0 0 316 414 0
+rnode "Vin.n0" 0 0 496 432 0
+rnode "Vin.t1" 0 0 526 181 0
+rnode "Vin" 0 0 316 414 0
+resist "Vin" "Vin.n0" 0.0375
+resist "Vin.n0" "Vin" 0.625
+resist "Vin" "Vin.t1" 140.624
+resist "Vin.n0" "Vin.t0" 222.61
+device msubckt sky130_fd_pr__nfet_01v8 511 139 512 140  "VSS" "Vin.t1" 60 0 "VSS" 84 4872,284 "Vout" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 512 654 513 655  "VDD" "Vin.t0" 60 0 "VDD" 168 9744,452 "Vout" 168 9744,452

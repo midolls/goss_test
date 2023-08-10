@@ -1,0 +1,38 @@
+** sch_path: /foss/designs/mySAR_SKY130/magic/ringosil/../../xschem/ringosil.sch
+*.subckt ringosil EN_CLK CLK VDD VSS
+*.PININFO EN_CLK:I CLK:O VDD:I VSS:I
+x1 VDD EN_CLK CLK net1 VSS nand
+x2 VDD net1 net2 VSS inverter
+x3 VDD net2 net3 VSS inverter
+x4 VDD net3 net4 VSS inverter
+x5 VDD net4 net5 VSS inverter
+x6 VDD net5 net6 VSS inverter
+x7 VDD net6 net7 VSS inverter
+x8 VDD net7 net8 VSS inverter
+x9 VDD net8 net9 VSS inverter
+x10 VDD net9 net10 VSS inverter
+x11 VDD net10 CLK VSS inverter
+*.ends
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/nand.sym # of pins=5
+** sym_path: /foss/designs/mySAR_SKY130/xschem/nand.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/nand.sch
+.subckt nand VDD A B OUT VSS
+*.PININFO B:I OUT:O A:I VDD:I VSS:I
+XM2 OUT B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM1 OUT B net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM3 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM4 OUT A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/inverter.sym # of pins=4
+** sym_path: /foss/designs/mySAR_SKY130/xschem/inverter.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/inverter.sch
+.subckt inverter VDD IN OUT VSS
+*.PININFO IN:I VDD:I VSS:I OUT:O
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+.ends
+
+.end
