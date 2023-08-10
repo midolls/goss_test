@@ -1,0 +1,83 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1691241966
+<< viali >>
+rect 610 778 768 812
+rect 1014 778 1172 812
+rect 614 -168 772 -134
+rect 1018 -168 1176 -134
+<< metal1 >>
+rect 478 812 1304 848
+rect 478 778 610 812
+rect 768 778 1014 812
+rect 1172 778 1304 812
+rect 478 750 1304 778
+rect 628 628 662 750
+rect 718 622 1066 662
+rect 1120 628 1154 750
+rect 670 62 716 576
+rect 868 372 914 622
+rect 854 366 930 372
+rect 854 302 860 366
+rect 924 302 930 366
+rect 854 296 930 302
+rect 1070 58 1116 572
+rect 1176 360 1240 366
+rect 1176 308 1182 360
+rect 1234 308 1240 360
+rect 1176 302 1240 308
+rect 1192 28 1228 302
+rect 628 -108 666 -22
+rect 726 -34 1064 6
+rect 1122 -12 1228 28
+rect 482 -134 1308 -108
+rect 482 -168 614 -134
+rect 772 -168 1018 -134
+rect 1176 -168 1308 -134
+rect 482 -206 1308 -168
+<< via1 >>
+rect 860 302 924 366
+rect 1182 308 1234 360
+<< metal2 >>
+rect 854 366 930 372
+rect 854 302 860 366
+rect 924 356 930 366
+rect 1176 360 1240 366
+rect 1176 356 1182 360
+rect 924 314 1182 356
+rect 924 302 930 314
+rect 1176 308 1182 314
+rect 1234 356 1240 360
+rect 1234 314 1312 356
+rect 1234 308 1240 314
+rect 1176 302 1240 308
+rect 854 296 930 302
+use sky130_fd_pr__nfet_01v8_L78EGD  sky130_fd_pr__nfet_01v8_L78EGD_0
+timestamp 1691238913
+transform 1 0 1097 0 1 17
+box -211 -221 211 221
+use sky130_fd_pr__pfet_01v8_2ZD9BZ  sky130_fd_pr__pfet_01v8_2ZD9BZ_0
+timestamp 1691238913
+transform 1 0 689 0 1 622
+box -211 -226 211 226
+use sky130_fd_pr__pfet_01v8_2ZD9BZ  XM2
+timestamp 1691238913
+transform -1 0 1093 0 1 622
+box -211 -226 211 226
+use sky130_fd_pr__nfet_01v8_L78EGD  XM4
+timestamp 1691238913
+transform 1 0 693 0 1 17
+box -211 -221 211 221
+<< labels >>
+flabel space 670 60 716 576 0 FreeSans 160 0 0 0 A
+port 0 nsew
+flabel space 1070 58 1116 575 0 FreeSans 160 0 0 0 B
+port 1 nsew
+flabel metal2 1234 314 1312 356 0 FreeSans 160 0 0 0 OUT
+port 2 nsew
+flabel metal1 478 812 1304 848 0 FreeSans 160 0 0 0 VDD
+port 3 nsew
+flabel metal1 482 -206 1308 -168 0 FreeSans 160 0 0 0 VSS
+port 5 nsew
+<< end >>

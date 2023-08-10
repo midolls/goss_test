@@ -1,0 +1,30 @@
+| units: 500000 tech: sky130A format: MIT
+x m1_1070_58# m1_726_n34# OUT VSS s=4872,284 d=4872,284 l=30 w=84 x=1083 y=-55 sky130_fd_pr__nfet_01v8
+x m1_1070_58# VDD OUT VDD s=4872,284 d=4872,284 l=30 w=84 x=1106 y=617 sky130_fd_pr__pfet_01v8
+x m1_670_62# VSS m1_726_n34# VSS s=4872,284 d=4872,284 l=30 w=84 x=679 y=-55 sky130_fd_pr__nfet_01v8
+x m1_670_62# VDD OUT VDD s=4872,284 d=4872,284 l=30 w=84 x=675 y=617 sky130_fd_pr__pfet_01v8
+R m1_726_n34# 838
+= m1_726_n34# sky130_fd_pr__nfet_01v8_L78EGD_0/a_n73_n73#
+= m1_726_n34# XM4/a_15_n73#
+R m1_670_62# 811
+= m1_670_62# sky130_fd_pr__pfet_01v8_2ZD9BZ_0/a_n33_n103#
+= m1_670_62# XM4/a_n33_33#
+R VSS 15906
+= VSS sky130_fd_pr__nfet_01v8_L78EGD_0/a_n175_n185#
+= VSS sky130_fd_pr__pfet_01v8_2ZD9BZ_0/VSUBS
+= VSS XM2/VSUBS
+= VSS XM4/a_n73_n73#
+= VSS VSUBS
+= VSS XM4/a_n175_n185#
+R OUT 1552
+= OUT sky130_fd_pr__nfet_01v8_L78EGD_0/a_15_n73#
+= OUT sky130_fd_pr__pfet_01v8_2ZD9BZ_0/a_15_n6#
+= OUT XM2/a_15_n6#
+R m1_1070_58# 811
+= m1_1070_58# sky130_fd_pr__nfet_01v8_L78EGD_0/a_n33_33#
+= m1_1070_58# XM2/a_n33_n103#
+R VDD 13144
+= VDD sky130_fd_pr__pfet_01v8_2ZD9BZ_0/a_n73_n6#
+= VDD sky130_fd_pr__pfet_01v8_2ZD9BZ_0/w_n211_n226#
+= VDD XM2/a_n73_n6#
+= VDD XM2/w_n211_n226#
