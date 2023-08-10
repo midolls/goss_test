@@ -1,201 +1,130 @@
-timestamp 1691578050
+timestamp 0
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use nand x1 1 0 988 0 1 1958
-use inverter x2 1 0 1966 0 1 1800
-use inverter x11 -1 0 3018 0 -1 1782
-use inverter x3 1 0 2373 0 1 1800
-use inverter x4 1 0 2778 0 1 1800
-use inverter x9 -1 0 3830 0 -1 1782
-use inverter x10 -1 0 3426 0 -1 1782
-use inverter x5 1 0 3182 0 1 1800
-use inverter x6 1 0 3588 0 1 1800
-use inverter x7 -1 0 4640 0 -1 1782
-use inverter x8 -1 0 4234 0 -1 1782
-port "VSS" 1 1482 1770 1588 1834 m1
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
 port "CLK" 5 2154 1330 2250 1360 m1
 port "EN" 3 1590 2256 1696 2320 m1
 port "VDD" 0 1470 2726 1576 2790 m1
-node "VSS" 0 70.1 1482 1770 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7128 348 0 0 0 0 0 0 0 0 0 0
-node "CLK" 4 533.375 2154 1330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14240 848 43232 1876 0 0 0 0 0 0 0 0
-node "m1_4322_1332#" 3 246.048 4322 1332 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38880 2044 0 0 0 0 0 0 0 0 0 0
-node "m1_2184_2242#" 0 69.9222 2184 2242 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6628 360 0 0 0 0 0 0 0 0 0 0
-node "EN" 0 71.2597 1590 2256 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6784 340 0 0 0 0 0 0 0 0 0 0
-node "m1_4304_816#" 3 876.733 4304 816 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 212492 4584 0 0 0 0 0 0 0 0 0 0
-node "VDD" 0 68.2555 1470 2726 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6784 340 0 0 0 0 0 0 0 0 0 0
-substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_2184_2242#" "CLK" 4.68008
-cap "VDD" "VSS" 4.48408
-cap "VSS" "CLK" 0.555557
-cap "m1_2184_2242#" "EN" 1.96283
-cap "m1_4304_816#" "m1_4322_1332#" 505.158
-cap "x1/m1_1070_58#" "x7/Vout" 0.0814311
-cap "x1/OUT" "x2/Vout" 5.59693
-cap "x1/m1_1070_58#" "x9/Vout" 1.02521
-cap "x1/m1_1070_58#" "x1/VDD" 2.76714
-cap "x3/Vout" "x2/Vout" 1.5216
-cap "x1/VSS" "x9/Vout" 0.155347
-cap "x1/VSS" "x1/VDD" -8.6062
-cap "x1/OUT" "x1/m1_1070_58#" 46.2039
-cap "x1/OUT" "x1/VSS" 36.0583
-cap "x1/m1_670_62#" "x1/VDD" -0.124332
-cap "x3/Vout" "x1/m1_1070_58#" 0.59241
-cap "x1/OUT" "x1/m1_670_62#" 0.0308244
-cap "x1/m1_1070_58#" "x1/XM4/a_15_n73#" 27.9298
-cap "x1/VSS" "x1/XM4/a_15_n73#" -0.0512042
-cap "x11/Vin" "x2/Vout" 0.047046
-cap "x9/Vin" "x1/m1_1070_58#" 0.5002
-cap "x1/m1_1070_58#" "x11/Vin" 10.6218
-cap "x1/VSS" "x11/Vin" 22.5695
-cap "x9/Vout" "x1/VDD" 0.154711
-cap "x1/OUT" "x1/VDD" -0.122864
-cap "x1/m1_1070_58#" "x2/Vout" 1.63875
-cap "x1/VSS" "x2/Vout" 20.5098
-cap "x1/XM4/a_15_n73#" "x1/VDD" -0.0653327
-cap "x1/m1_1070_58#" "x4/Vout" 0.235577
-cap "x1/VSS" "x1/m1_1070_58#" 169.33
-cap "x1/OUT" "x1/XM4/a_15_n73#" 0.146001
-cap "x1/m1_1070_58#" "x1/m1_670_62#" 1.89389
-cap "x1/VSS" "x1/m1_670_62#" 3.96789
-cap "x9/Vout" "x11/Vin" 8.9071
-cap "x11/Vin" "x1/VDD" 52.0451
-cap "x1/OUT" "x11/Vin" 3.10147
-cap "x1/VSS" "x5/Vout" 23.5579
-cap "x9/Vout" "x1/VSS" 23.3006
-cap "x9/Vin" "x3/Vout" 3.10147
-cap "x1/VDD" "x5/Vout" 0.823746
-cap "x5/Vout" "x4/Vout" 8.19291
-cap "x2/Vout" "x3/Vout" 6.66422
-cap "x1/VDD" "x9/Vout" 53.7836
-cap "x1/VDD" "x1/VSS" 0.0372222
-cap "x7/Vout" "x5/Vout" 0.0940921
-cap "x1/VSS" "x4/Vout" 24.5194
-cap "x7/Vout" "x1/VSS" 23.2868
-cap "x1/VDD" "x4/Vout" 0.000407824
-cap "x6/Vout" "x5/Vout" 6.64829
-cap "x9/Vout" "x3/Vout" 0.0978791
-cap "x1/VDD" "x7/Vout" 58.5764
-cap "x7/Vout" "x4/Vout" 3.10147
-cap "x3/Vout" "x1/VSS" 24.4376
-cap "x11/Vin" "x2/Vout" 0.0508331
-cap "x9/Vin" "x9/Vout" 17.9763
-cap "x6/Vout" "x1/VSS" 18.584
-cap "x9/Vin" "x1/VSS" 23.4808
-cap "x1/VDD" "x3/Vout" 0.000407824
-cap "x9/Vout" "x2/Vout" 3.08688
-cap "x3/Vout" "x4/Vout" 8.21495
-cap "x1/VDD" "x6/Vout" 17.9439
-cap "x2/Vout" "x1/OUT" 1.01857
-cap "x2/Vout" "x1/VSS" 3.40569
-cap "x1/VDD" "x9/Vin" 56.775
-cap "x9/Vin" "x4/Vout" 0.0940921
-cap "x1/VDD" "x2/Vout" 0.00401615
-cap "x6/Vout" "x7/Vout" 12.3242
-cap "x9/Vin" "x7/Vout" 17.9418
-cap "x11/Vin" "x9/Vout" 7.40468
-cap "x5/Vout" "x6/Vout" 0.241208
-cap "x6/Vout" "x2/VSS" 163.581
-cap "x7/Vout" "x2/VDD" 1.92977
-cap "x6/Vout" "x7/Vout" 1.66994
-cap "x6/Vout" "x2/VDD" 11.0512
-cap "x2/VDD" "x2/VSS" 8.99316
-cap "x1/m1_1070_58#" "x1/VSS" -0.0538121
-cap "x1/m1_1070_58#" "x4/Vout" 0.0457667
-cap "x1/OUT" "x3/Vout" 0.128594
-cap "x2/Vout" "x1/VDD" 44.2959
-cap "x1/OUT" "x1/VSS" 7.41457
-cap "x1/OUT" "x4/Vout" 0.0574882
-cap "x1/m1_670_62#" "x1/VSS" 5.59195
-cap "x1/m1_1070_58#" "x1/OUT" 13.4118
-cap "x1/VDD" "x1/VSS" -6.11085
-cap "x1/OUT" "x5/Vout" 0.0122787
-cap "x1/m1_670_62#" "x1/OUT" -0.580066
-cap "x1/m1_1070_58#" "x1/VDD" 29.4675
-cap "x2/Vout" "x3/Vout" 2.09089
-cap "x1/OUT" "x1/VDD" 52.9876
-cap "x2/Vout" "x1/VSS" -0.87766
-cap "x1/OUT" "x11/Vin" 0.000401295
-cap "x1/m1_670_62#" "x1/VDD" 14.3037
-cap "x1/m1_1070_58#" "x2/Vout" 3.61531
-cap "x1/VDD" "x11/Vin" 0.000407824
-cap "x1/m1_1070_58#" "x1/XM4/a_15_n73#" -0.160743
-cap "x1/OUT" "x2/Vout" 3.2316
-cap "x1/OUT" "x1/XM4/a_15_n73#" -0.244894
-cap "x1/m1_1070_58#" "x3/Vout" 0.0970525
-cap "x5/Vout" "x1/VSS" -0.93098
-cap "x9/Vin" "x1/VDD" 0.000407824
-cap "x5/Vout" "x6/Vout" 4.17177
-cap "x1/VSS" "x4/Vout" -1.048
-cap "x7/Vout" "x4/Vout" 0.000401295
-cap "x3/Vout" "x2/Vout" 7.61763
-cap "x3/Vout" "x1/VSS" -0.98949
-cap "x5/Vout" "x1/VDD" 52.6172
-cap "x1/VDD" "x4/Vout" 56.7881
-cap "x2/Vout" "x1/VSS" 0.00487758
-cap "x9/Vin" "x3/Vout" 0.000401295
-cap "x5/Vout" "x4/Vout" 9.72269
-cap "x3/Vout" "x1/VDD" 56.9358
-cap "x9/Vout" "x2/Vout" 0.0097561
-cap "x2/Vout" "x1/VDD" 13.5456
-cap "x3/Vout" "x4/Vout" 9.74406
-cap "x1/VDD" "x1/VSS" 0.031342
-cap "x2/Vout" "x1/OUT" 2.75794
-cap "x7/Vout" "x1/VDD" 0.000407824
-cap "x1/VDD" "x6/Vout" 33.8483
-cap "x2/VDD" "x6/Vout" 33.2411
-cap "x2/VDD" "x2/VSS" 0.00326663
-cap "x2/VDD" "x5/Vout" 0.176814
-merge "x8/VSUBS" "x7/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x7/VSUBS" "x6/VSUBS"
-merge "x6/VSUBS" "x5/VSUBS"
-merge "x5/VSUBS" "x10/VSUBS"
-merge "x10/VSUBS" "x9/VSUBS"
-merge "x9/VSUBS" "x4/VSUBS"
-merge "x4/VSUBS" "x3/VSUBS"
-merge "x3/VSUBS" "x11/VSUBS"
-merge "x11/VSUBS" "x2/VSUBS"
-merge "x2/VSUBS" "x1/VSUBS"
-merge "x1/VSUBS" "VSUBS"
-merge "x5/Vin" "x4/Vout" -207.953 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -648 -108 0 0 0 0 0 0 0 0 0 0
-merge "x8/VDD" "x11/sky130_fd_pr__pfet_01v8_2MG8BZ_0/w_n211_n268#" -2873.8 0 0 0 0 -74912 -9692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24300 -2784 0 0 0 0 0 0 0 0 0 0
-merge "x11/sky130_fd_pr__pfet_01v8_2MG8BZ_0/w_n211_n268#" "x2/sky130_fd_pr__pfet_01v8_2MG8BZ_0/w_n211_n268#"
-merge "x2/sky130_fd_pr__pfet_01v8_2MG8BZ_0/w_n211_n268#" "x10/VDD"
-merge "x10/VDD" "x9/VDD"
-merge "x9/VDD" "x11/VDD"
-merge "x11/VDD" "x7/VDD"
-merge "x7/VDD" "x6/VDD"
-merge "x6/VDD" "m1_4304_816#"
-merge "m1_4304_816#" "x5/VDD"
-merge "x5/VDD" "x4/VDD"
-merge "x4/VDD" "x3/VDD"
-merge "x3/VDD" "x2/VDD"
-merge "x2/VDD" "x1/VDD"
-merge "x1/VDD" "VDD"
-merge "x8/VSS" "x7/VSS" -3428.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27292 -6536 0 0 0 0 0 0 0 0 0 0
-merge "x7/VSS" "x6/VSS"
-merge "x6/VSS" "x5/VSS"
-merge "x5/VSS" "x10/VSS"
-merge "x10/VSS" "x9/VSS"
-merge "x9/VSS" "x4/VSS"
-merge "x4/VSS" "x3/VSS"
-merge "x3/VSS" "x11/VSS"
-merge "x11/VSS" "x2/VSS"
-merge "x2/VSS" "x1/VSS"
-merge "x1/VSS" "VSS"
-merge "x8/Vin" "x7/Vout" -206.788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -576 -104 0 0 0 0 0 0 0 0 0 0
-merge "x1/m1_670_62#" "EN" -63.4673 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2432 -204 0 0 0 0 0 0 0 0 0 0
-merge "x10/Vin" "x9/Vout" -202.273 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -648 -108 0 0 0 0 0 0 0 0 0 0
-merge "x10/Vout" "x11/Vin" -191.679 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -504 -100 0 0 0 0 0 0 0 0 0 0
-merge "x2/Vin" "x1/OUT" -236.184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2480 -324 0 0 0 0 0 0 0 0 0 0
-merge "x1/OUT" "m1_2184_2242#"
-merge "x4/Vin" "x3/Vout" -207.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -612 -106 0 0 0 0 0 0 0 0 0 0
-merge "x7/Vin" "x6/Vout" -341.816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -216 -156 0 0 0 0 0 0 0 0 0 0
-merge "x6/Vout" "m1_4322_1332#"
-merge "x11/Vout" "x1/m1_1070_58#" -246.974 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2944 -288 0 0 0 0 0 0 0 0 0 0
-merge "x1/m1_1070_58#" "CLK"
-merge "x3/Vin" "x2/Vout" -204.136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -540 -102 0 0 0 0 0 0 0 0 0 0
-merge "x6/Vin" "x5/Vout" -192.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -576 -104 0 0 0 0 0 0 0 0 0 0
-merge "x8/Vout" "x9/Vin" -207.976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -648 -108 0 0 0 0 0 0 0 0 0 0
+port "VSS" 1 1482 1770 1588 1834 m1
+node "x8.Vin" 1851 582.921 3674 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62248 3114 0 0 0 0 0 0 0 0 0 0
+equiv "x8.Vin" "x7.Vout"
+node "x8.Vout" 1851 581.927 3270 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x8.Vout" "x9.Vin"
+node "x10.Vin" 1851 581.953 2866 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x10.Vin" "x9.Vout"
+node "x10.Vout" 1851 597.314 2458 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62320 3118 0 0 0 0 0 0 0 0 0 0
+equiv "x10.Vout" "x11.Vin"
+node "a_1696_1902#" 838 377.031 1696 1902 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 18528 980 0 0 0 0 0 0 0 0 0 0
+node "x7.Vin" 1854 852.82 4080 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 101488 5106 0 0 0 0 0 0 0 0 0 0
+equiv "x7.Vin" "x6.Vout"
+node "x6.Vin" 1851 596.912 3723 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62248 3114 0 0 0 0 0 0 0 0 0 0
+equiv "x6.Vin" "x5.Vout"
+node "x5.Vin" 1851 581.941 3319 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x5.Vin" "x4.Vout"
+node "x4.Vin" 1851 582.131 2914 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62212 3112 0 0 0 0 0 0 0 0 0 0
+equiv "x4.Vin" "x3.Vout"
+node "x3.Vin" 1851 582.529 2507 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62284 3116 0 0 0 0 0 0 0 0 0 0
+equiv "x3.Vin" "x2.Vout"
+node "x11.Vout" 1720 1147.19 2048 2477 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16902 1074 0 0 13600 1072 70806 3748 43232 1876 0 0 0 0 0 0 0 0
+equiv "x11.Vout" "CLK"
+node "x2.Vin" 2525 725.359 1692 2574 pdif 0 0 0 0 0 0 0 0 4872 284 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13872 1156 88536 4052 23228 1112 0 0 0 0 0 0 0 0
+equiv "x2.Vin" "x1.OUT"
+node "EN" 811 405.535 1590 2256 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16902 1074 0 0 4488 400 29192 1308 0 0 0 0 0 0 0 0 0 0
+node "x8.VDD" 92305 12231.3 1466 2354 nw 0 0 0 0 2560360 12024 0 0 597312 35136 107184 5088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 667688 39880 804572 19492 0 0 0 0 0 0 0 0 0 0
+equiv "x8.VDD" "x7.VDD"
+equiv "x8.VDD" "x6.VDD"
+equiv "x8.VDD" "x5.VDD"
+equiv "x8.VDD" "x10.VDD"
+equiv "x8.VDD" "x9.VDD"
+equiv "x8.VDD" "x4.VDD"
+equiv "x8.VDD" "x3.VDD"
+equiv "x8.VDD" "x11.VDD"
+equiv "x8.VDD" "x2.VDD"
+equiv "x8.VDD" "x1.VDD"
+equiv "x8.VDD" "VDD"
+substrate "x8.VSS" 0 0 1506 1790 ppd 0 0 0 0 0 0 0 0 53592 3124 532032 31296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 570520 34108 540164 9248 0 0 0 0 0 0 0 0 0 0
+equiv "x8.VSS" "x7.VSS"
+equiv "x8.VSS" "x6.VSS"
+equiv "x8.VSS" "x5.VSS"
+equiv "x8.VSS" "x10.VSS"
+equiv "x8.VSS" "x9.VSS"
+equiv "x8.VSS" "x4.VSS"
+equiv "x8.VSS" "x3.VSS"
+equiv "x8.VSS" "x11.VSS"
+equiv "x8.VSS" "x2.VSS"
+equiv "x8.VSS" "x1.VSS"
+equiv "x8.VSS" "VSS"
+cap "x2.Vin" "a_1696_1902#" 99.9996
+cap "x4.Vin" "x8.Vout" 3.10187
+cap "x2.Vin" "x6.Vin" 0.0122787
+cap "x8.Vin" "x5.Vin" 3.10187
+cap "x2.Vin" "x11.Vout" 312.68
+cap "x8.VDD" "EN" 220.694
+cap "x4.Vin" "x11.Vout" 0.689462
+cap "x11.Vout" "x3.Vin" 5.25406
+cap "x8.VDD" "x5.Vin" 632.595
+cap "x6.Vin" "x7.Vin" 177.231
+cap "x4.Vin" "x10.Vin" 0.0978791
+cap "x8.Vin" "x8.VDD" 636.313
+cap "x10.Vin" "x3.Vin" 3.09664
+cap "x10.Vout" "x8.VDD" 627.852
+cap "x4.Vin" "x2.Vin" 0.128594
+cap "EN" "a_1696_1902#" 12.0717
+cap "x2.Vin" "x3.Vin" 180.323
+cap "x8.Vout" "x5.Vin" 0.0940921
+cap "x4.Vin" "x3.Vin" 184.064
+cap "x8.Vin" "x8.Vout" 184.111
+cap "EN" "x11.Vout" 38.5471
+cap "x6.Vin" "x5.Vin" 184.085
+cap "x11.Vout" "x5.Vin" 0.281344
+cap "x8.Vin" "x6.Vin" 0.0940921
+cap "x8.Vout" "x8.VDD" 632.582
+cap "x8.Vin" "x11.Vout" 0.0814311
+cap "x8.VDD" "a_1696_1902#" 6.61453
+cap "x8.VDD" "x6.Vin" 629.424
+cap "x8.VDD" "x11.Vout" 564.961
+cap "x10.Vout" "x11.Vout" 176.791
+cap "EN" "x2.Vin" 78.6747
+cap "x8.VDD" "x10.Vin" 632.604
+cap "x10.Vout" "x10.Vin" 184.025
+cap "x2.Vin" "x5.Vin" 0.0574882
+cap "x4.Vin" "x5.Vin" 184.129
+cap "x8.VDD" "x2.Vin" 853.091
+cap "x8.Vout" "x11.Vout" 0.5002
+cap "x10.Vout" "x2.Vin" 3.10187
+cap "x11.Vout" "a_1696_1902#" 40.2708
+cap "x8.Vin" "x7.Vin" 180.164
+cap "x4.Vin" "x8.VDD" 632.743
+cap "x8.VDD" "x3.Vin" 633.652
+cap "x8.Vout" "x10.Vin" 184.146
+cap "x10.Vout" "x3.Vin" 0.0978791
+cap "x8.VDD" "x7.Vin" 1177.05
+cap "x11.Vout" "x10.Vin" 1.02521
+device msubckt sky130_fd_pr__pfet_01v8 4098 960 4099 961 l=30 w=168 "x8.VDD" "x7.Vin" 60 0 "x8.Vin" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3692 960 3693 961 l=30 w=168 "x8.VDD" "x8.Vin" 60 0 "x8.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3288 960 3289 961 l=30 w=168 "x8.VDD" "x8.Vout" 60 0 "x10.Vin" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2884 960 2885 961 l=30 w=168 "x8.VDD" "x10.Vin" 60 0 "x10.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2476 960 2477 961 l=30 w=168 "x8.VDD" "x10.Vout" 60 0 "x11.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__nfet_01v8 4099 1559 4100 1560 l=30 w=84 "x8.VSS" "x7.Vin" 60 0 "x8.Vin" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3693 1559 3694 1560 l=30 w=84 "x8.VSS" "x8.Vin" 60 0 "x8.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3289 1559 3290 1560 l=30 w=84 "x8.VSS" "x8.Vout" 60 0 "x10.Vin" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2885 1559 2886 1560 l=30 w=84 "x8.VSS" "x10.Vin" 60 0 "x10.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2477 1559 2478 1560 l=30 w=84 "x8.VSS" "x10.Vout" 60 0 "x11.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 4099 1939 4100 1940 l=30 w=84 "x8.VSS" "x6.Vin" 60 0 "x8.VSS" 84 4872,284 "x7.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3693 1939 3694 1940 l=30 w=84 "x8.VSS" "x5.Vin" 60 0 "x8.VSS" 84 4872,284 "x6.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3289 1939 3290 1940 l=30 w=84 "x8.VSS" "x4.Vin" 60 0 "x8.VSS" 84 4872,284 "x5.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2884 1939 2885 1940 l=30 w=84 "x8.VSS" "x3.Vin" 60 0 "x8.VSS" 84 4872,284 "x4.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2477 1939 2478 1940 l=30 w=84 "x8.VSS" "x2.Vin" 60 0 "x8.VSS" 84 4872,284 "x3.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2070 1902 2071 1903 l=30 w=84 "x8.VSS" "x11.Vout" 60 0 "a_1696_1902#" 84 4872,284 "x2.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 1666 1902 1667 1903 l=30 w=84 "x8.VSS" "EN" 60 0 "x8.VSS" 84 4872,284 "a_1696_1902#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 4100 2454 4101 2455 l=30 w=168 "x8.VDD" "x6.Vin" 60 0 "x8.VDD" 168 9744,452 "x7.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3694 2454 3695 2455 l=30 w=168 "x8.VDD" "x5.Vin" 60 0 "x8.VDD" 168 9744,452 "x6.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3290 2454 3291 2455 l=30 w=168 "x8.VDD" "x4.Vin" 60 0 "x8.VDD" 168 9744,452 "x5.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2885 2454 2886 2455 l=30 w=168 "x8.VDD" "x3.Vin" 60 0 "x8.VDD" 168 9744,452 "x4.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2478 2454 2479 2455 l=30 w=168 "x8.VDD" "x2.Vin" 60 0 "x8.VDD" 168 9744,452 "x3.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2066 2574 2067 2575 l=30 w=84 "x8.VDD" "x11.Vout" 60 0 "x2.Vin" 84 4872,284 "x8.VDD" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 1662 2574 1663 2575 l=30 w=84 "x8.VDD" "EN" 60 0 "x8.VDD" 84 4872,284 "x2.Vin" 84 4872,284
