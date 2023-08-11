@@ -1,0 +1,132 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "CLK" 5 2154 1332 2250 1362 m1
+port "EN_CLK" 7 1464 2288 1570 2352 m1
+port "VDD" 0 1474 2696 1580 2760 m1
+port "VSS" 1 1476 1806 1582 1870 m1
+node "x8.Vin" 1851 583.14 3674 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62248 3114 0 0 0 0 0 0 0 0 0 0
+equiv "x8.Vin" "x7.Vout"
+node "x8.Vout" 1851 582.146 3270 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x8.Vout" "x9.Vin"
+node "x10.Vin" 1851 582.171 2866 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x10.Vin" "x9.Vout"
+node "x10.Vout" 1851 597.533 2458 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62320 3118 0 0 0 0 0 0 0 0 0 0
+equiv "x10.Vout" "x11.Vin"
+node "a_1692_1940#" 838 371.99 1692 1940 ndif 0 0 0 0 0 0 0 0 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6256 504 18528 980 0 0 0 0 0 0 0 0 0 0
+node "x7.Vin" 1854 853.039 4080 1159 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 101488 5106 0 0 0 0 0 0 0 0 0 0
+equiv "x7.Vin" "x6.Vout"
+node "x6.Vin" 1851 597.131 3723 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62248 3114 0 0 0 0 0 0 0 0 0 0
+equiv "x6.Vin" "x5.Vout"
+node "x5.Vin" 1851 582.16 3319 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62176 3110 0 0 0 0 0 0 0 0 0 0
+equiv "x5.Vin" "x4.Vout"
+node "x4.Vin" 1851 582.35 2914 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62212 3112 0 0 0 0 0 0 0 0 0 0
+equiv "x4.Vin" "x3.Vout"
+node "x3.Vin" 1851 582.731 2507 1939 ndif 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13600 1072 62284 3116 0 0 0 0 0 0 0 0 0 0
+equiv "x3.Vin" "x2.Vout"
+node "x11.Vout" 1719 1138.16 2048 2046 p 0 0 0 0 0 0 0 0 4872 284 9744 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16902 1074 0 0 13600 1072 80472 3918 43232 1876 0 0 0 0 0 0 0 0
+equiv "x11.Vout" "x1.B"
+equiv "x11.Vout" "CLK"
+node "x2.Vin" 2525 718.902 1692 2540 pdif 0 0 0 0 0 0 0 0 4872 284 9744 568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19422 1242 0 0 13872 1156 85972 3908 23228 1112 0 0 0 0 0 0 0 0
+equiv "x2.Vin" "x1.OUT"
+node "x1.A" 811 412.793 1644 2046 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16902 1074 0 0 4488 400 36672 1400 0 0 0 0 0 0 0 0 0 0
+equiv "x1.A" "EN_CLK"
+node "x8.VDD" 92188 12138.7 1466 2320 nw 0 0 0 0 2560020 11956 0 0 597312 35136 107184 5088 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 663408 39840 804232 19424 0 0 0 0 0 0 0 0 0 0
+equiv "x8.VDD" "x7.VDD"
+equiv "x8.VDD" "x6.VDD"
+equiv "x8.VDD" "x5.VDD"
+equiv "x8.VDD" "x10.VDD"
+equiv "x8.VDD" "x9.VDD"
+equiv "x8.VDD" "x4.VDD"
+equiv "x8.VDD" "x3.VDD"
+equiv "x8.VDD" "x11.VDD"
+equiv "x8.VDD" "x2.VDD"
+equiv "x8.VDD" "x1.VDD"
+equiv "x8.VDD" "VDD"
+substrate "x8.VSS" 0 0 1502 1828 ppd 0 0 0 0 0 0 0 0 53592 3124 532032 31296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 566440 34068 540556 9256 0 0 0 0 0 0 0 0 0 0
+equiv "x8.VSS" "x7.VSS"
+equiv "x8.VSS" "x6.VSS"
+equiv "x8.VSS" "x5.VSS"
+equiv "x8.VSS" "x10.VSS"
+equiv "x8.VSS" "x9.VSS"
+equiv "x8.VSS" "x4.VSS"
+equiv "x8.VSS" "x3.VSS"
+equiv "x8.VSS" "x11.VSS"
+equiv "x8.VSS" "x2.VSS"
+equiv "x8.VSS" "x1.VSS"
+equiv "x8.VSS" "VSS"
+cap "x10.Vout" "x10.Vin" 184.025
+cap "x11.Vout" "x10.Vout" 176.777
+cap "x11.Vout" "x5.Vin" 0.26829
+cap "x2.Vin" "x4.Vin" 0.3234
+cap "x1.A" "x11.Vout" 28.1851
+cap "x8.Vout" "x10.Vin" 184.146
+cap "x11.Vout" "x8.Vout" 0.498412
+cap "x8.VDD" "x4.Vin" 633.048
+cap "x2.Vin" "x3.Vin" 181.089
+cap "x8.VDD" "x8.Vin" 636.619
+cap "x8.VDD" "x3.Vin" 633.994
+cap "x6.Vin" "x7.Vin" 177.231
+cap "x11.Vout" "a_1692_1940#" 37.9486
+cap "x2.Vin" "x10.Vout" 3.10187
+cap "x2.Vin" "x5.Vin" 0.146261
+cap "x1.A" "x2.Vin" 82.159
+cap "x8.VDD" "x10.Vout" 628.158
+cap "x8.VDD" "x5.Vin" 632.9
+cap "x1.A" "x8.VDD" 267.608
+cap "x11.Vout" "x10.Vin" 1.02133
+cap "x8.VDD" "x8.Vout" 632.887
+cap "x4.Vin" "x3.Vin" 184.064
+cap "x2.Vin" "a_1692_1940#" 108.059
+cap "x2.Vin" "x6.Vin" 0.0259055
+cap "x8.VDD" "a_1692_1940#" 8.23077
+cap "x8.VDD" "x6.Vin" 629.73
+cap "x5.Vin" "x4.Vin" 184.129
+cap "x2.Vin" "x11.Vout" 411.352
+cap "x10.Vout" "x3.Vin" 0.0978791
+cap "x5.Vin" "x8.Vin" 3.10187
+cap "x8.VDD" "x7.Vin" 1177.35
+cap "x8.Vout" "x4.Vin" 3.10187
+cap "x8.VDD" "x10.Vin" 632.91
+cap "x11.Vout" "x8.VDD" 630.04
+cap "x8.Vin" "x8.Vout" 184.111
+cap "x6.Vin" "x8.Vin" 0.0940921
+cap "x5.Vin" "x8.Vout" 0.0940921
+cap "x4.Vin" "x10.Vin" 0.0978791
+cap "x2.Vin" "x8.VDD" 798.476
+cap "x7.Vin" "x8.Vin" 180.164
+cap "x11.Vout" "x4.Vin" 0.663915
+cap "x11.Vout" "x8.Vin" 0.0810769
+cap "x10.Vin" "x3.Vin" 3.09664
+cap "x1.A" "a_1692_1940#" 12.0991
+cap "x11.Vout" "x3.Vin" 5.19818
+cap "x5.Vin" "x6.Vin" 184.085
+device msubckt sky130_fd_pr__pfet_01v8 4098 960 4099 961 l=30 w=168 "x8.VDD" "x7.Vin" 60 0 "x8.Vin" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3692 960 3693 961 l=30 w=168 "x8.VDD" "x8.Vin" 60 0 "x8.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3288 960 3289 961 l=30 w=168 "x8.VDD" "x8.Vout" 60 0 "x10.Vin" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2884 960 2885 961 l=30 w=168 "x8.VDD" "x10.Vin" 60 0 "x10.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2476 960 2477 961 l=30 w=168 "x8.VDD" "x10.Vout" 60 0 "x11.Vout" 168 9744,452 "x8.VDD" 168 9744,452
+device msubckt sky130_fd_pr__nfet_01v8 4099 1559 4100 1560 l=30 w=84 "x8.VSS" "x7.Vin" 60 0 "x8.Vin" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3693 1559 3694 1560 l=30 w=84 "x8.VSS" "x8.Vin" 60 0 "x8.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3289 1559 3290 1560 l=30 w=84 "x8.VSS" "x8.Vout" 60 0 "x10.Vin" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2885 1559 2886 1560 l=30 w=84 "x8.VSS" "x10.Vin" 60 0 "x10.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2477 1559 2478 1560 l=30 w=84 "x8.VSS" "x10.Vout" 60 0 "x11.Vout" 84 4872,284 "x8.VSS" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 4099 1939 4100 1940 l=30 w=84 "x8.VSS" "x6.Vin" 60 0 "x8.VSS" 84 4872,284 "x7.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3693 1939 3694 1940 l=30 w=84 "x8.VSS" "x5.Vin" 60 0 "x8.VSS" 84 4872,284 "x6.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 3289 1939 3290 1940 l=30 w=84 "x8.VSS" "x4.Vin" 60 0 "x8.VSS" 84 4872,284 "x5.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2884 1939 2885 1940 l=30 w=84 "x8.VSS" "x3.Vin" 60 0 "x8.VSS" 84 4872,284 "x4.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2477 1939 2478 1940 l=30 w=84 "x8.VSS" "x2.Vin" 60 0 "x8.VSS" 84 4872,284 "x3.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 2066 1940 2067 1941 l=30 w=84 "x8.VSS" "x11.Vout" 60 0 "a_1692_1940#" 84 4872,284 "x2.Vin" 84 4872,284
+device msubckt sky130_fd_pr__nfet_01v8 1662 1940 1663 1941 l=30 w=84 "x8.VSS" "x1.A" 60 0 "x8.VSS" 84 4872,284 "a_1692_1940#" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 4100 2454 4101 2455 l=30 w=168 "x8.VDD" "x6.Vin" 60 0 "x8.VDD" 168 9744,452 "x7.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3694 2454 3695 2455 l=30 w=168 "x8.VDD" "x5.Vin" 60 0 "x8.VDD" 168 9744,452 "x6.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 3290 2454 3291 2455 l=30 w=168 "x8.VDD" "x4.Vin" 60 0 "x8.VDD" 168 9744,452 "x5.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2885 2454 2886 2455 l=30 w=168 "x8.VDD" "x3.Vin" 60 0 "x8.VDD" 168 9744,452 "x4.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2478 2454 2479 2455 l=30 w=168 "x8.VDD" "x2.Vin" 60 0 "x8.VDD" 168 9744,452 "x3.Vin" 168 9744,452
+device msubckt sky130_fd_pr__pfet_01v8 2066 2540 2067 2541 l=30 w=84 "x8.VDD" "x11.Vout" 60 0 "x2.Vin" 84 4872,284 "x8.VDD" 84 4872,284
+device msubckt sky130_fd_pr__pfet_01v8 1662 2540 1663 2541 l=30 w=84 "x8.VDD" "x1.A" 60 0 "x8.VDD" 84 4872,284 "x2.Vin" 84 4872,284

@@ -1,0 +1,4 @@
+* SPICE3 file created from netlist.ext - technology: sky130A
+
+X0 OUT IN VDD sky130_fd_pr__pfet_01v8_2MG8BZ_0/w_n211_n268# sky130_fd_pr__pfet_01v8 ad=0.244 pd=2.26 as=0.244 ps=2.26 w=0.84 l=0.15
+X1 OUT IN VSS VSUBS sky130_fd_pr__nfet_01v8 ad=0.122 pd=1.42 as=0.122 ps=1.42 w=0.42 l=0.15

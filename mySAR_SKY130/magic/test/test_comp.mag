@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1690729554
+use sky130_fd_pr__nfet_01v8_648S5X  XM1
+timestamp 0
+transform 1 0 158 0 1 857
+box 0 0 1 1
+use sky130_fd_pr__pfet_01v8_XGAKDL  XM2
+timestamp 0
+transform 1 0 527 0 1 913
+box 0 0 1 1
+<< end >>

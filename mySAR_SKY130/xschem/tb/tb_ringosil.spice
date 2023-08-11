@@ -1,0 +1,95 @@
+** sch_path: /foss/designs/mySAR_SKY130/xschem/tb/tb_ringosil.sch
+**.subckt tb_ringosil
+V1 VDD GND 1.8
+.save i(v1)
+V2 Vin GND PULSE(1.8 0 1p 50p 50p 200p 6000p)
+.save i(v2)
+x1 VDD Vin Vout GND ringosil
+C1 Vout GND 10f m=1
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.tran 3ps 6000ps
+
+.control
+	*dc V2 0 1.8 0.01
+	run
+	plot V(Vin) V(Vout)
+
+.endc
+
+.save all
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/ringosil.sym # of pins=4
+** sym_path: /foss/designs/mySAR_SKY130/xschem/ringosil.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/ringosil.sch
+.subckt ringosil VDD EN_CLK CLK VSS
+*.ipin EN_CLK
+*.opin CLK
+*.ipin VDD
+*.ipin VSS
+x1 VDD EN_CLK CLK net1 VSS nand
+x2 VDD net1 net2 VSS inverter
+x3 VDD net2 net3 VSS inverter
+x4 VDD net3 net4 VSS inverter
+x5 VDD net4 net5 VSS inverter
+x6 VDD net5 net6 VSS inverter
+x7 VDD net6 net7 VSS inverter
+x8 VDD net7 net8 VSS inverter
+x9 VDD net8 net9 VSS inverter
+x10 VDD net9 net10 VSS inverter
+x11 VDD net10 CLK VSS inverter
+.ends
+
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/nand.sym # of pins=5
+** sym_path: /foss/designs/mySAR_SKY130/xschem/nand.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/nand.sch
+.subckt nand VDD A B OUT VSS
+*.ipin B
+*.opin OUT
+*.ipin A
+*.ipin VDD
+*.ipin VSS
+XM2 OUT B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.68 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT B net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.68 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/inverter.sym # of pins=4
+** sym_path: /foss/designs/mySAR_SKY130/xschem/inverter.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/inverter.sch
+.subckt inverter VDD IN OUT VSS
+*.ipin IN
+*.ipin VDD
+*.ipin VSS
+*.opin OUT
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

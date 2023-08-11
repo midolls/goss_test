@@ -1,0 +1,91 @@
+magic
+tech sky130A
+timestamp 1691161631
+<< nwell >>
+rect -41 175 105 333
+<< nmos >>
+rect 35 15 50 60
+<< pmos >>
+rect 35 195 50 280
+<< ndiffc >>
+rect 5 25 25 50
+rect 60 25 80 50
+<< pdiffc >>
+rect 5 215 25 255
+rect 60 215 80 255
+<< poly >>
+rect 35 280 50 295
+rect 35 185 50 195
+rect 20 171 65 185
+rect 20 154 34 171
+rect 52 154 65 171
+rect 20 140 65 154
+rect 20 97 65 108
+rect 20 80 33 97
+rect 51 80 65 97
+rect 20 70 65 80
+rect 35 60 50 70
+rect 35 0 50 15
+<< polycont >>
+rect 34 154 52 171
+rect 33 80 51 97
+<< ndiffres >>
+rect -5 50 35 60
+rect -5 25 5 50
+rect 25 25 35 50
+rect -5 15 35 25
+rect 50 50 90 60
+rect 50 25 60 50
+rect 80 25 90 50
+rect 50 15 90 25
+<< pdiffres >>
+rect -5 255 35 280
+rect -5 215 5 255
+rect 25 215 35 255
+rect -5 195 35 215
+rect 50 255 90 280
+rect 50 215 60 255
+rect 80 215 90 255
+rect 50 195 90 215
+<< locali >>
+rect -3 255 34 314
+rect -3 215 5 255
+rect 25 215 34 255
+rect 60 255 80 270
+rect 80 225 106 226
+rect 80 215 107 225
+rect 60 207 107 215
+rect 20 171 65 172
+rect 20 154 34 171
+rect 52 154 65 171
+rect 20 153 65 154
+rect 20 80 33 97
+rect 51 80 64 97
+rect 85 58 107 207
+rect 60 50 107 58
+rect -3 25 5 50
+rect 25 25 33 50
+rect -3 -19 33 25
+rect 80 39 107 50
+rect 60 17 80 25
+<< viali >>
+rect 34 154 52 171
+rect 33 80 51 97
+<< metal1 >>
+rect 29 171 58 177
+rect 29 154 34 171
+rect 52 154 58 171
+rect 29 97 58 154
+rect 29 80 33 97
+rect 51 80 58 97
+rect 29 72 58 80
+<< labels >>
+flabel metal1 32 114 54 134 0 FreeSans 80 0 0 0 Vin
+port 1 nsew
+flabel locali 85 116 106 136 0 FreeSans 80 0 0 0 Vout
+port 2 nsew
+flabel locali 6 290 27 310 0 FreeSans 80 0 0 0 VDD
+port 3 nsew
+flabel locali 9 -14 30 6 0 FreeSans 80 0 0 0 VSS
+port 5 nsew
+<< end >>

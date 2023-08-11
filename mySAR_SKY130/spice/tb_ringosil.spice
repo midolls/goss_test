@@ -1,0 +1,100 @@
+** sch_path: /foss/designs/mySAR_SKY130/magic/ringosil/../../xschem/tb/tb_ringosil.sch
+.subckt tb_ringosil
+
+V1 VDD GND 0
+.save i(v1)
+V2 EN GND PULSE(1.8 0 1p 50p 50p 1000p 4000p)
+.save i(v2)
+x1 VDD EN Vout GND ringosil
+C1 Vout GND 10f m=1
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.tran 1ps 3000ps
+
+.control
+	let start_vdd = 1.62
+	let stop_vdd = 1.98
+	let delta_vdd = 0.18
+	let vdd_act = start_vdd
+
+	foreach temp_act 0 25 100
+		option temp=$temp_act
+
+		while vdd_act le stop_vdd
+
+			alter V1 vdd_act
+			run
+			plot V(EN) V(Vout)
+			let vdd_act = vdd_act + delta_vdd
+
+			let l_vdd = vdd_act * 0.2
+			let h_vdd = vdd_act * 0.8
+			meas tran rising_s find time when V(Vout)=l_vdd RISE=1 TD=1000p
+			meas tran rising_e find time when V(Vout)=h_vdd RISE=1 TD=1000p
+			let rising_time = rising_e-rising_s
+			meas tran falling_s find time when V(Vout)=h_vdd FALL=1 TD=1000p
+			meas tran falling_e find time when V(Vout)=l_vdd FALL=1 TD=1000p
+			let falling_time = falling_e-falling_s
+			meas tran IN find time when V(EN)=0.9 RISE=1 TD=1000p
+			meas tran OUT find time when V(Vout)=0.9 FALL=1 TD=1000p
+			let delay = OUT-IN
+
+			print rising_time falling_time delay
+		end
+		let vdd_act = start_vdd
+	end
+.endc
+.save all
+
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/ringosil.sym # of pins=4
+** sym_path: /foss/designs/mySAR_SKY130/xschem/ringosil.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/ringosil.sch
+.subckt ringosil VDD EN_CLK CLK VSS
+*.PININFO EN_CLK:I CLK:O VDD:I VSS:I
+x1 VDD EN_CLK CLK net1 VSS nand
+x2 VDD net1 net2 VSS inverter
+x3 VDD net2 net3 VSS inverter
+x4 VDD net3 net4 VSS inverter
+x5 VDD net4 net5 VSS inverter
+x6 VDD net5 net6 VSS inverter
+x7 VDD net6 net7 VSS inverter
+x8 VDD net7 net8 VSS inverter
+x9 VDD net8 net9 VSS inverter
+x10 VDD net9 net10 VSS inverter
+x11 VDD net10 CLK VSS inverter
+.ends
+
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/nand.sym # of pins=5
+** sym_path: /foss/designs/mySAR_SKY130/xschem/nand.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/nand.sch
+.subckt nand VDD A B OUT VSS
+*.PININFO B:I OUT:O A:I VDD:I VSS:I
+XM2 OUT B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM1 OUT B net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM3 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM4 OUT A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/mySAR_SKY130/xschem/inverter.sym # of pins=4
+** sym_path: /foss/designs/mySAR_SKY130/xschem/inverter.sym
+** sch_path: /foss/designs/mySAR_SKY130/xschem/inverter.sch
+.subckt inverter VDD IN OUT VSS
+*.PININFO IN:I VDD:I VSS:I OUT:O
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end
