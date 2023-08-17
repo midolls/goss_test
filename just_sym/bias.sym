@@ -1,0 +1,45 @@
+v {xschem version=3.4.0 file_version=1.2
+* Copyright 2022 Stefan Frederik Schippers
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+}
+G {}
+K {type=primitive
+format="@name @@A1 @@A2 @@B1_N @VGND @VNB @VPB @VPWR @@Y @prefix\\\\a21boi_0"
+template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
+extra="VGND VNB VPB VPWR prefix"
+verilogprefix=sky130_fd_sc_hd__
+highlight=true}
+V {}
+S {type=primitive
+format="@name @@VDD @@VSS @@Vref "
+template="name=x1  "
+extra="VGND VNB VPB VPWR prefix"
+
+highlight=true}
+E {}
+L 4 -20 -50 -20 50 {}
+L 4 -20 50 40 50 {}
+L 4 40 -50 40 50 {}
+L 4 -20 -50 40 -50 {}
+L 4 10 50 10 70 {}
+L 4 10 -70 10 -50 {}
+L 4 40 -0 60 0 {}
+B 5 7.5 -72.5 12.5 -67.5 {name=VDD dir=in goto=3 propag=3 }
+B 5 7.5 67.5 12.5 72.5 {name=VSS dir=in goto=3 propag=3 }
+B 5 57.5 -2.5 62.5 2.5 {name=Vref dir=out }
+T {VDD} 15 -84 0 0 0.2 0.2 {}
+T {VSS} 15 56 0 0 0.2 0.2 {}
+T {Vref} 75 -14 0 1 0.2 0.2 {}
+T {@name} 46.25 -65 0 0 0.2 0.2 {}
+T {@symname} -21.25 -10 0 0 0.2 0.2 {}

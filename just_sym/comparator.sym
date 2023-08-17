@@ -1,0 +1,47 @@
+v {xschem version=3.4.0 file_version=1.2
+* Copyright 2022 Stefan Frederik Schippers
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+}
+G {}
+K {type=primitive
+format="@name @@Vin+ @@Vin- @@VDD @@VSS @@Vout"
+template="name=x1 "
+extra="VGND VNB VPB VPWR prefix"
+highlight=true}
+V {}
+S {}
+E {}
+L 4 -10 -60 -10 60 {}
+L 4 -10 -60 90 -0 {}
+L 4 -10 60 90 -0 {}
+L 4 10 -80 10 -50 {}
+L 4 10 50 10 80 {}
+L 4 -40 -40 -10 -40 {}
+L 4 -40 40 -10 40 {}
+L 4 60 -20 110 -20 {}
+L 4 60 20 110 20 {}
+B 5 7.5 -82.5 12.5 -77.5 {name=VDD dir=in goto=5 propag=5 }
+B 5 -42.5 -42.5 -37.5 -37.5 {name=Vin+ dir=in goto=5 propag=5 }
+B 5 7.5 77.5 12.5 82.5 {name=VSS dir=in goto=5 propag=5 }
+B 5 -42.5 37.5 -37.5 42.5 {name=Vin- dir=in goto=5 propag=5 }
+B 5 107.5 -22.5 112.5 -17.5 {name=Vout dir=out }
+B 5 107.5 17.5 112.5 22.5 {name=Vout dir=out }
+T {VDD} 15 -94 0 0 0.2 0.2 {}
+T {Vin+} -35 -54 0 0 0.2 0.2 {}
+T {VSS} 15 76 0 0 0.2 0.2 {}
+T {Vin-} -35 26 0 0 0.2 0.2 {}
+T {Vout} 105 -34 0 1 0.2 0.2 {}
+T {@name} 36.25 -55 0 0 0.2 0.2 {}
+T {@symname} -1.25 -5 0 0 0.2 0.2 {}
+T {Vout'} 105 6 0 1 0.2 0.2 {}
