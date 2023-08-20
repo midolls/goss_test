@@ -18,12 +18,12 @@ C {devices/code.sym} -140 -210 0 0 {name=spice1 only_toplevel=false value="
 .tran 1ps 3000ps
 
 .control
-	let start_vdd = 1.62
-	let stop_vdd = 1.98
+	let start_vdd = 1.8
+	let stop_vdd = 1.8
 	let delta_vdd = 0.18
 	let vdd_act = start_vdd
 
-	foreach temp_act 0 25 100
+	foreach temp_act 27
 		option temp=$temp_act
 
 		while vdd_act le stop_vdd
@@ -53,7 +53,6 @@ C {devices/code.sym} -140 -210 0 0 {name=spice1 only_toplevel=false value="
 .save all
 
 "}
-C {/foss/designs/mySAR_SKY130/xschem/ringosil.sym} 250 -210 0 0 {name=x1}
 C {devices/vdd.sym} 250 -260 0 0 {name=l7 lab=VDD}
 C {devices/lab_pin.sym} 180 -210 0 0 {name=p4 sig_type=std_logic lab=EN}
 C {devices/gnd.sym} 250 -160 0 0 {name=l8 lab=GND}
@@ -64,3 +63,4 @@ m=1
 value=10f
 footprint=1206
 device="ceramic capacitor"}
+C {/foss/designs/HGU_SKY130_SAR-ADC/goss_test/goss_test/mySAR_SKY130/xschem/ringosil.sym} 250 -210 0 0 {name=x1}

@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/HGU_SKY130_SAR-ADC/goss_test/goss_test/ringosil/inv.sch
+*.subckt inv VDD VSS IN OUT
+*.PININFO VDD:I VSS:I IN:I OUT:O
+XM1 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 m=1
+XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 m=1
+*.ends
+*.end
