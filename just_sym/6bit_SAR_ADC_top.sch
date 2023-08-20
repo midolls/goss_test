@@ -28,6 +28,8 @@ N -30 -290 -30 -70 {}
 N -930 -290 -30 -290 {}
 N -930 -290 -930 -40 {}
 N 250 20 310 20 {}
+N -690 120 -690 130 {}
+N -690 130 -540 130 {}
 C {/foss/designs/HGU_SKY130_SAR-ADC/goss_test/goss_test/just_sym/clk_gen_buffer.sym} -1230 270 0 0 {}
 C {/foss/designs/HGU_SKY130_SAR-ADC/goss_test/goss_test/just_sym/retimer.sym} 170 220 0 0 {}
 C {/foss/designs/HGU_SKY130_SAR-ADC/goss_test/goss_test/just_sym/trackhold.sym} -2420 1160 0 0 {}
