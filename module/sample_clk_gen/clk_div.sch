@@ -12,7 +12,7 @@ lab=#net1}
 N 410 -500 410 -450 {
 lab=#net1}
 C {devices/title.sym} 160 -50 0 0 {name=l1 author="Stefan Schippers"}
-C {/foss/designs/mySAR_SKY130/xschem/dff_4.sym} 560 -400 0 0 {name=x1}
+C {/foss/designs/goss_test/module/sample_clk_gen/dff_4.sym} 560 -400 0 0 {name=x1}
 C {devices/ipin.sym} 410 -430 0 0 {name=p36 lab=CLK}
 C {devices/ipin.sym} 410 -410 0 0 {name=p40 lab=VDD}
 C {devices/ipin.sym} 410 -390 0 0 {name=p41 lab=VSS}
