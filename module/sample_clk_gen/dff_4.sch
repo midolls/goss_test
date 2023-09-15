@@ -218,10 +218,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 800 -550 0 1 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 780 -640 0 1 {name=p13 sig_type=std_logic lab=VDD}
-C {/foss/designs/mySAR_SKY130/xschem/inverter.sym} 1060 -470 0 0 {name=x2}
+C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 1060 -470 0 0 {name=x2}
 C {devices/lab_pin.sym} 1060 -430 3 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1060 -510 1 0 {name=p18 sig_type=std_logic lab=VDD}
-C {/foss/designs/mySAR_SKY130/xschem/inverter.sym} 1170 -470 0 0 {name=x3}
+C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 1170 -470 0 0 {name=x3}
 C {devices/lab_pin.sym} 1170 -430 3 0 {name=p19 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1170 -510 1 0 {name=p20 sig_type=std_logic lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 930 -440 0 0 {name=M11
