@@ -7,6 +7,8 @@ S {}
 E {}
 N 110 -320 170 -320 {
 lab=GND}
+N 470 -360 530 -360 {}
+N 470 -340 470 -310 {}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {devices/vsource.sym} 350 -170 0 0 {name=V2 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
 C {devices/gnd.sym} 350 -140 0 0 {name=l5 lab=GND}
@@ -33,9 +35,16 @@ C {/foss/designs/goss_test/module/sample_clk_gen/sample_clk_gen.sym} 320 -320 0 
 C {devices/gnd.sym} 170 -280 1 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 170 -300 1 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 170 -360 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
-C {devices/lab_pin.sym} 470 -360 2 0 {name=p8 sig_type=std_logic lab=Vout}
-C {devices/gnd.sym} 470 -300 0 0 {name=l4 lab=GND}
-C {devices/capa.sym} 470 -330 0 0 {name=C1
+C {devices/lab_pin.sym} 530 -360 2 0 {name=p8 sig_type=std_logic lab=Vout}
+C {devices/gnd.sym} 530 -300 0 0 {name=l4 lab=GND}
+C {devices/capa.sym} 530 -330 0 0 {name=C1
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 470 -310 2 0 {name=p2 sig_type=std_logic lab=Vout}
+C {devices/gnd.sym} 470 -250 0 0 {name=l6 lab=GND}
+C {devices/capa.sym} 470 -280 0 0 {name=C2
 m=1
 value=10f
 footprint=1206
