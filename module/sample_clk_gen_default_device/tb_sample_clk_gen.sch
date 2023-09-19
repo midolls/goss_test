@@ -16,11 +16,11 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
-.tran 1ps 400ns
+.tran 1ps 200ns
 
 .control
 	run
-	plot V(Vout) V(EXT_CLK)
+	plot V(Vout) V(Voutb) V(EXT_CLK)
 .endc
 .save all
 
@@ -59,3 +59,4 @@ m=1
 value=10f
 footprint=1206
 device="ceramic capacitor"}
+C {devices/lab_pin.sym} 470 -340 2 0 {name=p2 sig_type=std_logic lab=Voutb}
