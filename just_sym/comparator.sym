@@ -14,11 +14,9 @@ v {xschem version=3.4.0 file_version=1.2
 * limitations under the License.
 }
 G {}
-K {type=primitive
-format="@name @@Vin+ @@Vin- @@VDD @@VSS @@Vout"
-template="name=x1 "
-extra="VGND VNB VPB VPWR prefix"
-highlight=true}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"}
 V {}
 S {}
 E {}
