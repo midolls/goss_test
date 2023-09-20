@@ -55,12 +55,12 @@ N 240 -610 240 -330 {
 lab=D}
 N 240 -330 310 -330 {
 lab=D}
-N 1240 -470 1240 -370 {
+N 1270 -470 1270 -370 {
 lab=Qb}
-N 1130 -470 1130 -370 {
+N 1160 -470 1160 -370 {
 lab=Q}
-N 1100 -470 1130 -470 {}
-N 1210 -470 1240 -470 {}
+N 1130 -470 1160 -470 {
+lab=Q}
 C {sky130_fd_pr/pfet_01v8.sym} 330 -610 2 1 {name=M2
 L=0.15
 W=1.68
@@ -254,19 +254,25 @@ C {devices/lab_pin.sym} 560 -640 0 1 {name=p27 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 950 -530 0 1 {name=p28 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 950 -410 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 240 -390 0 0 {name=p30 lab=D}
-C {devices/opin.sym} 1130 -370 1 0 {name=p31 lab=Q}
-C {devices/opin.sym} 1240 -370 1 0 {name=p32 lab=Qb}
+C {devices/opin.sym} 1160 -370 1 0 {name=p31 lab=Q}
+C {devices/opin.sym} 1270 -370 1 0 {name=p32 lab=Qb}
 C {devices/lab_pin.sym} 740 -550 0 0 {name=p33 sig_type=std_logic lab=SET}
 C {devices/lab_pin.sym} 910 -440 0 0 {name=p35 sig_type=std_logic lab=SET}
-C {devices/lab_pin.sym} 290 -760 0 1 {name=p37 sig_type=std_logic lab=RESETb}
+C {devices/lab_pin.sym} 310 -720 0 1 {name=p37 sig_type=std_logic lab=RESETb}
 C {devices/lab_pin.sym} 910 -500 0 0 {name=p38 sig_type=std_logic lab=RESETb}
-C {devices/lab_pin.sym} 210 -760 0 0 {name=p39 sig_type=std_logic lab=RESET}
+C {devices/lab_pin.sym} 200 -720 0 0 {name=p39 sig_type=std_logic lab=RESET}
 C {devices/ipin.sym} 240 -260 0 0 {name=p36 lab=CLK}
 C {devices/ipin.sym} 240 -230 0 0 {name=p40 lab=VDD}
 C {devices/ipin.sym} 240 -200 0 0 {name=p41 lab=VSS}
 C {devices/ipin.sym} 240 -160 0 0 {name=p42 lab=SET}
 C {devices/ipin.sym} 240 -130 0 0 {name=p43 lab=RESET}
 C {devices/lab_pin.sym} 310 -550 0 0 {name=p7 sig_type=std_logic lab=CLK}
-C {sky130_stdcells/inv_1.sym} 250 -760 0 0 {name=x4 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1060 -470 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 1170 -470 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 240 -720 0 0 {name=x3}
+C {devices/lab_pin.sym} 240 -760 0 1 {name=p14 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 240 -680 2 0 {name=p17 sig_type=std_logic lab=VSS}
+C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 1060 -470 0 0 {name=x4}
+C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 1200 -470 0 0 {name=x1}
+C {devices/lab_pin.sym} 1060 -510 0 1 {name=p18 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1200 -510 0 1 {name=p19 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1060 -430 2 0 {name=p20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1200 -430 2 0 {name=p21 sig_type=std_logic lab=VSS}

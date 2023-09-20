@@ -43,7 +43,59 @@ N -220 -400 -120 -400 {
 lab=sw_n}
 N -120 -400 -120 -240 {
 lab=sw_n}
-C {/foss/designs/goss_test/module/tah.sym} -160 -140 0 0 {name=x1}
+N -370 150 -240 150 {
+lab=#net2}
+N -300 150 -300 210 {
+lab=#net2}
+N -300 270 -300 280 {
+lab=GND}
+N -370 190 -340 190 {
+lab=GND}
+N -340 190 -340 280 {
+lab=GND}
+N -260 190 -240 190 {
+lab=GND}
+N -260 190 -260 280 {
+lab=GND}
+N -410 200 -410 320 {
+lab=#net3}
+N -410 320 -200 320 {
+lab=#net3}
+N -200 200 -200 320 {
+lab=#net3}
+N -300 320 -300 350 {
+lab=#net3}
+N -410 120 -410 140 {
+lab=vip}
+N -200 120 -200 140 {
+lab=vin}
+N -300 -90 -300 -70 {
+lab=vin}
+N -300 -70 -300 -60 {
+lab=vin}
+N -300 -60 -300 -50 {
+lab=vin}
+N -300 -50 -300 -40 {
+lab=vin}
+N -300 -40 -300 -30 {
+lab=vin}
+N -300 -30 -300 0 {
+lab=vin}
+N -300 0 -300 20 {
+lab=vin}
+N -300 20 -300 60 {
+lab=vin}
+N -300 60 -200 60 {
+lab=vin}
+N -200 60 -200 120 {
+lab=vin}
+N -350 -40 -350 60 {
+lab=vip}
+N -410 60 -350 60 {
+lab=vip}
+N -410 60 -410 120 {
+lab=vip}
+C {/foss/designs/goss_test/module/tah/tah.sym} -160 -140 0 0 {name=x1}
 C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.8
 }
 C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}
@@ -55,7 +107,7 @@ C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 
 .control
 run
-plot v(sw)+4 v(sw_n)+4 vip vin+2 tah_vp tah_vn+2
+plot v(sw)+2 v(sw) vip vin+2 tah_vp tah_vn+2
 
 plot in out
 .endc
@@ -79,9 +131,6 @@ C {devices/lab_wire.sym} -240 -160 0 0 {name=p6 sig_type=std_logic lab=vip
 }
 C {devices/lab_wire.sym} 30 -90 0 0 {name=p7 sig_type=std_logic lab=tah_vn
 }
-C {devices/vsource.sym} -350 -10 0 0 {name=V5 value="sin(0.9 0.9 2MEG 48n)"
-}
-C {devices/gnd.sym} -350 20 0 0 {name=l4 lab=GND}
 C {devices/capa.sym} 70 -120 0 0 {name=C1
 m=1
 value=1p
@@ -93,9 +142,6 @@ C {devices/lab_wire.sym} 60 -170 0 0 {name=p8 sig_type=std_logic lab=tah_vp
 C {devices/lab_wire.sym} -240 -120 0 0 {name=p9 sig_type=std_logic lab=vin
 
 }
-C {devices/vsource.sym} -300 -60 0 0 {name=V6 value="sin(0.9 0.9 2MEG 0)"
-}
-C {devices/gnd.sym} -300 -30 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} -90 -60 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} -90 -220 0 0 {name=l2 lab=VDD}
 C {/foss/designs/goss_test/module/sample_clk_gen/sample_clk_gen.sym} -370 -380 0 0 {name=x2}
@@ -107,3 +153,19 @@ C {devices/vdd.sym} -520 -400 3 0 {name=l11 lab=VDD}
 C {devices/gnd.sym} -520 -340 1 0 {name=l12 lab=GND}
 C {devices/gnd.sym} -520 -360 1 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} -520 -420 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
+C {devices/vcvs.sym} -410 170 0 1 {name=E1 value=0.5
+}
+C {devices/vcvs.sym} -200 170 0 0 {name=E2 value=-0.5
+}
+C {devices/gnd.sym} -300 280 0 0 {name=l14 lab=GND}
+C {devices/gnd.sym} -340 280 0 0 {name=l15 lab=GND}
+C {devices/gnd.sym} -260 280 0 0 {name=l16 lab=GND}
+C {devices/vsource.sym} -300 380 0 0 {name=V4 value=0.9}
+C {devices/gnd.sym} -300 410 0 0 {name=l17 lab=GND}
+C {devices/lab_wire.sym} -410 120 0 0 {name=p2 sig_type=std_logic lab=vip
+
+}
+C {devices/lab_wire.sym} -200 130 0 0 {name=p10 sig_type=std_logic lab=vin
+
+}
+C {devices/vsource.sym} -300 240 0 0 {name=V3 value="SIN(0 0.45 1MEG 0)"}

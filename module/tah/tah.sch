@@ -131,7 +131,7 @@ N -170 540 50 540 {
 lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 50 -50 1 0 {name=M1
 L=0.22
-W=3.8
+W=7.6
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -181,7 +181,7 @@ C {devices/ipin.sym} -370 0 0 0 {name=p10 lab=sw_n
 }
 C {sky130_fd_pr/pfet_01v8.sym} -170 -50 1 0 {name=M2
 L=0.22
-W=7.6
+W=15.2
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
