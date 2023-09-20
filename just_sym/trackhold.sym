@@ -1,7 +1,9 @@
 v {xschem version=3.4.0 file_version=1.2
 }
 G {}
-K {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"}
 V {}
 S {}
 E {}
@@ -37,8 +39,7 @@ T {vinp} 1235 -1134 0 0 0.2 0.2 {}
 T {vinn} 1235 -1084 0 0 0.2 0.2 {}
 T {vip} 1415 -1134 0 0 0.2 0.2 {}
 T {vin} 1415 -1084 0 0 0.2 0.2 {}
-T {@T&H
-} 1312.5 -1116 0 0 0.3 0.3 {}
+T {@symname} 1312.5 -1136 0 0 0.3 0.3 {}
 T {sample_en} 1295 -1054 0 0 0.2 0.2 {}
 T {VSS} 1355 -1054 0 0 0.2 0.2 {}
 T {VDD} 1325 -1164 0 0 0.2 0.2 {}

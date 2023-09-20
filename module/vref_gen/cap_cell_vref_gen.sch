@@ -16,13 +16,13 @@ lab=mimcap_bot}
 N 420 -330 440 -330 {
 lab=mimcap_top}
 N 400 -110 440 -110 {
-lab=vcm}
+lab=nmoscap_top}
 N 400 -10 410 -10 {
 lab=nmoscap_bot}
 N 440 -110 480 -110 {
-lab=vcm}
+lab=nmoscap_top}
 N 480 -110 480 -90 {
-lab=vcm}
+lab=nmoscap_top}
 N 480 -30 480 -10 {
 lab=nmoscap_bot}
 N 410 -10 480 -10 {
