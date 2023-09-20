@@ -5,6 +5,7 @@ K {}
 V {}
 S {}
 E {}
+<<<<<<< HEAD
 N 360 -530 360 -440 {
 lab=#net1}
 N 360 -440 590 -440 {
@@ -170,3 +171,7 @@ C {devices/lab_wire.sym} -130 -410 0 1 {name=l27 sig_type=std_logic lab=phi2_b}
 C {devices/lab_wire.sym} -130 -450 2 0 {name=l28 sig_type=std_logic lab=phi1_b}
 C {devices/lab_wire.sym} -130 -470 2 0 {name=l29 sig_type=std_logic lab=phi1}
 C {devices/ipin.sym} -460 -430 0 0 {name=p1 lab=clk}
+=======
+C {/foss/designs/goss_test/module/vref_gen/sw_vref_gen.sym} 40 -30 0 0 {name=x1}
+C {/foss/designs/goss_test/module/vref_gen/sw_vref_gen.sym} 210 -30 0 0 {name=x2}
+>>>>>>> 3cbdb4bd0c70f00d85b3bbe020310b9e101ec8e5

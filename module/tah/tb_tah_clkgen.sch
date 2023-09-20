@@ -43,7 +43,7 @@ N -220 -400 -120 -400 {
 lab=sw_n}
 N -120 -400 -120 -240 {
 lab=sw_n}
-C {/foss/designs/goss_test/module/tah.sym} -160 -140 0 0 {name=x1}
+C {/foss/designs/goss_test/module/tah/tah.sym} -160 -140 0 0 {name=x1}
 C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.8
 }
 C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}

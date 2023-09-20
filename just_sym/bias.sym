@@ -14,12 +14,9 @@ v {xschem version=3.4.0 file_version=1.2
 * limitations under the License.
 }
 G {}
-K {type=primitive
-format="@name @@A1 @@A2 @@B1_N @VGND @VNB @VPB @VPWR @@Y @prefix\\\\a21boi_0"
-template="name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ "
-extra="VGND VNB VPB VPWR prefix"
-verilogprefix=sky130_fd_sc_hd__
-highlight=true}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"}
 V {}
 S {type=primitive
 format="@name @@VDD @@VSS @@Vref "
