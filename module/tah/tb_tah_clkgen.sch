@@ -169,3 +169,5 @@ C {devices/lab_wire.sym} -200 130 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
 C {devices/vsource.sym} -300 240 0 0 {name=V3 value="SIN(0 0.45 1MEG 0)"}
+C {devices/iopin.sym} 220 -840 0 0 {name=p11 lab=C0<1:0>
+}
