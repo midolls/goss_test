@@ -98,15 +98,15 @@ C {devices/lab_pin.sym} 530 -570 0 0 {name=p2 sig_type=std_logic lab=SEL}
 C {devices/lab_pin.sym} 530 -350 0 0 {name=p4 sig_type=std_logic lab=SELb}
 C {devices/lab_pin.sym} 530 -300 0 0 {name=p6 sig_type=std_logic lab=SELb}
 C {devices/lab_pin.sym} 530 -80 0 0 {name=p7 sig_type=std_logic lab=SEL}
-C {/foss/designs/mySAR_SKY130/xschem/inverter.sym} 280 -320 0 0 {name=x1}
+C {inverter.sym} 280 -320 0 0 {name=x1}
 C {devices/lab_pin.sym} 280 -280 3 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 280 -360 1 0 {name=p21 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 350 -320 0 1 {name=p37 sig_type=std_logic lab=SELb}
 C {devices/lab_pin.sym} 240 -320 0 0 {name=p39 sig_type=std_logic lab=SEL}
 C {devices/opin.sym} 920 -320 0 0 {name=p31 lab=Q}
-C {/foss/designs/mySAR_SKY130/xschem/inverter.sym} 740 -320 0 0 {name=x2}
+C {inverter.sym} 740 -320 0 0 {name=x2}
 C {devices/lab_pin.sym} 740 -280 3 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 740 -360 1 0 {name=p9 sig_type=std_logic lab=VDD}
-C {/foss/designs/mySAR_SKY130/xschem/inverter.sym} 850 -320 0 0 {name=x3}
+C {inverter.sym} 850 -320 0 0 {name=x3}
 C {devices/lab_pin.sym} 850 -280 3 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 850 -360 1 0 {name=p11 sig_type=std_logic lab=VDD}
