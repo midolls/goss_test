@@ -107,9 +107,8 @@ C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 
 .control
 run
-plot v(sw)+2 v(sw) vip vin+2 tah_vp tah_vn+2
-
-plot in out
+*plot v(sw)+2 v(sw) tah_vp tah_vn+2
+plot v(sw) tah_vp tah_vn
 .endc
 "
 }
