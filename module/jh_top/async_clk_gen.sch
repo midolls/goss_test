@@ -47,25 +47,17 @@ C {devices/lab_pin.sym} 1690 -480 2 0 {name=p22 sig_type=std_logic lab=ASYNC_CLK
 C {devices/lab_pin.sym} 230 -290 0 0 {name=p23 sig_type=std_logic lab=ASYNC_CLK_SAR}
 C {devices/ipin.sym} 320 -470 0 0 {name=p24 lab=READY}
 C {devices/lab_pin.sym} 230 -400 0 0 {name=p25 sig_type=std_logic lab=READY}
-C {devices/lab_pin.sym} 230 -360 0 0 {name=p26 sig_type=std_logic lab=cap_ctrl_code[0:7]}
-C {devices/lab_pin.sym} 230 -250 0 0 {name=p27 sig_type=std_logic lab=cap_ctrl_code[0:7]}
-C {devices/vdd.sym} 720 -170 1 0 {name=l1 lab=cap_ctrl_code[7]}
+C {devices/lab_pin.sym} 230 -360 0 0 {name=p26 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
+C {devices/lab_pin.sym} 230 -250 0 0 {name=p27 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
+C {devices/vdd.sym} 720 -170 1 0 {name=l1 lab=async_cap_ctrl_code[7]}
 C {devices/gnd.sym} 660 -230 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 830 -170 1 0 {name=l5 lab=cap_ctrl_code[6]}
-C {devices/vdd.sym} 940 -170 1 0 {name=l7 lab=cap_ctrl_code[5]}
-C {devices/vdd.sym} 1050 -170 1 0 {name=l8 lab=cap_ctrl_code[4]}
-C {devices/vdd.sym} 1160 -170 1 0 {name=l9 lab=cap_ctrl_code[3]}
-C {devices/vdd.sym} 1270 -290 1 0 {name=l10 lab=cap_ctrl_code[2]}
-C {devices/vdd.sym} 1380 -170 1 0 {name=l11 lab=cap_ctrl_code[1]}
-C {devices/vdd.sym} 1490 -170 1 0 {name=l13 lab=cap_ctrl_code[0]}
-C {devices/vsource.sym} 720 -260 0 0 {name=V1 value=1.8}
-C {devices/vsource.sym} 830 -260 0 0 {name=V2 value=1.8}
-C {devices/vsource.sym} 940 -260 0 0 {name=V4 value=1.8}
-C {devices/vsource.sym} 1050 -260 0 0 {name=V5 value=1.8}
-C {devices/vsource.sym} 1160 -260 0 0 {name=V6 value=1.8}
-C {devices/vsource.sym} 1270 -260 0 0 {name=V7 value=1.8}
-C {devices/vsource.sym} 1380 -260 0 0 {name=V8 value=1.8}
-C {devices/vsource.sym} 1490 -260 0 0 {name=V9 value=1.8}
+C {devices/vdd.sym} 830 -170 1 0 {name=l5 lab=async_cap_ctrl_code[6]}
+C {devices/vdd.sym} 940 -170 1 0 {name=l7 lab=async_cap_ctrl_code[5]}
+C {devices/vdd.sym} 1050 -170 1 0 {name=l8 lab=async_cap_ctrl_code[4]}
+C {devices/vdd.sym} 1160 -170 1 0 {name=l9 lab=async_cap_ctrl_code[3]}
+C {devices/vdd.sym} 1270 -170 1 0 {name=l10 lab=async_cap_ctrl_code[2]}
+C {devices/vdd.sym} 1380 -170 1 0 {name=l11 lab=async_cap_ctrl_code[1]}
+C {devices/vdd.sym} 1490 -170 1 0 {name=l13 lab=async_cap_ctrl_code[0]}
 C {devices/vsource.sym} 720 -200 0 0 {name=V10 value=0}
 C {devices/vsource.sym} 830 -200 0 0 {name=V11 value=0}
 C {devices/vsource.sym} 940 -200 0 0 {name=V12 value=0}
