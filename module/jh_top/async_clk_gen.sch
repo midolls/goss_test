@@ -16,11 +16,10 @@ lab=#net3}
 N 1330 -480 1390 -480 {
 lab=#net4}
 N 660 -230 1580 -230 {
-lab=GND}
+lab=VSS}
 C {dff_4.sym} 770 -450 0 0 {name=x1}
 C {mux.sym} 1180 -440 0 0 {name=x2}
-C {delay.sym} 380 -390 0 0 {name=x3 DELAY_CAP=1f}
-C {delay.sym} 380 -280 0 0 {name=x4 DELAY_CAP=1f}
+C {delay.sym} 790 -700 0 0 {name=x4 DELAY_CAP=1f}
 C {devices/ipin.sym} 320 -550 0 0 {name=p1 lab=VDD}
 C {devices/opin.sym} 370 -550 0 0 {name=p2 lab=ASYNC_CLK_SAR}
 C {devices/lab_pin.sym} 620 -460 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -50,7 +49,6 @@ C {devices/lab_pin.sym} 230 -400 0 0 {name=p25 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 230 -360 0 0 {name=p26 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
 C {devices/lab_pin.sym} 230 -250 0 0 {name=p27 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
 C {devices/vdd.sym} 720 -170 1 0 {name=l1 lab=async_cap_ctrl_code[7]}
-C {devices/gnd.sym} 660 -230 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 830 -170 1 0 {name=l5 lab=async_cap_ctrl_code[6]}
 C {devices/vdd.sym} 940 -170 1 0 {name=l7 lab=async_cap_ctrl_code[5]}
 C {devices/vdd.sym} 1050 -170 1 0 {name=l8 lab=async_cap_ctrl_code[4]}
@@ -66,9 +64,14 @@ C {devices/vsource.sym} 1160 -200 0 0 {name=V29 value=0}
 C {devices/vsource.sym} 1270 -200 0 0 {name=V30 value=0}
 C {devices/vsource.sym} 1380 -200 0 0 {name=V31 value=0}
 C {devices/vsource.sym} 1490 -200 0 0 {name=V32 value=0}
-C {devices/capa.sym} 920 -530 2 0 {name=C2
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 920 -560 2 0 {name=l18 lab=GND}
+C {devices/lab_pin.sym} 660 -230 0 0 {name=p28 sig_type=std_logic lab=VSS}
+C {devices/noconn.sym} 920 -500 2 0 {name=l2}
+C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -400 0 0 {name=x6}
+C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -290 0 0 {name=x7}
+C {devices/noconn.sym} 230 -360 2 0 {name=l3}
+C {devices/noconn.sym} 230 -250 2 0 {name=l4}
+C {devices/noconn.sym} 940 -730 2 0 {name=l6}
+C {devices/noconn.sym} 640 -730 0 0 {name=l12}
+C {devices/noconn.sym} 640 -710 0 0 {name=l14}
+C {devices/noconn.sym} 640 -690 0 0 {name=l15}
+C {devices/noconn.sym} 640 -670 0 0 {name=l16}

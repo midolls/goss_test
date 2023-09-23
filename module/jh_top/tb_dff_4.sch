@@ -34,7 +34,7 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 .dc VDD 1.8 1.8
 .dc GND 0 0
 
-.tran 1ps 100ns
+.tran 1ps 60ns
 
 .control
 	run
@@ -54,7 +54,7 @@ device="ceramic capacitor"}
 C {devices/vsource.sym} 540 -170 0 0 {name=V1 value="PULSE(0 1.8 2.5n 5p 5p 10n 1)"}
 C {devices/gnd.sym} 540 -140 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 540 -200 0 0 {name=p10 sig_type=std_logic lab=SET}
-C {devices/vsource.sym} 740 -160 0 0 {name=V3 value="PULSE(0 1.8 32.5n 5p 5p 30n 1)"}
+C {devices/vsource.sym} 740 -160 0 0 {name=V3 value="PULSE(0 1.8 40.0095n 5p 5p 30n 1)"}
 C {devices/gnd.sym} 740 -130 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 740 -190 0 0 {name=p11 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 550 -360 2 0 {name=p12 sig_type=std_logic lab=Voutb}
