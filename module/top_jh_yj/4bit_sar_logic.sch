@@ -6,63 +6,65 @@ V {}
 S {}
 E {}
 N 390 -720 420 -720 {
-lab=check[8]}
+lab=#net1}
 N 420 -740 420 -720 {
-lab=check[8]}
+lab=#net1}
 N 420 -740 500 -740 {
-lab=check[8]}
+lab=#net1}
 N 800 -720 880 -720 {
-lab=check[7]}
+lab=#net2}
 N 2510 -740 2510 -720 {
-lab=check[3]}
+lab=#net3}
 N 2510 -740 2610 -740 {
-lab=check[3]}
+lab=#net3}
 N 2910 -720 2930 -720 {
-lab=check[2]}
+lab=#net4}
 N 2930 -740 2930 -720 {
-lab=check[2]}
+lab=#net4}
 N 2930 -740 3010 -740 {
-lab=check[2]}
+lab=#net4}
 N 3310 -720 3330 -720 {
-lab=check[1]}
+lab=#net5}
 N 3330 -740 3330 -720 {
-lab=check[1]}
+lab=#net5}
 N 3330 -740 3410 -740 {
-lab=check[1]}
+lab=#net5}
 N 3710 -720 3730 -720 {
 lab=check[0]}
 N 3730 -740 3730 -720 {
 lab=check[0]}
 N 3730 -740 3800 -740 {
 lab=check[0]}
+N 4100 -720 4230 -720 {
+lab=EOC}
 N 4340 -400 4340 -380 {
-lab=VSS}
+lab=GND}
 N 2510 -720 2510 -320 {
-lab=check[3]}
+lab=#net3}
 N 2510 -320 2610 -320 {
-lab=check[3]}
+lab=#net3}
 N 2930 -720 2930 -320 {
-lab=check[2]}
+lab=#net4}
 N 2930 -320 3030 -320 {
-lab=check[2]}
+lab=#net4}
 N 3330 -720 3330 -320 {
-lab=check[1]}
+lab=#net5}
 N 3330 -320 3410 -320 {
-lab=check[1]}
+lab=#net5}
 N 3730 -720 3730 -320 {
 lab=check[0]}
 N 3730 -320 3800 -320 {
 lab=check[0]}
 N 4640 -380 4660 -380 {
-lab=#net1}
+lab=#net6}
 N 4660 -560 4660 -380 {
-lab=#net1}
+lab=#net6}
 N 3760 -560 4660 -560 {
-lab=#net1}
+lab=#net6}
 N 3760 -560 3760 -380 {
-lab=#net1}
+lab=#net6}
 N 3760 -380 3800 -380 {
-lab=#net1}
+lab=#net6}
 N 2910 -380 2910 -140 {
 lab=D[3]}
 N 3310 -380 3310 -140 {
@@ -90,43 +92,43 @@ lab=D[2]}
 N 2540 -250 3310 -250 {
 lab=D[2]}
 N 880 -740 880 -720 {
-lab=check[7]}
+lab=#net2}
 N 880 -740 980 -740 {
-lab=check[7]}
+lab=#net2}
 N 1280 -720 1300 -720 {
-lab=check[6]}
+lab=#net7}
 N 1300 -740 1300 -720 {
-lab=check[6]}
+lab=#net7}
 N 1300 -740 1380 -740 {
-lab=check[6]}
+lab=#net7}
 N 1680 -720 1700 -720 {
-lab=check[5]}
+lab=#net8}
 N 1700 -740 1700 -720 {
-lab=check[5]}
+lab=#net8}
 N 1700 -740 1780 -740 {
-lab=check[5]}
+lab=#net8}
 N 2080 -720 2100 -720 {
-lab=check[4]}
+lab=#net9}
 N 2100 -740 2100 -720 {
-lab=check[4]}
+lab=#net9}
 N 2100 -740 2170 -740 {
-lab=check[4]}
+lab=#net9}
 N 880 -720 880 -320 {
-lab=check[7]}
+lab=#net2}
 N 880 -320 980 -320 {
-lab=check[7]}
+lab=#net2}
 N 1300 -720 1300 -320 {
-lab=check[6]}
+lab=#net7}
 N 1300 -320 1400 -320 {
-lab=check[6]}
+lab=#net7}
 N 1700 -720 1700 -320 {
-lab=check[5]}
+lab=#net8}
 N 1700 -320 1780 -320 {
-lab=check[5]}
+lab=#net8}
 N 2100 -720 2100 -320 {
-lab=check[4]}
+lab=#net9}
 N 2100 -320 2170 -320 {
-lab=check[4]}
+lab=#net9}
 N 1280 -380 1280 -140 {
 lab=D[7]}
 N 1680 -380 1680 -140 {
@@ -154,33 +156,22 @@ lab=D[6]}
 N 910 -250 1680 -250 {
 lab=D[6]}
 N 2470 -720 2510 -720 {
-lab=check[3]}
+lab=#net3}
 N 2110 -380 2170 -380 {
 lab=D[3]}
 N 2110 -380 2110 -230 {
 lab=D[3]}
 N 2110 -230 2910 -230 {
 lab=D[3]}
-N 450 -810 450 -740 {
-lab=check[8]}
-N 880 -810 880 -740 {
-lab=check[7]}
-N 1340 -810 1340 -740 {
-lab=check[6]}
-N 1740 -810 1740 -740 {
-lab=check[5]}
-N 2130 -810 2130 -740 {
-lab=check[4]}
-N 2550 -810 2550 -740 {
-lab=check[3]}
-N 2960 -810 2960 -740 {
-lab=check[2]}
-N 3360 -810 3360 -740 {
-lab=check[1]}
-N 3750 -810 3750 -740 {
-lab=check[0]}
-N 4100 -720 4210 -720 {
-lab=#net2}
+N 450 -850 450 -780 {}
+N 880 -850 880 -780 {}
+N 1340 -850 1340 -780 {}
+N 1740 -850 1740 -780 {}
+N 2130 -850 2130 -780 {}
+N 2550 -850 2550 -780 {}
+N 2960 -850 2960 -780 {}
+N 3360 -850 3360 -780 {}
+N 3750 -850 3750 -780 {}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {dff_4.sym} 2760 -350 0 0 {name=x1}
 C {dff_4.sym} 3160 -350 0 0 {name=x2}
@@ -241,6 +232,14 @@ C {devices/lab_pin.sym} 2610 -640 0 0 {name=p45 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3010 -640 0 0 {name=p46 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3410 -640 0 0 {name=p47 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3800 -640 0 0 {name=p48 sig_type=std_logic lab=reset}
+C {devices/gnd.sym} 390 -740 2 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 800 -740 2 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 2910 -740 2 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 3310 -740 2 0 {name=l5 lab=GND}
+C {devices/gnd.sym} 3710 -740 2 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 4100 -740 2 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 4230 -720 2 0 {name=p49 sig_type=std_logic lab=EOC}
+C {devices/gnd.sym} 4340 -400 2 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 4340 -320 0 0 {name=p50 sig_type=std_logic lab=EOC}
 C {devices/lab_pin.sym} 4340 -300 0 0 {name=p51 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3800 -300 0 0 {name=p52 sig_type=std_logic lab=reset}
@@ -251,6 +250,11 @@ C {devices/lab_pin.sym} 2610 -400 1 0 {name=p56 sig_type=std_logic lab=comparato
 C {devices/lab_pin.sym} 3010 -400 1 0 {name=p57 sig_type=std_logic lab=comparator_out}
 C {devices/lab_pin.sym} 3410 -400 1 0 {name=p58 sig_type=std_logic lab=comparator_out}
 C {devices/lab_pin.sym} 3800 -400 1 0 {name=p59 sig_type=std_logic lab=comparator_out}
+C {devices/gnd.sym} 4640 -400 2 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 4100 -400 2 0 {name=l10 lab=GND}
+C {devices/gnd.sym} 3710 -400 2 0 {name=l11 lab=GND}
+C {devices/gnd.sym} 3310 -400 2 0 {name=l12 lab=GND}
+C {devices/gnd.sym} 2910 -400 2 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 2910 -140 0 0 {name=p60 sig_type=std_logic lab=D[3]}
 C {devices/lab_pin.sym} 3310 -140 0 0 {name=p61 sig_type=std_logic lab=D[2]}
 C {devices/lab_pin.sym} 3710 -140 0 0 {name=p62 sig_type=std_logic lab=D[1]}
@@ -291,6 +295,10 @@ C {devices/lab_pin.sym} 980 -640 0 0 {name=p91 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 1380 -640 0 0 {name=p92 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 1780 -640 0 0 {name=p93 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 2170 -640 0 0 {name=p94 sig_type=std_logic lab=reset}
+C {devices/gnd.sym} 1280 -740 2 0 {name=l14 lab=GND}
+C {devices/gnd.sym} 1680 -740 2 0 {name=l15 lab=GND}
+C {devices/gnd.sym} 2080 -740 2 0 {name=l16 lab=GND}
+C {devices/gnd.sym} 2470 -740 2 0 {name=l17 lab=GND}
 C {devices/lab_pin.sym} 2170 -300 0 0 {name=p95 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 1780 -300 0 0 {name=p96 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 1380 -300 0 0 {name=p97 sig_type=std_logic lab=reset}
@@ -299,45 +307,65 @@ C {devices/lab_pin.sym} 980 -400 1 0 {name=p99 sig_type=std_logic lab=comparator
 C {devices/lab_pin.sym} 1380 -400 1 0 {name=p100 sig_type=std_logic lab=comparator_out}
 C {devices/lab_pin.sym} 1780 -400 1 0 {name=p101 sig_type=std_logic lab=comparator_out}
 C {devices/lab_pin.sym} 2170 -400 1 0 {name=p102 sig_type=std_logic lab=comparator_out}
+C {devices/gnd.sym} 2470 -400 2 0 {name=l18 lab=GND}
+C {devices/gnd.sym} 2080 -400 2 0 {name=l19 lab=GND}
+C {devices/gnd.sym} 1680 -400 2 0 {name=l20 lab=GND}
+C {devices/gnd.sym} 1280 -400 2 0 {name=l21 lab=GND}
 C {devices/lab_pin.sym} 1280 -140 0 0 {name=p103 sig_type=std_logic lab=D[7]}
 C {devices/lab_pin.sym} 1680 -140 0 0 {name=p104 sig_type=std_logic lab=D[6]}
 C {devices/lab_pin.sym} 2080 -140 0 0 {name=p105 sig_type=std_logic lab=D[5]}
 C {devices/lab_pin.sym} 2470 -140 0 0 {name=p106 sig_type=std_logic lab=D[4]}
-C {devices/opin.sym} 220 -250 0 0 {name=p64 lab=check[0:8]}
-C {devices/lab_pin.sym} 450 -770 0 0 {name=p65 sig_type=std_logic lab=check[8]}
-C {devices/lab_pin.sym} 880 -770 0 0 {name=p66 sig_type=std_logic lab=check[7]}
-C {devices/lab_pin.sym} 1340 -770 0 0 {name=p107 sig_type=std_logic lab=check[6]}
-C {devices/lab_pin.sym} 1740 -770 0 0 {name=p108 sig_type=std_logic lab=check[5]}
-C {devices/lab_pin.sym} 2130 -770 0 0 {name=p109 sig_type=std_logic lab=check[4]}
-C {devices/lab_pin.sym} 2550 -770 0 0 {name=p110 sig_type=std_logic lab=check[3]}
-C {devices/lab_pin.sym} 2960 -770 0 0 {name=p111 sig_type=std_logic lab=check[2]}
-C {devices/lab_pin.sym} 3360 -770 0 0 {name=p112 sig_type=std_logic lab=check[1]}
-C {devices/lab_pin.sym} 3750 -770 0 0 {name=p113 sig_type=std_logic lab=check[0]}
-C {devices/noconn.sym} 390 -740 2 0 {name=l2}
-C {devices/noconn.sym} 800 -740 2 0 {name=l3}
-C {devices/noconn.sym} 1280 -740 2 0 {name=l14}
-C {devices/noconn.sym} 1680 -740 2 0 {name=l15}
-C {devices/noconn.sym} 2080 -740 2 0 {name=l16}
-C {devices/noconn.sym} 2470 -740 2 0 {name=l4}
-C {devices/noconn.sym} 2910 -740 2 0 {name=l5}
-C {devices/noconn.sym} 3310 -740 2 0 {name=l6}
-C {devices/noconn.sym} 3710 -740 2 0 {name=l7}
-C {devices/noconn.sym} 4100 -740 2 0 {name=l17}
-C {devices/noconn.sym} 2080 -400 2 0 {name=l10}
-C {devices/noconn.sym} 2470 -400 2 0 {name=l11}
-C {devices/noconn.sym} 2910 -400 2 0 {name=l12}
-C {devices/noconn.sym} 3310 -400 2 0 {name=l13}
-C {devices/noconn.sym} 3710 -400 2 0 {name=l18}
-C {devices/noconn.sym} 4100 -400 2 0 {name=l19}
-C {devices/noconn.sym} 1680 -400 2 0 {name=l20}
-C {devices/noconn.sym} 1280 -400 2 0 {name=l21}
-C {devices/noconn.sym} 4640 -400 2 0 {name=l9}
-C {devices/lab_pin.sym} 4340 -400 0 0 {name=p123 sig_type=std_logic lab=VSS}
-C {sky130_stdcells/mux4_4.sym} 4250 -780 0 0 {name=x21 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 4290 -780 2 0 {name=p115 sig_type=std_logic lab=EOC}
-C {devices/lab_pin.sym} 4210 -760 0 0 {name=p49 sig_type=std_logic lab=check[0]}
-C {devices/lab_pin.sym} 4210 -800 0 0 {name=p116 sig_type=std_logic lab=check[1]}
-C {devices/lab_pin.sym} 4210 -840 0 0 {name=p117 sig_type=std_logic lab=check[2]}
-C {devices/ipin.sym} 130 -370 0 0 {name=p118 lab=sel_bit[0:1]}
-C {devices/lab_pin.sym} 4210 -680 0 0 {name=p119 sig_type=std_logic lab=sel_bit[0]}
-C {devices/lab_pin.sym} 4210 -650 0 0 {name=p120 sig_type=std_logic lab=sel_bit[1]}
+C {devices/capa.sym} 2130 -880 2 0 {name=C1
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 2130 -910 2 0 {name=l22 lab=GND}
+C {devices/capa.sym} 2550 -880 2 0 {name=C3
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 2550 -910 2 0 {name=l23 lab=GND}
+C {devices/capa.sym} 2960 -880 2 0 {name=C4
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 2960 -910 2 0 {name=l24 lab=GND}
+C {devices/capa.sym} 3360 -880 2 0 {name=C5
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 3360 -910 2 0 {name=l25 lab=GND}
+C {devices/capa.sym} 450 -880 2 0 {name=C6
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 450 -910 2 0 {name=l26 lab=GND}
+C {devices/capa.sym} 880 -880 2 0 {name=C7
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 880 -910 2 0 {name=l27 lab=GND}
+C {devices/capa.sym} 1340 -880 2 0 {name=C8
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 1340 -910 2 0 {name=l28 lab=GND}
+C {devices/capa.sym} 1740 -880 2 0 {name=C9
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 1740 -910 2 0 {name=l29 lab=GND}
+C {devices/capa.sym} 3750 -880 2 0 {name=C2
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 3750 -910 2 0 {name=l30 lab=GND}

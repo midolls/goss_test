@@ -19,7 +19,7 @@ N 660 -230 1580 -230 {
 lab=VSS}
 C {dff_4.sym} 770 -450 0 0 {name=x1}
 C {mux.sym} 1180 -440 0 0 {name=x2}
-C {delay.sym} 790 -700 0 0 {name=x4 DELAY_CAP=5f}
+C {delay.sym} 790 -700 0 0 {name=x4 DELAY_CAP=1f}
 C {devices/ipin.sym} 320 -550 0 0 {name=p1 lab=VDD}
 C {devices/opin.sym} 370 -550 0 0 {name=p2 lab=ASYNC_CLK_SAR}
 C {devices/lab_pin.sym} 620 -460 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -48,7 +48,7 @@ C {devices/ipin.sym} 320 -470 0 0 {name=p24 lab=READY}
 C {devices/lab_pin.sym} 230 -400 0 0 {name=p25 sig_type=std_logic lab=READY}
 C {devices/lab_pin.sym} 230 -360 0 0 {name=p26 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
 C {devices/lab_pin.sym} 230 -250 0 0 {name=p27 sig_type=std_logic lab=async_cap_ctrl_code[0:7]}
-C {devices/vdd.sym} 720 -290 1 0 {name=l1 lab=async_cap_ctrl_code[7]}
+C {devices/vdd.sym} 720 -170 1 0 {name=l1 lab=async_cap_ctrl_code[7]}
 C {devices/vdd.sym} 830 -170 1 0 {name=l5 lab=async_cap_ctrl_code[6]}
 C {devices/vdd.sym} 940 -170 1 0 {name=l7 lab=async_cap_ctrl_code[5]}
 C {devices/vdd.sym} 1050 -170 1 0 {name=l8 lab=async_cap_ctrl_code[4]}
@@ -56,13 +56,14 @@ C {devices/vdd.sym} 1160 -170 1 0 {name=l9 lab=async_cap_ctrl_code[3]}
 C {devices/vdd.sym} 1270 -170 1 0 {name=l10 lab=async_cap_ctrl_code[2]}
 C {devices/vdd.sym} 1380 -170 1 0 {name=l11 lab=async_cap_ctrl_code[1]}
 C {devices/vdd.sym} 1490 -170 1 0 {name=l13 lab=async_cap_ctrl_code[0]}
-C {devices/vsource.sym} 1160 -200 0 0 {name=V10 value=0}
+C {devices/vsource.sym} 720 -200 0 0 {name=V10 value=0}
 C {devices/vsource.sym} 830 -200 0 0 {name=V11 value=0}
 C {devices/vsource.sym} 940 -200 0 0 {name=V12 value=0}
 C {devices/vsource.sym} 1050 -200 0 0 {name=V28 value=0}
-C {devices/vsource.sym} 1490 -200 0 0 {name=V29 value=0}
+C {devices/vsource.sym} 1160 -200 0 0 {name=V29 value=0}
 C {devices/vsource.sym} 1270 -200 0 0 {name=V30 value=0}
 C {devices/vsource.sym} 1380 -200 0 0 {name=V31 value=0}
+C {devices/vsource.sym} 1490 -200 0 0 {name=V32 value=0}
 C {devices/lab_pin.sym} 660 -230 0 0 {name=p28 sig_type=std_logic lab=VSS}
 C {devices/noconn.sym} 920 -500 2 0 {name=l2}
 C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -400 0 0 {name=x6}
@@ -74,4 +75,3 @@ C {devices/noconn.sym} 640 -730 0 0 {name=l12}
 C {devices/noconn.sym} 640 -710 0 0 {name=l14}
 C {devices/noconn.sym} 640 -690 0 0 {name=l15}
 C {devices/noconn.sym} 640 -670 0 0 {name=l16}
-C {devices/vsource.sym} 720 -260 0 0 {name=V1 value=1.8}

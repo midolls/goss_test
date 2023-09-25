@@ -35,6 +35,8 @@ N 3730 -740 3730 -720 {
 lab=check[0]}
 N 3730 -740 3800 -740 {
 lab=check[0]}
+N 4100 -720 4230 -720 {
+lab=EOC}
 N 4340 -400 4340 -380 {
 lab=VSS}
 N 2510 -720 2510 -320 {
@@ -179,8 +181,6 @@ N 3360 -810 3360 -740 {
 lab=check[1]}
 N 3750 -810 3750 -740 {
 lab=check[0]}
-N 4100 -720 4210 -720 {
-lab=#net2}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {dff_4.sym} 2760 -350 0 0 {name=x1}
 C {dff_4.sym} 3160 -350 0 0 {name=x2}
@@ -241,6 +241,7 @@ C {devices/lab_pin.sym} 2610 -640 0 0 {name=p45 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3010 -640 0 0 {name=p46 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3410 -640 0 0 {name=p47 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3800 -640 0 0 {name=p48 sig_type=std_logic lab=reset}
+C {devices/lab_pin.sym} 4230 -720 2 0 {name=p49 sig_type=std_logic lab=EOC}
 C {devices/lab_pin.sym} 4340 -320 0 0 {name=p50 sig_type=std_logic lab=EOC}
 C {devices/lab_pin.sym} 4340 -300 0 0 {name=p51 sig_type=std_logic lab=reset}
 C {devices/lab_pin.sym} 3800 -300 0 0 {name=p52 sig_type=std_logic lab=reset}
@@ -331,13 +332,23 @@ C {devices/noconn.sym} 3710 -400 2 0 {name=l18}
 C {devices/noconn.sym} 4100 -400 2 0 {name=l19}
 C {devices/noconn.sym} 1680 -400 2 0 {name=l20}
 C {devices/noconn.sym} 1280 -400 2 0 {name=l21}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -950 0 0 {name=x20 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 880 -950 0 0 {name=x21 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1340 -950 0 0 {name=x22 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1740 -950 0 0 {name=x23 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 2130 -950 0 0 {name=x24 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 2550 -950 0 0 {name=x25 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 2960 -950 0 0 {name=x26 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 3360 -950 0 0 {name=x27 csize=csize}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 3750 -950 0 0 {name=x28 csize=csize}
 C {devices/noconn.sym} 4640 -400 2 0 {name=l9}
+C {devices/lab_pin.sym} 450 -1000 0 0 {name=p114 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 880 -1000 0 0 {name=p115 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1340 -1000 0 0 {name=p116 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1740 -1000 0 0 {name=p117 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2130 -1000 0 0 {name=p118 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2550 -1000 0 0 {name=p119 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2960 -1000 0 0 {name=p120 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 3360 -1000 0 0 {name=p121 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 3750 -1000 0 0 {name=p122 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 4340 -400 0 0 {name=p123 sig_type=std_logic lab=VSS}
-C {sky130_stdcells/mux4_4.sym} 4250 -780 0 0 {name=x21 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 4290 -780 2 0 {name=p115 sig_type=std_logic lab=EOC}
-C {devices/lab_pin.sym} 4210 -760 0 0 {name=p49 sig_type=std_logic lab=check[0]}
-C {devices/lab_pin.sym} 4210 -800 0 0 {name=p116 sig_type=std_logic lab=check[1]}
-C {devices/lab_pin.sym} 4210 -840 0 0 {name=p117 sig_type=std_logic lab=check[2]}
-C {devices/ipin.sym} 130 -370 0 0 {name=p118 lab=sel_bit[0:1]}
-C {devices/lab_pin.sym} 4210 -680 0 0 {name=p119 sig_type=std_logic lab=sel_bit[0]}
-C {devices/lab_pin.sym} 4210 -650 0 0 {name=p120 sig_type=std_logic lab=sel_bit[1]}

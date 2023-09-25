@@ -1,0 +1,107 @@
+v {xschem version=3.4.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 1240 -410 1290 -410 {
+lab=EOC}
+N 1260 -430 1290 -430 {
+lab=sample_clk}
+N 1600 -430 1710 -430 {
+lab=sample_clk}
+N 1590 -470 1710 -470 {
+lab=sar_clk}
+N 1240 -500 2010 -500 {
+lab=EOC}
+N 1240 -500 1240 -410 {
+lab=EOC}
+N 2010 -500 2010 -470 {
+lab=EOC}
+N 1210 -350 1600 -350 {
+lab=sample_clk}
+N 1600 -430 1600 -350 {
+lab=sample_clk}
+N 1260 -430 1260 -350 {
+lab=sample_clk}
+N 2010 -450 2090 -450 {
+lab=result[0:7]}
+C {../jh_top/async_clk_gen.sym} 1440 -430 0 0 {name=x1}
+C {../jh_top/sample_clk_gen.sym} 1060 -310 0 0 {name=x2}
+C {../jh_top/8bit_sar_logic.sym} 1860 -430 0 0 {name=x3 csize=0.001}
+C {devices/lab_pin.sym} 910 -350 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_pin.sym} 910 -330 0 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 910 -310 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1290 -470 0 0 {name=p4 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1290 -450 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1710 -410 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1710 -390 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1290 -390 0 0 {name=p8 sig_type=std_logic lab=READY}
+C {devices/lab_pin.sym} 1710 -450 0 0 {name=p9 sig_type=std_logic lab=COMP_RESULT}
+C {devices/capa.sym} 2090 -420 0 0 {name=C1
+m=1
+value=10f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 2090 -450 2 0 {name=p33 sig_type=std_logic lab=result[0:7]}
+C {devices/lab_pin.sym} 910 -290 0 0 {name=p10 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 910 -270 0 0 {name=p14 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2090 -390 3 0 {name=p15 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1670 -470 0 0 {name=p16 sig_type=std_logic lab=sar_clk}
+C {devices/lab_wire.sym} 1680 -500 0 0 {name=p17 sig_type=std_logic lab=EOC}
+C {devices/lab_wire.sym} 1440 -350 0 0 {name=p18 sig_type=std_logic lab=sample_clk}
+C {devices/lab_pin.sym} 2010 -430 2 0 {name=p19 sig_type=std_logic lab=tempD[0:8]}
+C {/foss/designs/goss_test/module/comparator/comp.sym} 450 -370 0 0 {name=x4}
+C {devices/lab_pin.sym} 610 -390 2 0 {name=p11 sig_type=std_logic lab=COMP_RESULT}
+C {devices/lab_pin.sym} 510 -300 2 0 {name=p12 sig_type=std_logic lab=READY}
+C {devices/lab_pin.sym} 410 -260 2 0 {name=p13 sig_type=std_logic lab=sar_clk}
+C {devices/lab_pin.sym} 370 -260 0 0 {name=p20 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 370 -470 0 0 {name=p21 sig_type=std_logic lab=VDD}
+C {devices/code.sym} 130 -170 0 0 {name=spice1 only_toplevel=false value="
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.tran 1ns 1200ns
+
+.control
+	run
+	let str = (inp-inn)*30+0.9
+	plot V(EXT_CLK)-2 V(sample_clk) V(EOC)+2 V(READY)+4 V(sar_clk)+6 V(COMP_RESULT)+8 V(str)+8
+	plot V(\\"tempD[0]\\") V(\\"tempD[1]\\")+2 V(\\"tempD[2]\\")+4 V(\\"tempD[3]\\")+6 V(\\"tempD[4]\\")+8 V(\\"tempD[5]\\")+10 V(\\"tempD[6]\\")+12 V(\\"tempD[7]\\")+14 V(sar_clk) V(sar_clk)+2 V(sar_clk)+4 V(sar_clk)+6 V(sar_clk)+8 V(sar_clk)+10 V(sar_clk)+12 V(sar_clk)+14 V(EOC)-2 
+	plot V(\\"result[0]\\") V(\\"result[1]\\")+2 V(\\"result[2]\\")+4 V(\\"result[3]\\")+6 V(\\"result[4]\\")+8 V(\\"result[5]\\")+10 V(\\"result[6]\\")+12 V(\\"result[7]\\")+14
+ 	plot V(str) V(X)+2 V(Y)+2 V(Q)-2 V(P)-2 V(X_drive)+4 V(Y_drive)+4
+.endc
+.save all
+
+"}
+C {devices/vsource.sym} 480 -110 0 0 {name=V2 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
+C {devices/gnd.sym} 480 -80 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 480 -140 2 0 {name=p22 sig_type=std_logic lab=EXT_CLK}
+C {devices/vdd.sym} 350 -140 0 0 {name=l7 lab=VDD}
+C {devices/gnd.sym} 350 -80 0 0 {name=l8 lab=GND}
+C {devices/vsource.sym} 350 -110 0 0 {name=V4 value=1.8}
+C {devices/vdd.sym} 400 -140 0 0 {name=l6 lab=VSS}
+C {devices/gnd.sym} 400 -80 0 0 {name=l9 lab=GND}
+C {devices/vsource.sym} 400 -110 0 0 {name=V5 value=0}
+C {devices/noconn.sym} 610 -350 2 0 {name=l1}
+C {devices/noconn.sym} 680 -520 2 0 {name=l2}
+C {devices/noconn.sym} 680 -500 2 0 {name=l3}
+C {devices/noconn.sym} 680 -480 2 0 {name=l4}
+C {devices/noconn.sym} 680 -460 2 0 {name=l10}
+C {devices/noconn.sym} 680 -440 2 0 {name=l11}
+C {devices/noconn.sym} 680 -420 2 0 {name=l12}
+C {devices/vsource.sym} 710 -110 0 0 {name=V1 value="PULSE(0.9017578125 0.8982421875 0 5p 5p 25n 50n)"}
+C {devices/vsource.sym} 1030 -110 0 0 {name=V3 value="PULSE(0.8982421875 0.9017578125 0 5p 5p 25n 50n)"}
+C {devices/gnd.sym} 1030 -80 0 0 {name=l13 lab=GND}
+C {devices/lab_pin.sym} 710 -140 0 0 {name=p23 sig_type=std_logic lab=inp}
+C {devices/lab_pin.sym} 1030 -140 0 0 {name=p24 sig_type=std_logic lab=inn}
+C {devices/gnd.sym} 710 -80 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} 280 -400 0 0 {name=p25 sig_type=std_logic lab=inp}
+C {devices/lab_pin.sym} 280 -340 0 0 {name=p26 sig_type=std_logic lab=inn}
+C {devices/lab_pin.sym} 510 -480 2 0 {name=p27 sig_type=std_logic lab=X}
+C {devices/lab_pin.sym} 510 -460 2 0 {name=p28 sig_type=std_logic lab=Y}
+C {devices/lab_pin.sym} 510 -520 2 0 {name=p29 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} 510 -500 2 0 {name=p30 sig_type=std_logic lab=Q}
+C {devices/lab_pin.sym} 510 -440 2 0 {name=p31 sig_type=std_logic lab=X_drive}
+C {devices/lab_pin.sym} 510 -420 2 0 {name=p32 sig_type=std_logic lab=Y_drive}

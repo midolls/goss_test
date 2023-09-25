@@ -146,7 +146,7 @@ lab=vip}
 N -60 -270 -60 -240 {
 lab=vin}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 570 -470 2 0 {name=x3 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -470 2 0 {name=x4 csize=2}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -470 2 0 {name=x4[1:0] csize=1}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 690 -470 2 0 {name=x5 csize=1}
 C {devices/gnd.sym} 690 -520 2 0 {name=l1 lab=GND}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 990 -470 2 1 {name=x8 csize=1}

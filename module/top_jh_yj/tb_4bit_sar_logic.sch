@@ -12,7 +12,7 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-*.tran 10ps 310ns
+*.tran 1ps 310ns
 .tran 1ns 310ns
 
 .control

@@ -123,42 +123,10 @@ N 890 -820 1110 -820 {
 lab=VDD}
 N 890 -500 1110 -500 {
 lab=VSS}
-N 1150 -660 1150 -620 {
-lab=#net1}
-N 1080 -570 1080 -420 {
-lab=CAP_CTRL_CODE[7]}
-N 1290 -660 1290 -620 {
-lab=#net1}
-N 1220 -570 1220 -420 {
-lab=CAP_CTRL_CODE[6]}
-N 1430 -660 1430 -620 {
-lab=#net1}
-N 1360 -570 1360 -420 {
-lab=CAP_CTRL_CODE[5]}
-N 1570 -660 1570 -620 {
-lab=#net1}
-N 1500 -570 1500 -420 {
-lab=CAP_CTRL_CODE[4]}
-N 1710 -660 1710 -620 {
-lab=#net1}
-N 1640 -570 1640 -420 {
-lab=CAP_CTRL_CODE[3]}
-N 1850 -660 1850 -620 {
-lab=#net1}
-N 1780 -570 1780 -420 {
-lab=CAP_CTRL_CODE[2]}
-N 1990 -660 1990 -620 {
-lab=#net1}
-N 1920 -570 1920 -420 {
-lab=CAP_CTRL_CODE[1]}
-N 2130 -660 2130 -620 {
-lab=#net1}
 N 1110 -660 2220 -660 {
 lab=#net1}
 N 1110 -500 2220 -500 {
 lab=VSS}
-N 2060 -570 2060 -420 {
-lab=CAP_CTRL_CODE[0]}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {devices/ipin.sym} 780 -660 0 0 {name=p4 lab=IN}
 C {devices/ipin.sym} 780 -820 0 0 {name=p1 lab=VDD}
@@ -291,20 +259,3 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 2220 -820 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {devices/ipin.sym} 860 -420 0 0 {name=p9 lab=CAP_CTRL_CODE[0:7]}
-C {devices/lab_pin.sym} 1080 -420 3 0 {name=p5 sig_type=std_logic lab=CAP_CTRL_CODE[7]}
-C {devices/lab_pin.sym} 1220 -420 3 0 {name=p6 sig_type=std_logic lab=CAP_CTRL_CODE[6]}
-C {devices/lab_pin.sym} 1360 -420 3 0 {name=p7 sig_type=std_logic lab=CAP_CTRL_CODE[5]}
-C {devices/lab_pin.sym} 1500 -420 3 0 {name=p8 sig_type=std_logic lab=CAP_CTRL_CODE[4]}
-C {devices/lab_pin.sym} 1640 -420 3 0 {name=p11 sig_type=std_logic lab=CAP_CTRL_CODE[3]}
-C {devices/lab_pin.sym} 1780 -420 3 0 {name=p12 sig_type=std_logic lab=CAP_CTRL_CODE[2]}
-C {devices/lab_pin.sym} 1920 -420 3 0 {name=p13 sig_type=std_logic lab=CAP_CTRL_CODE[1]}
-C {devices/lab_pin.sym} 2060 -420 3 0 {name=p14 sig_type=std_logic lab=CAP_CTRL_CODE[0]}
-C {sw_cap.sym} 2130 -580 0 0 {name=x2 DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1990 -580 0 0 {name=x3[1:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1850 -580 0 0 {name=x4[3:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1710 -580 0 0 {name=x5[7:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1570 -580 0 0 {name=x6[15:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1430 -580 0 0 {name=x7[31:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1290 -580 0 0 {name=x8[63:0] DELAY_CAP=DELAY_CAP m_num=1}
-C {sw_cap.sym} 1150 -580 0 0 {name=x1[127:0] DELAY_CAP=DELAY_CAP m_num=1}
