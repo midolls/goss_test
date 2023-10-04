@@ -28,11 +28,11 @@ lab=sample_clk}
 N 510 -440 510 -420 {
 lab=EOB}
 C {async_clk_gen.sym} 710 -350 0 0 {name=x1}
-C {sample_clk_gen.sym} 330 -230 0 0 {name=x2}
+C {sample_clk_gen.sym} 330 -220 0 0 {name=x2}
 C {8bit_sar_logic.sym} 1130 -360 0 0 {name=x3 csize=0.001}
-C {devices/lab_pin.sym} 180 -270 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
-C {devices/lab_pin.sym} 180 -250 0 0 {name=p2 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 -230 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
+C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 560 -390 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 560 -370 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 980 -330 0 0 {name=p6 sig_type=std_logic lab=VDD}
@@ -58,9 +58,23 @@ C {devices/opin.sym} 270 -350 0 0 {name=p25 lab=tempD[0:7]}
 C {devices/opin.sym} 270 -330 0 0 {name=p26 lab=sample_clk}
 C {devices/ipin.sym} 240 -430 0 0 {name=p118 lab=sel_bit[0:1]}
 C {devices/lab_pin.sym} 980 -410 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0:1]}
-C {devices/capa.sym} 810 -240 0 0 {name=C1
+C {devices/capa.sym} 760 -240 0 0 {name=C1
 m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 810 -210 0 0 {name=p27 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 760 -210 0 0 {name=p27 sig_type=std_logic lab=VSS}
+C {devices/capa.sym} 870 -420 2 0 {name=C2
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 870 -450 2 0 {name=p28 sig_type=std_logic lab=VSS}
+C {devices/capa.sym} 720 -470 2 0 {name=C3
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 720 -500 2 0 {name=p29 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 180 -170 0 0 {name=p30 sig_type=std_logic lab=cap_ctrl_code[0:7]}
+C {devices/ipin.sym} 230 -110 0 0 {name=p31 lab=cap_ctrl_code[0:7]}

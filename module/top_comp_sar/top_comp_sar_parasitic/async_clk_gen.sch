@@ -103,7 +103,7 @@ C {devices/noconn.sym} 870 -910 2 0 {name=l20}
 C {devices/noconn.sym} 870 -820 2 0 {name=l21}
 C {devices/vsource.sym} 720 -200 0 0 {name=V2 value=0}
 C {devices/noconn.sym} 720 -290 2 0 {name=l22}
-C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -400 0 0 {name=x2}
-C {/foss/designs/goss_test/module/jh_top/delay_no_code.sym} 380 -490 0 0 {name=x4}
+C {delay_no_code.sym} 380 -400 0 0 {name=x2}
+C {delay_no_code.sym} 380 -490 0 0 {name=x4}
 C {devices/noconn.sym} 230 -450 2 0 {name=l23}
 C {devices/noconn.sym} 230 -360 2 0 {name=l24}

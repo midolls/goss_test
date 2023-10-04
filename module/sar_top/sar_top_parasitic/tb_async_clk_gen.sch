@@ -26,17 +26,19 @@ C {devices/gnd.sym} 320 -70 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 320 -100 0 0 {name=V5 value=0}
 C {devices/code.sym} 120 -160 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ss
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
 .tran 10ps 150ns
 
 .control
-	option temp = 100
-	let vdd_act = 1.62
+	option temp = 0
+	let vdd_act = 1.98
       
-	alter V1 vdd_act
+	alter V4 vdd_act
+	alter V8 vdd_act
+	alter V10 vdd_act
 
 	run
 	plot V(READY)-2 V(sample_clk) V(EOC)+2 V(sar_clk)+4 V(sar_clk)-2 V(sar_clk)

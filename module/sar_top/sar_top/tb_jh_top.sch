@@ -7,6 +7,8 @@ S {}
 E {}
 N 1190 -380 1320 -380 {
 lab=result[0:7]}
+N 680 -650 1600 -650 {
+lab=VSS}
 C {devices/code.sym} 510 -190 0 0 {name=spice1 only_toplevel=false value="
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
@@ -38,7 +40,7 @@ C {devices/vdd.sym} 780 -160 0 0 {name=l6 lab=VSS}
 C {devices/gnd.sym} 780 -100 0 0 {name=l9 lab=GND}
 C {devices/vsource.sym} 780 -130 0 0 {name=V5 value=0}
 C {devices/vsource.sym} 1310 -130 0 0 {name=V3 value="PULSE(1.8 0 22n 5p 5p 3n 10n)"}
-C {jh_top.sym} 1040 -370 0 0 {name=x4}
+C {jh_top.sym} 1040 -360 0 0 {name=x4}
 C {devices/lab_pin.sym} 890 -400 0 0 {name=p20 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 890 -380 0 0 {name=p21 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 890 -360 0 0 {name=p22 sig_type=std_logic lab=EXT_CLK}
@@ -74,3 +76,37 @@ C {devices/vsource.sym} 1650 -110 0 0 {name=V10 value=1.8}
 C {devices/vdd.sym} 1550 -140 0 0 {name=l16 lab=VPWR}
 C {devices/gnd.sym} 1700 -80 0 0 {name=l17 lab=GND}
 C {devices/vsource.sym} 1700 -110 0 0 {name=V11 value=0}
+C {devices/vdd.sym} 740 -590 1 0 {name=l18 lab=cap_ctrl_code[7]}
+C {devices/vdd.sym} 850 -590 1 0 {name=l19 lab=cap_ctrl_code[6]}
+C {devices/vdd.sym} 960 -590 1 0 {name=l20 lab=cap_ctrl_code[5]}
+C {devices/vdd.sym} 1070 -590 1 0 {name=l21 lab=cap_ctrl_code[4]}
+C {devices/vdd.sym} 1180 -710 1 0 {name=l22 lab=cap_ctrl_code[3]}
+C {devices/vdd.sym} 1290 -710 1 0 {name=l23 lab=cap_ctrl_code[2]}
+C {devices/vdd.sym} 1400 -710 1 0 {name=l24 lab=cap_ctrl_code[1]}
+C {devices/vdd.sym} 1510 -710 1 0 {name=l25 lab=cap_ctrl_code[0]}
+C {devices/vsource.sym} 1510 -680 0 0 {name=V12 value=1.8}
+C {devices/vsource.sym} 740 -620 0 0 {name=V13 value=0}
+C {devices/vsource.sym} 850 -620 0 0 {name=V14 value=0}
+C {devices/vsource.sym} 960 -620 0 0 {name=V15 value=0}
+C {devices/vsource.sym} 1070 -620 0 0 {name=V28 value=0}
+C {devices/vsource.sym} 1180 -620 0 0 {name=V29 value=0}
+C {devices/vsource.sym} 1290 -620 0 0 {name=V30 value=0}
+C {devices/vsource.sym} 1400 -620 0 0 {name=V31 value=0}
+C {devices/lab_pin.sym} 680 -650 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 1400 -680 0 0 {name=V16 value=1.8}
+C {devices/vsource.sym} 1290 -680 0 0 {name=V17 value=1.8}
+C {devices/vsource.sym} 1180 -680 0 0 {name=V18 value=1.8}
+C {devices/vsource.sym} 1070 -680 0 0 {name=V19 value=1.8}
+C {devices/vsource.sym} 960 -680 0 0 {name=V20 value=1.8}
+C {devices/vsource.sym} 850 -680 0 0 {name=V21 value=1.8}
+C {devices/vsource.sym} 740 -680 0 0 {name=V22 value=1.8}
+C {devices/vsource.sym} 1510 -620 0 0 {name=V23 value=0}
+C {devices/noconn.sym} 740 -710 2 0 {name=l26}
+C {devices/noconn.sym} 850 -710 2 0 {name=l27}
+C {devices/noconn.sym} 960 -710 2 0 {name=l28}
+C {devices/noconn.sym} 1070 -710 2 0 {name=l29}
+C {devices/noconn.sym} 1180 -590 2 0 {name=l30}
+C {devices/noconn.sym} 1290 -590 2 0 {name=l31}
+C {devices/noconn.sym} 1400 -590 2 0 {name=l32}
+C {devices/noconn.sym} 1510 -590 2 0 {name=l33}
+C {devices/lab_pin.sym} 890 -300 0 0 {name=p3 sig_type=std_logic lab=cap_ctrl_code[0:7]}

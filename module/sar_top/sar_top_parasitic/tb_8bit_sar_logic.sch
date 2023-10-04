@@ -25,9 +25,9 @@ C {devices/gnd.sym} 790 -60 0 0 {name=l22 lab=GND}
 C {devices/vsource.sym} 790 -90 0 0 {name=V11 value=0}
 C {devices/lab_pin.sym} 480 -110 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0]}
 C {devices/lab_pin.sym} 480 -80 0 0 {name=p15 sig_type=std_logic lab=sel_bit[1]}
-C {devices/vsource.sym} 510 -80 3 0 {name=V6 value=0}
+C {devices/vsource.sym} 510 -80 3 0 {name=V6 value=1.8}
 C {devices/gnd.sym} 540 -80 0 0 {name=l23 lab=GND}
-C {devices/vsource.sym} 510 -110 3 0 {name=V7 value=0}
+C {devices/vsource.sym} 510 -110 3 0 {name=V7 value=1.8}
 C {devices/gnd.sym} 540 -110 0 0 {name=l24 lab=GND}
 C {devices/vsource.sym} 90 -250 0 0 {name=V2 value="PULSE(0 1.8 100n 5p 5p 17n 31n)"}
 C {devices/gnd.sym} 90 -220 0 0 {name=l5 lab=GND}
@@ -55,7 +55,7 @@ C {devices/vdd.sym} 440 -260 3 0 {name=l13 lab=VSS}
 C {devices/lab_pin.sym} 440 -360 0 0 {name=p13 sig_type=std_logic lab=sel_bit[0:1]}
 C {devices/code.sym} 50 -160 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
@@ -63,10 +63,12 @@ C {devices/code.sym} 50 -160 0 0 {name=spice1 only_toplevel=false value="
 .tran 10ps 300ns
 
 .control
-	option temp = 25
-	let vdd_act = 1.8
+	option temp = 0
+	let vdd_act = 1.98
       
-	alter V1 vdd_act
+	alter V4 vdd_act
+	alter V8 vdd_act
+	alter V10 vdd_act
 
 	run
 	plot V(\\"tempD[0]\\") V(\\"tempD[1]\\")+2 V(\\"tempD[2]\\")+4 V(\\"tempD[3]\\")+6 V(\\"tempD[4]\\")+8 V(\\"tempD[5]\\")+10 V(\\"tempD[6]\\")+12 V(\\"tempD[7]\\")+14 V(clk)-4 V(EOB)-2 

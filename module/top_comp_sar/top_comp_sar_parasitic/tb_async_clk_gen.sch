@@ -30,7 +30,7 @@ C {devices/code.sym} 120 -160 0 0 {name=spice1 only_toplevel=false value="
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
-.tran 10ps 150ns
+.tran 10ps 250ns
 
 .control
 	option temp = 100

@@ -20,4 +20,4 @@ m=1
 value=5f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 710 -180 0 0 {name=p27 sig_type=std_logic lab=VSS}
+C {devices/gnd.sym} 710 -180 0 0 {name=l2 lab=GND}
