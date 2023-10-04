@@ -16,29 +16,21 @@ lab=#net2}
 N 610 -440 1010 -440 {
 lab=#net2}
 N 580 -180 1500 -180 {
-lab=GND}
+lab=VSS}
+N 940 -330 970 -330 {
+lab=#net1}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {clk_div.sym} 410 -270 0 0 {name=x1}
+C {clk_div.sym} 410 -290 0 0 {name=x1}
 C {delay.sym} 710 -300 0 0 {name=x2 DELAY_CAP=173f}
-C {inverter.sym} 900 -330 0 0 {name=x3}
-C {nand.sym} 1070 -420 0 0 {name=x4}
-C {inverter.sym} 1190 -420 0 0 {name=x5}
-C {devices/ipin.sym} 260 -290 0 0 {name=p11 lab=VDD}
-C {devices/ipin.sym} 260 -270 0 0 {name=p12 lab=VSS}
-C {devices/lab_pin.sym} 900 -370 0 0 {name=p6 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 900 -290 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {devices/ipin.sym} 260 -380 0 0 {name=p11 lab=VDD}
+C {devices/ipin.sym} 260 -360 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} 560 -330 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 560 -290 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1190 -460 0 0 {name=p3 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1190 -380 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1070 -480 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 1070 -360 0 0 {name=p8 sig_type=std_logic lab=VSS}
-C {devices/ipin.sym} 260 -250 0 0 {name=p9 lab=SET}
-C {devices/ipin.sym} 260 -230 0 0 {name=p10 lab=RESET}
+C {devices/ipin.sym} 260 -270 0 0 {name=p9 lab=SET}
+C {devices/ipin.sym} 260 -290 0 0 {name=p10 lab=RESET}
 C {devices/ipin.sym} 260 -310 0 0 {name=p14 lab=CLK}
-C {devices/opin.sym} 1260 -420 0 0 {name=p15 lab=SAMPLE_CLK}
+C {devices/opin.sym} 1130 -420 0 0 {name=p15 lab=SAMPLE_CLK}
 C {devices/vdd.sym} 640 -120 1 0 {name=l2 lab=cap_ctrl_code[7]}
-C {devices/gnd.sym} 580 -180 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 750 -120 1 0 {name=l5 lab=cap_ctrl_code[6]}
 C {devices/vdd.sym} 860 -120 1 0 {name=l7 lab=cap_ctrl_code[5]}
 C {devices/vdd.sym} 970 -120 1 0 {name=l8 lab=cap_ctrl_code[4]}
@@ -55,3 +47,6 @@ C {devices/vsource.sym} 1080 -150 0 0 {name=V29 value=0}
 C {devices/vsource.sym} 1190 -150 0 0 {name=V30 value=0}
 C {devices/vsource.sym} 1300 -150 0 0 {name=V31 value=0}
 C {devices/lab_pin.sym} 560 -270 0 0 {name=p26 sig_type=std_logic lab=cap_ctrl_code[0:7]}
+C {sky130_stdcells/and2_0.sym} 1070 -420 0 0 {name=x6 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 900 -330 0 0 {name=x7 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 580 -180 0 0 {name=p5 sig_type=std_logic lab=VSS}

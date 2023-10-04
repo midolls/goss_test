@@ -127,6 +127,8 @@ N 1110 -660 2220 -660 {
 lab=#net1}
 N 1110 -500 2220 -500 {
 lab=VSS}
+N 1160 -600 1160 -500 {
+lab=VSS}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {devices/ipin.sym} 780 -660 0 0 {name=p4 lab=IN}
 C {devices/ipin.sym} 780 -820 0 0 {name=p1 lab=VDD}

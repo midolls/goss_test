@@ -163,15 +163,22 @@ N 2110 -380 2110 -230 {
 lab=D[3]}
 N 2110 -230 2910 -230 {
 lab=D[3]}
-N 450 -850 450 -780 {}
-N 880 -850 880 -780 {}
-N 1340 -850 1340 -780 {}
-N 1740 -850 1740 -780 {}
-N 2130 -850 2130 -780 {}
-N 2550 -850 2550 -780 {}
-N 2960 -850 2960 -780 {}
-N 3360 -850 3360 -780 {}
-N 3750 -850 3750 -780 {}
+N 2550 -980 2550 -740 {
+lab=D[3]}
+N 2950 -980 2950 -740 {
+lab=D[2]}
+N 3350 -980 3350 -740 {
+lab=D[1]}
+N 3740 -980 3740 -740 {
+lab=D[0]}
+N 920 -980 920 -740 {
+lab=D[7]}
+N 1320 -980 1320 -740 {
+lab=D[6]}
+N 1720 -980 1720 -740 {
+lab=D[5]}
+N 2110 -980 2110 -740 {
+lab=D[4]}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {dff_4.sym} 2760 -350 0 0 {name=x1}
 C {dff_4.sym} 3160 -350 0 0 {name=x2}
@@ -315,57 +322,3 @@ C {devices/lab_pin.sym} 1280 -140 0 0 {name=p103 sig_type=std_logic lab=D[7]}
 C {devices/lab_pin.sym} 1680 -140 0 0 {name=p104 sig_type=std_logic lab=D[6]}
 C {devices/lab_pin.sym} 2080 -140 0 0 {name=p105 sig_type=std_logic lab=D[5]}
 C {devices/lab_pin.sym} 2470 -140 0 0 {name=p106 sig_type=std_logic lab=D[4]}
-C {devices/capa.sym} 2130 -880 2 0 {name=C1
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 2130 -910 2 0 {name=l22 lab=GND}
-C {devices/capa.sym} 2550 -880 2 0 {name=C3
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 2550 -910 2 0 {name=l23 lab=GND}
-C {devices/capa.sym} 2960 -880 2 0 {name=C4
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 2960 -910 2 0 {name=l24 lab=GND}
-C {devices/capa.sym} 3360 -880 2 0 {name=C5
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 3360 -910 2 0 {name=l25 lab=GND}
-C {devices/capa.sym} 450 -880 2 0 {name=C6
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 450 -910 2 0 {name=l26 lab=GND}
-C {devices/capa.sym} 880 -880 2 0 {name=C7
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 880 -910 2 0 {name=l27 lab=GND}
-C {devices/capa.sym} 1340 -880 2 0 {name=C8
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1340 -910 2 0 {name=l28 lab=GND}
-C {devices/capa.sym} 1740 -880 2 0 {name=C9
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1740 -910 2 0 {name=l29 lab=GND}
-C {devices/capa.sym} 3750 -880 2 0 {name=C2
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 3750 -910 2 0 {name=l30 lab=GND}
