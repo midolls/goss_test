@@ -44,7 +44,7 @@ C {devices/lab_pin.sym} 180 -190 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 940 -390 0 0 {name=p16 sig_type=std_logic lab=sar_clk}
 C {devices/lab_wire.sym} 950 -440 0 0 {name=p17 sig_type=std_logic lab=EOB}
 C {devices/lab_wire.sym} 710 -270 0 0 {name=p18 sig_type=std_logic lab=sample_clk}
-C {devices/lab_pin.sym} 1280 -370 2 0 {name=p19 sig_type=std_logic lab=tempD[0:8]}
+C {devices/lab_pin.sym} 1280 -370 2 0 {name=p19 sig_type=std_logic lab=tempD[0:7]}
 C {devices/ipin.sym} 240 -410 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 240 -390 0 0 {name=p12 lab=VSS}
 C {devices/ipin.sym} 240 -350 0 0 {name=p13 lab=COMP_RESULT}
@@ -54,7 +54,13 @@ C {devices/opin.sym} 270 -410 0 0 {name=p21 lab=sar_clk}
 C {devices/opin.sym} 270 -390 0 0 {name=p22 lab=EOB}
 C {devices/opin.sym} 270 -370 0 0 {name=p23 lab=sar_result[0:7]}
 C {devices/lab_pin.sym} 1280 -390 2 0 {name=p24 sig_type=std_logic lab=sar_result[0:7]}
-C {devices/opin.sym} 270 -350 0 0 {name=p25 lab=tempD[0:8]}
+C {devices/opin.sym} 270 -350 0 0 {name=p25 lab=tempD[0:7]}
 C {devices/opin.sym} 270 -330 0 0 {name=p26 lab=sample_clk}
 C {devices/ipin.sym} 240 -430 0 0 {name=p118 lab=sel_bit[0:1]}
 C {devices/lab_pin.sym} 980 -410 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0:1]}
+C {devices/capa.sym} 810 -240 0 0 {name=C1
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 810 -210 0 0 {name=p27 sig_type=std_logic lab=VSS}

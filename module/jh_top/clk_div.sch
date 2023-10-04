@@ -5,17 +5,13 @@ K {}
 V {}
 S {}
 E {}
-N 710 -500 710 -450 {
-lab=#net1}
-N 410 -500 710 -500 {
-lab=#net1}
-N 410 -500 410 -450 {
-lab=#net1}
 C {devices/title.sym} 160 -50 0 0 {name=l1 author="Stefan Schippers"}
-C {dff_4.sym} 560 -400 0 0 {name=x1}
-C {devices/ipin.sym} 410 -430 0 0 {name=p36 lab=CLK}
-C {devices/ipin.sym} 410 -410 0 0 {name=p40 lab=VDD}
-C {devices/ipin.sym} 410 -390 0 0 {name=p41 lab=VSS}
-C {devices/ipin.sym} 410 -370 0 0 {name=p42 lab=SET}
-C {devices/ipin.sym} 410 -350 0 0 {name=p43 lab=RESET}
-C {devices/opin.sym} 710 -430 0 0 {name=p27 lab=DIV_CLK}
+C {sky130_stdcells/dfbbp_1.sym} 620 -230 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 490 -200 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 490 -220 0 0 {name=x4 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/opin.sym} 710 -260 0 0 {name=p1 lab=DIV_CLK}
+C {devices/ipin.sym} 450 -200 0 0 {name=p2 lab=SET}
+C {devices/ipin.sym} 450 -220 0 0 {name=p3 lab=RESET}
+C {devices/ipin.sym} 530 -260 0 0 {name=p4 lab=CLK}
+C {devices/lab_pin.sym} 530 -240 0 0 {name=p47 sig_type=std_logic lab=D_loop}
+C {devices/lab_pin.sym} 710 -240 2 0 {name=p5 sig_type=std_logic lab=D_loop}
