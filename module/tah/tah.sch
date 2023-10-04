@@ -229,7 +229,7 @@ C {devices/lab_wire.sym} -410 540 0 0 {name=p18 sig_type=std_logic lab=VSS
 }
 C {sky130_fd_pr/pfet_01v8.sym} -170 360 1 0 {name=M9
 L=0.22
-W=7.6
+W=15.2
 nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -243,7 +243,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 50 360 1 0 {name=M7
 L=0.22
-W=3.8
+W=7.6
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

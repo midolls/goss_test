@@ -107,93 +107,59 @@ N 310 -350 340 -350 {
 lab=tah_vp}
 N 340 -380 340 -350 {
 lab=tah_vp}
-N -130 -150 0 -150 {
-lab=#net10}
-N -60 -150 -60 -90 {
-lab=#net10}
-N -60 -30 -60 -20 {
-lab=GND}
-N -130 -110 -100 -110 {
-lab=GND}
-N -100 -110 -100 -20 {
-lab=GND}
-N -20 -110 0 -110 {
-lab=GND}
-N -20 -110 -20 -20 {
-lab=GND}
-N -170 -100 -170 20 {
-lab=#net11}
-N -170 20 40 20 {
-lab=#net11}
-N 40 -100 40 20 {
-lab=#net11}
-N -60 20 -60 50 {
-lab=#net11}
-N -170 -180 -170 -160 {
-lab=vip}
-N 40 -180 40 -160 {
-lab=vin}
-N -60 -240 40 -240 {
-lab=vin}
-N 40 -240 40 -180 {
-lab=vin}
-N -170 -240 -110 -240 {
-lab=vip}
-N -170 -240 -170 -180 {
-lab=vip}
 N -110 -280 -110 -240 {
 lab=vip}
 N -60 -270 -60 -240 {
 lab=vin}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 570 -470 2 0 {name=x3 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -470 2 0 {name=x4 csize=2}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -470 2 0 {name=x4[1:0] csize=1}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 690 -470 2 0 {name=x5 csize=1}
 C {devices/gnd.sym} 690 -520 2 0 {name=l1 lab=GND}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 990 -470 2 1 {name=x8 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -470 2 1 {name=x9 csize=2}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -470 2 1 {name=x9[1:0] csize=1}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 870 -470 2 1 {name=x10 csize=1}
 C {devices/gnd.sym} 870 -520 2 1 {name=l2 lab=GND}
 C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 510 -140 1 1 {name=x11 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -140 1 1 {name=x12 multp=2 multn=2}
+C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -140 1 1 {name=x12[1:0] multp=1 multn=1 }
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 570 -160 0 1 {name=x13 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -160 0 1 {name=x14 csize=2}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 450 -160 0 1 {name=x14[1:0] csize=1}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 690 -160 0 1 {name=x15 csize=1}
 C {devices/gnd.sym} 690 -110 0 1 {name=l3 lab=GND}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 990 -160 0 0 {name=x18 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -160 0 0 {name=x19 csize=2}
+C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 1110 -160 0 0 {name=x19[1:0] csize=1}
 C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 870 -160 0 0 {name=x20 csize=1}
 C {devices/gnd.sym} 870 -110 0 0 {name=l4 lab=GND}
 C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1050 -140 3 0 {name=x16 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -140 3 0 {name=x17 multp=2 multn=2}
+C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -140 3 0 {name=x17[1:0] multp=1 multn=1}
 C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1050 -490 3 1 {name=x1 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -490 3 1 {name=x2 multp=2 multn=2 }
+C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 1170 -490 3 1 {name=x2[1:0] multp=1 multn=1 }
 C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 510 -490 1 0 {name=x6 multp=1 multn=1}
-C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -490 1 0 {name=x7 multp=2 multn=2}
+C {/foss/designs/goss_test/module/cdac/var_mult_inv.sym} 390 -490 1 0 {name=x7[1:0] multp=1 multn=1}
 C {devices/capa.sym} 1220 -350 0 0 {name=C1
 m=1
-value=1p
+value=0.01f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 1220 -220 0 0 {name=C2
 m=1
-value=1p
+value=0.01f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1220 -320 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} 1220 -190 0 0 {name=l8 lab=GND}
 C {devices/vsource.sym} 450 -720 2 0 {name=V3 value="PULSE(0 1.8 80n 1p 1p 120n 200n)"}
 C {devices/gnd.sym} 450 -750 2 0 {name=l9 lab=GND}
-C {devices/vsource.sym} 570 -720 2 0 {name=V4 value=0}
+C {devices/vsource.sym} 570 -720 2 0 {name=V4 value="PULSE(0 1.8 140n 1p 1p 60n 200n)"0}
 C {devices/gnd.sym} 570 -750 2 0 {name=l10 lab=GND}
-C {devices/vsource.sym} 990 -720 2 0 {name=V5 value="PULSE(1.8 0 140n 1p 1p 60n 200n)"}
+C {devices/vsource.sym} 990 -720 2 0 {name=V5 value=1.8}
 C {devices/gnd.sym} 990 -750 2 0 {name=l11 lab=GND}
 C {devices/vsource.sym} 1110 -720 2 0 {name=V6 value=1.8}
 C {devices/gnd.sym} 1110 -750 2 0 {name=l12 lab=GND}
 C {devices/vsource.sym} 1110 90 0 0 {name=V7 value=0}
 C {devices/gnd.sym} 1110 120 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} 990 90 0 0 {name=V8 value="PULSE(0 1.8 140n 1p 1p 60n 200n)"}
+C {devices/vsource.sym} 990 90 0 0 {name=V8 value=0}
 C {devices/gnd.sym} 990 120 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 570 90 0 0 {name=V9 value=1.8}
+C {devices/vsource.sym} 570 90 0 0 {name=V9 value="PULSE(0 1.8 0 1p 1p 140n 200n)"}
 C {devices/gnd.sym} 570 120 0 0 {name=l15 lab=GND}
 C {devices/vsource.sym} 450 90 0 0 {name=V10 value="PULSE(0 1.8 0 1p 1p 80n 200n)"}
 C {devices/gnd.sym} 450 120 0 0 {name=l16 lab=GND}
@@ -210,7 +176,7 @@ C {devices/code.sym} 25 -680 0 0 {name=s1 only_toplevel=false value="
 
 .control
 	run
-	plot v(tah_vp) v(tah_vn) v(up1) v(upb1) v(dn2) v(dnb2) v(vip) v(vin)
+	plot tah_vp-tah_vn vip-vin
 	plot v(up2)+14 v(up1)+12 v(dn2)+10 v(dn1)+8 v(upb2)+6 v(upb1)+4 v(dnb2)+2 v(dnb1)
 .endc
 "
@@ -244,7 +210,7 @@ C {devices/lab_pin.sym} 1070 0 1 0 {name=p27 sig_type=std_logic lab=VREF}
 C {/foss/designs/goss_test/module/tah/tah.sym} 80 -320 0 0 {name=x21}
 C {devices/vsource.sym} 50 -500 2 0 {name=V13 value="0 pulse(0 1.8 0 1p 1p 20n 200n)"
 }
-C {devices/vsource.sym} 120 -450 2 1 {name=V14 value="0 pulse(1.8 0 0 1p 1p 30n 200n)"
+C {devices/vsource.sym} 120 -450 2 1 {name=V14 value="0 pulse(1.8 0 0 1p 1p 20n 200n)"
 }
 C {devices/gnd.sym} 50 -530 2 0 {name=l20 lab=GND}
 C {devices/gnd.sym} 120 -480 2 0 {name=l21 lab=GND}
@@ -269,19 +235,7 @@ C {devices/vsource.sym} -390 -610 0 0 {name=V17 value=1.8
 }
 C {devices/gnd.sym} -390 -580 0 0 {name=l27 lab=GND}
 C {devices/vdd.sym} -390 -670 0 0 {name=l28 lab=VDD}
-C {devices/vcvs.sym} -170 -130 0 1 {name=E1 value=0.5
-}
-C {devices/vcvs.sym} 40 -130 0 0 {name=E2 value=-0.5
-}
-C {devices/gnd.sym} -60 -20 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} -100 -20 0 0 {name=l6 lab=GND}
-C {devices/gnd.sym} -20 -20 0 0 {name=l19 lab=GND}
-C {devices/vsource.sym} -60 80 0 0 {name=V1 value=0.9}
-C {devices/gnd.sym} -60 110 0 0 {name=l23 lab=GND}
-C {devices/lab_wire.sym} -170 -180 0 0 {name=p33 sig_type=std_logic lab=vip
-
-}
-C {devices/lab_wire.sym} 40 -170 0 0 {name=p34 sig_type=std_logic lab=vin
-
-}
-C {devices/vsource.sym} -60 -60 0 0 {name=V2 value="SIN(0 0.45 1MEG 0)"}
+C {devices/vsource.sym} -110 -210 0 0 {name=V1 value=1.35}
+C {devices/gnd.sym} -110 -180 0 0 {name=l23 lab=GND}
+C {devices/vsource.sym} -60 -210 0 0 {name=V2 value=0.45}
+C {devices/gnd.sym} -60 -180 0 0 {name=l5 lab=GND}
