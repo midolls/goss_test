@@ -283,3 +283,59 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/capa.sym} -300 130 0 0 {name=C1
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 180 130 0 0 {name=C2
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} -300 540 0 0 {name=C3
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 180 540 0 0 {name=C4
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_wire.sym} -300 160 0 0 {name=p21 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} 180 160 0 0 {name=p22 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} -300 570 0 0 {name=p23 sig_type=std_logic lab=VSS
+}
+C {devices/lab_wire.sym} 180 570 0 0 {name=p24 sig_type=std_logic lab=VSS
+}
+C {devices/capa.sym} -60 10 0 0 {name=C5
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_wire.sym} -60 40 0 0 {name=p25 sig_type=std_logic lab=VSS
+}
+C {devices/capa.sym} -60 240 0 0 {name=C6
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_wire.sym} -60 270 0 0 {name=p26 sig_type=std_logic lab=VSS
+}
+C {devices/capa.sym} -60 420 0 0 {name=C7
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_wire.sym} -60 450 0 0 {name=p27 sig_type=std_logic lab=VSS
+}
+C {devices/capa.sym} -60 650 0 0 {name=C8
+m=1
+value=5f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_wire.sym} -60 680 0 0 {name=p28 sig_type=std_logic lab=VSS
+}

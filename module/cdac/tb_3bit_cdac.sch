@@ -107,40 +107,6 @@ N 310 -350 340 -350 {
 lab=tah_vp}
 N 340 -380 340 -350 {
 lab=tah_vp}
-N -130 -150 0 -150 {
-lab=#net10}
-N -60 -150 -60 -90 {
-lab=#net10}
-N -60 -30 -60 -20 {
-lab=GND}
-N -130 -110 -100 -110 {
-lab=GND}
-N -100 -110 -100 -20 {
-lab=GND}
-N -20 -110 0 -110 {
-lab=GND}
-N -20 -110 -20 -20 {
-lab=GND}
-N -170 -100 -170 20 {
-lab=#net11}
-N -170 20 40 20 {
-lab=#net11}
-N 40 -100 40 20 {
-lab=#net11}
-N -60 20 -60 50 {
-lab=#net11}
-N -170 -180 -170 -160 {
-lab=vip}
-N 40 -180 40 -160 {
-lab=vin}
-N -60 -240 40 -240 {
-lab=vin}
-N 40 -240 40 -180 {
-lab=vin}
-N -170 -240 -110 -240 {
-lab=vip}
-N -170 -240 -170 -180 {
-lab=vip}
 N -110 -280 -110 -240 {
 lab=vip}
 N -60 -270 -60 -240 {
@@ -210,9 +176,9 @@ C {devices/code.sym} 25 -680 0 0 {name=s1 only_toplevel=false value="
 
 .control
 	run
-	plot v(tah_vp) v(tah_vn) v(up1) v(upb1) v(dn2) v(dnb2) v(vip) v(vin)
-	plot v(up2)+14 v(up1)+12 v(dn2)+10 v(dn1)+8 v(upb2)+6 v(upb1)+4 v(dnb2)+2 v(dnb1)
-.endc
+        plot v(up2)+14 v(up1)+12 v(dn2)+10 v(dn1)+8 v(upb2)+6 v(upb1)+4 v(dnb2)+2 v(dnb1)
+	plot tah_vp-tah_vn vip-vin
+endc
 "
 }
 C {sky130_fd_pr/corner.sym} -105 -680 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -269,19 +235,7 @@ C {devices/vsource.sym} -390 -610 0 0 {name=V17 value=1.8
 }
 C {devices/gnd.sym} -390 -580 0 0 {name=l27 lab=GND}
 C {devices/vdd.sym} -390 -670 0 0 {name=l28 lab=VDD}
-C {devices/vcvs.sym} -170 -130 0 1 {name=E1 value=0.5
-}
-C {devices/vcvs.sym} 40 -130 0 0 {name=E2 value=-0.5
-}
-C {devices/gnd.sym} -60 -20 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} -100 -20 0 0 {name=l6 lab=GND}
-C {devices/gnd.sym} -20 -20 0 0 {name=l19 lab=GND}
-C {devices/vsource.sym} -60 80 0 0 {name=V1 value=0.9}
-C {devices/gnd.sym} -60 110 0 0 {name=l23 lab=GND}
-C {devices/lab_wire.sym} -170 -180 0 0 {name=p33 sig_type=std_logic lab=vip
-
-}
-C {devices/lab_wire.sym} 40 -170 0 0 {name=p34 sig_type=std_logic lab=vin
-
-}
-C {devices/vsource.sym} -60 -60 0 0 {name=V2 value="SIN(0 0.45 1MEG 0)"}
+C {devices/vsource.sym} -110 -210 0 0 {name=V1 value=1.35}
+C {devices/gnd.sym} -110 -180 0 0 {name=l23 lab=GND}
+C {devices/vsource.sym} -60 -210 0 0 {name=V2 value=0.45}
+C {devices/gnd.sym} -60 -180 0 0 {name=l5 lab=GND}
