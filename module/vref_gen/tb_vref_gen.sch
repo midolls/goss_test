@@ -36,7 +36,7 @@ lab=VSS}
 C {/foss/designs/goss_test/module/vref_gen/vref_gen.sym} 140 -190 0 0 {name=x1}
 C {devices/vsource.sym} 450 -90 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 510 -90 0 0 {name=V2 value=0}
-C {devices/vsource.sym} 580 -90 0 0 {name=V3 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
+C {devices/vsource.sym} 580 -90 0 0 {name=V3 value="PULSE(0 1.8 0 50p 50p 50n 100n)"}
 C {devices/lab_wire.sym} 450 -140 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -140 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 300 -250 0 1 {name=p3 sig_type=std_logic lab=vcm}

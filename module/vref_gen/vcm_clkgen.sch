@@ -123,6 +123,10 @@ N 110 -410 130 -410 {
 lab=VDD}
 N 110 -390 130 -390 {
 lab=VSS}
+N 330 -280 350 -280 {
+lab=#net4}
+N 1140 -270 1160 -270 {
+lab=#net3}
 C {devices/iopin.sym} 110 -410 2 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 110 -390 2 0 {name=p2 lab=VSS}
 C {devices/opin.sym} 1300 -160 0 0 {name=p9 lab=phi2_n}
@@ -149,3 +153,13 @@ C {sky130_stdcells/nand2_1.sym} 430 -320 0 0 {name=x15 VGND=VSS VNB=VSS VPB=VDD 
 C {sky130_stdcells/nand2_1.sym} 430 -160 0 0 {name=x16 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/noconn.sym} 130 -410 0 1 {name=l1}
 C {devices/noconn.sym} 130 -390 0 1 {name=l2}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 140 -310 0 0 {name=C1 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 140 -280 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -250 0 0 {name=C2 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 330 -220 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1160 -240 0 0 {name=C3 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 1160 -210 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 990 -410 2 0 {name=C4 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 990 -440 2 0 {name=p11 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 990 -70 0 0 {name=C5 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_pin.sym} 990 -40 0 0 {name=p12 sig_type=std_logic lab=VSS}

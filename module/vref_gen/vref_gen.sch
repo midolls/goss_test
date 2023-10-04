@@ -5,7 +5,6 @@ K {}
 V {}
 S {}
 E {}
-<<<<<<< HEAD
 N 360 -530 360 -440 {
 lab=#net1}
 N 360 -440 590 -440 {
@@ -171,7 +170,21 @@ C {devices/lab_wire.sym} -130 -410 0 1 {name=l27 sig_type=std_logic lab=phi2_b}
 C {devices/lab_wire.sym} -130 -450 2 0 {name=l28 sig_type=std_logic lab=phi1_b}
 C {devices/lab_wire.sym} -130 -470 2 0 {name=l29 sig_type=std_logic lab=phi1}
 C {devices/ipin.sym} -460 -430 0 0 {name=p1 lab=clk}
-=======
-C {/foss/designs/goss_test/module/vref_gen/sw_vref_gen.sym} 40 -30 0 0 {name=x1}
-C {/foss/designs/goss_test/module/vref_gen/sw_vref_gen.sym} 210 -30 0 0 {name=x2}
->>>>>>> 3cbdb4bd0c70f00d85b3bbe020310b9e101ec8e5
+C {sky130_fd_pr/cap_mim_m3_1.sym} 530 -50 0 0 {name=C2 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 530 -20 2 0 {name=l31 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 840 -50 0 0 {name=C3 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 840 -20 2 0 {name=l32 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 510 -410 0 0 {name=C4 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 510 -380 2 0 {name=l33 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 160 -300 0 0 {name=C5 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} 160 -270 2 0 {name=l34 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -30 50 0 0 {name=C1 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} -30 80 2 0 {name=l30 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -140 -500 2 0 {name=C6 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} -140 -530 0 0 {name=l35 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -140 -360 0 0 {name=C7 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} -140 -330 2 0 {name=l36 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -100 -450 3 0 {name=C8 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} -70 -450 1 0 {name=l37 sig_type=std_logic lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -100 -410 3 0 {name=C9 model=cap_mim_m3_1 W=1.405 L=1.4 MF=1 spiceprefix=X}
+C {devices/lab_wire.sym} -70 -410 1 0 {name=l38 sig_type=std_logic lab=VSS}

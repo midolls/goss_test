@@ -101,13 +101,44 @@ C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.65
 C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}
 C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 .save all 
+<<<<<<< HEAD
 .temp = 100
 .tran 100p 800n
+=======
+.temp = 25
+.tran 100p 600n
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 .OPTIONS savecurrents
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 .control
 run
+<<<<<<< HEAD
 plot v(sw) vip-vin+0.825 tah_vp-tah_vn+0.825
+=======
+	plot v(sw) tah_vp-tah_vn vip-vin
+        let svdd = 1.8
+        let max = svdd*0.8
+        let min = svdd*0.2
+        let mid = svdd*0.5
+        meas tran rising_s find time when V(tah_vp-tah_vn)=min RISE=1 TD=100n
+        meas tran rising_e find time when V(tah_vp-tah_vn)=max RISE=1 TD=100n
+        let rising_time = rising_e-rising_s
+        meas tran falling_s find time when V(tah_vp-tah_vn)=max FALL=1 TD=1000p
+        meas tran falling_e find time when V(tah_vp-tah_vn)=min FALL=1 TD=1000p
+        let falling_time = falling_e-falling_s
+        meas tran IN find time when V(sw)=mid RISE=1 TD=350n
+        meas tran OUT find time when V(tah_vp-tah_vn)=mid RISE=1 TD=350n
+        let rising_delay = OUT-IN
+        meas tran fIN find time when V(sw)=mid RISE=1 TD=100n
+        meas tran fOUT find time when V(tah_vp-tah_vn)=mid FALL=1 TD=100n
+        let falling_delay = fOUT-fIN
+
+        print rising_time falling_time rising_delay falling_delay
+
+*plot v(sw)+2 v(sw) tah_vp tah_vn+2
+*plot v(sw) tah_vp-tah_vn vip-vin
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 .endc
 "
 }
@@ -115,7 +146,11 @@ C {sky130_fd_pr/corner.sym} -645 -100 0 0 {name=CORNER only_toplevel=false corne
 C {devices/vdd.sym} -520 -250 0 0 {name=l3 lab=VDD}
 C {devices/capa.sym} 30 -40 0 0 {name=C2
 m=1
+<<<<<<< HEAD
 value=0.6p
+=======
+value=0.4p
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 30 -10 0 0 {name=l5 lab=GND}
@@ -131,7 +166,11 @@ C {devices/lab_wire.sym} 30 -90 0 0 {name=p7 sig_type=std_logic lab=tah_vn
 }
 C {devices/capa.sym} 70 -120 0 0 {name=C1
 m=1
+<<<<<<< HEAD
 value=0.6p
+=======
+value=0.4p
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 70 -90 0 0 {name=l8 lab=GND}
@@ -142,8 +181,13 @@ C {devices/lab_wire.sym} -240 -120 0 0 {name=p9 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} -90 -60 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} -90 -220 0 0 {name=l2 lab=VDD}
+<<<<<<< HEAD
 C {/foss/designs/goss_test/module/sample_clk_gen/sample_clk_gen.sym} -370 -380 0 0 {name=x2}
 C {devices/vsource.sym} 0 -290 0 0 {name=V1 value="PULSE(0 1.65 0 5p 5p 50n 100n)"}
+=======
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/sample_clk_gen.sym} -370 -380 0 0 {name=x2}
+C {devices/vsource.sym} 0 -290 0 0 {name=V1 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 C {devices/gnd.sym} 0 -260 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 0 -320 0 0 {name=p4 sig_type=std_logic lab=EXT_CLK}
 C {devices/gnd.sym} -580 -380 1 0 {name=l7 lab=GND}
@@ -167,3 +211,7 @@ C {devices/lab_wire.sym} -410 100 0 0 {name=p2 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} -200 110 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
+<<<<<<< HEAD
+=======
+C {devices/vsource.sym} -300 240 0 0 {name=V3 value="PULSE(1.8 0 80n 1p 1p 200n 400n)"}
+>>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6

@@ -176,8 +176,8 @@ C {devices/code.sym} 25 -680 0 0 {name=s1 only_toplevel=false value="
 
 .control
 	run
+        plot v(up2)+14 v(up1)+12 v(dn2)+10 v(dn1)+8 v(upb2)+6 v(upb1)+4 v(dnb2)+2 v(dnb1)
 	plot tah_vp-tah_vn vip-vin
-	plot v(up2)+14 v(up1)+12 v(dn2)+10 v(dn1)+8 v(upb2)+6 v(upb1)+4 v(dnb2)+2 v(dnb1)
 .endc
 "
 }
