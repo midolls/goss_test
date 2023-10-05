@@ -88,10 +88,7 @@ C {devices/code.sym} -235 40 0 0 {name=s1 only_toplevel=false value="
 
 .control
 run
-<<<<<<< HEAD
 plot v(sw) vip vin vip-vin+0.9 tah_vp-tah_vn+0.9
-=======
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 
         let svdd = 1.62
         let max = svdd*0.8
@@ -127,11 +124,9 @@ value=0.4p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 310 130 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 310 130 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 90 -180 2 0 {name=V3 value="0 pulse(0 1.62 0 1p 1p 30n 200n)"
 }
 C {devices/vsource.sym} 160 -130 2 1 {name=V4 value="0 pulse(1.62 0 0 1p 1p 30n 200n)"
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 }
 C {devices/gnd.sym} 90 -210 2 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 160 -160 2 0 {name=l7 lab=GND}

@@ -101,21 +101,13 @@ C {devices/vsource.sym} -520 -190 0 0 {name=V2 value=1.65
 C {devices/gnd.sym} -520 -160 0 0 {name=l1 lab=GND}
 C {devices/code.sym} -515 -100 0 0 {name=s1 only_toplevel=false value="
 .save all 
-<<<<<<< HEAD
-.temp = 100
-.tran 100p 800n
-=======
 .temp = 25
 .tran 100p 600n
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 .OPTIONS savecurrents
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 .control
 run
-<<<<<<< HEAD
-plot v(sw) vip-vin+0.825 tah_vp-tah_vn+0.825
-=======
 	plot v(sw) tah_vp-tah_vn vip-vin
         let svdd = 1.8
         let max = svdd*0.8
@@ -138,7 +130,6 @@ plot v(sw) vip-vin+0.825 tah_vp-tah_vn+0.825
 
 *plot v(sw)+2 v(sw) tah_vp tah_vn+2
 *plot v(sw) tah_vp-tah_vn vip-vin
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 .endc
 "
 }
