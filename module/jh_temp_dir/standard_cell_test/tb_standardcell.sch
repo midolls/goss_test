@@ -5,6 +5,14 @@ K {}
 V {}
 S {}
 E {}
+N 720 -340 720 -280 {
+lab=a}
+N 760 -370 760 -340 {
+lab=VDD}
+N 760 -280 760 -250 {
+lab=VSS}
+N 760 -310 800 -310 {
+lab=inv_a}
 C {devices/vdd.sym} 240 -110 0 0 {name=l1 lab=VPB}
 C {devices/vsource.sym} 240 -80 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 240 -50 0 0 {name=l2 lab=GND}
@@ -124,7 +132,7 @@ C {devices/lab_pin.sym} 800 -310 2 0 {name=p16 sig_type=std_logic lab=inv_a}
 C {devices/lab_pin.sym} 250 -710 2 0 {name=p17 sig_type=std_logic lab=Qb_a}
 C {sky130_stdcells/and2_0.sym} 570 -310 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dfbbp_1.sym} 160 -700 0 0 {name=x2 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 760 -310 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 760 -430 0 0 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/mux2_1.sym} 130 -310 0 0 {name=x4 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/vdd.sym} 120 -110 0 0 {name=l16 lab=VPWR}
 C {devices/vsource.sym} 120 -80 0 0 {name=V7 value=1.8}
@@ -183,3 +191,39 @@ C {sky130_stdcells/inv_1.sym} 770 110 0 0 {name=x10 VGND=VGND VNB=VNB VPB=VPB VP
 C {devices/lab_pin.sym} 780 -560 0 0 {name=p30 sig_type=std_logic lab=a}
 C {devices/vdd.sym} 470 -590 0 0 {name=l32 lab=VPWR}
 C {devices/vdd.sym} 470 -510 2 0 {name=l33 lab=VGND}
+C {sky130_fd_pr/nfet_01v8.sym} 740 -280 0 0 {name=M1
+L=0.15
+W=1
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 740 -340 0 0 {name=M2
+L=0.15
+W=3.06
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 760 -250 2 0 {name=p19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 760 -370 2 0 {name=p20 sig_type=std_logic lab=VDD}
+C {devices/vdd.sym} 0 -110 0 0 {name=l34 lab=VDD}
+C {devices/vsource.sym} 0 -80 0 0 {name=V9 value=1.8}
+C {devices/gnd.sym} 0 -50 0 0 {name=l35 lab=GND}
+C {devices/vdd.sym} 60 -110 0 0 {name=l36 lab=VSS}
+C {devices/vsource.sym} 60 -80 0 0 {name=V10 value=0}
+C {devices/gnd.sym} 60 -50 0 0 {name=l37 lab=GND}
