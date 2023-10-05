@@ -24,10 +24,11 @@ lab=SAMPLE_CLKb}
 N 940 -330 970 -330 {
 lab=#net1}
 N 1230 -420 1260 -420 {
-lab=SAMPLE_CLK}
+lab=SAMPLE_CLKb}
 N 1180 -420 1180 -360 {
-lab=SAMPLE_CLK}
-N 1150 -420 1230 -420 {}
+lab=SAMPLE_CLKb}
+N 1150 -420 1230 -420 {
+lab=SAMPLE_CLKb}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
 C {/foss/designs/goss_test/module/sample_clk_gen/clk_div.sym} 410 -270 0 0 {name=x1}
 C {/foss/designs/goss_test/module/sample_clk_gen/delay.sym} 710 -310 0 0 {name=x2 DELAY_CAP=173f}

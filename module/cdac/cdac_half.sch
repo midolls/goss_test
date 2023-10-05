@@ -49,7 +49,7 @@ lab=d<1> bus=true}
 N 470 -810 470 -760 {
 lab=d<0>}
 N 1240 -810 1240 -760 {
-lab=db<6>bus=true }
+lab=db<6> }
 N 1180 -810 1180 -760 {
 lab=db<5> bus=true}
 N 1120 -810 1120 -760 {

@@ -181,13 +181,7 @@ C {devices/lab_wire.sym} -240 -120 0 0 {name=p9 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} -90 -60 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} -90 -220 0 0 {name=l2 lab=VDD}
-<<<<<<< HEAD
-C {/foss/designs/goss_test/module/sample_clk_gen/sample_clk_gen.sym} -370 -380 0 0 {name=x2}
-C {devices/vsource.sym} 0 -290 0 0 {name=V1 value="PULSE(0 1.65 0 5p 5p 50n 100n)"}
-=======
-C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/sample_clk_gen.sym} -370 -380 0 0 {name=x2}
 C {devices/vsource.sym} 0 -290 0 0 {name=V1 value="PULSE(0 1.8 0 5p 5p 50n 100n)"}
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 C {devices/gnd.sym} 0 -260 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 0 -320 0 0 {name=p4 sig_type=std_logic lab=EXT_CLK}
 C {devices/gnd.sym} -580 -380 1 0 {name=l7 lab=GND}
@@ -211,7 +205,4 @@ C {devices/lab_wire.sym} -410 100 0 0 {name=p2 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} -200 110 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
-<<<<<<< HEAD
-=======
-C {devices/vsource.sym} -300 240 0 0 {name=V3 value="PULSE(1.8 0 80n 1p 1p 200n 400n)"}
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
+C {/foss/designs/goss_test/module/sar_top/sar_top_parasitic/sample_clk_gen.sym} -370 -380 0 0 {name=x3}

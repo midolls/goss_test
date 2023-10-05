@@ -105,20 +105,6 @@ N 1960 -1560 1960 -1470 {
 lab=dn5}
 N 1990 -1560 1990 -1470 {
 lab=dn6}
-N 1990 -770 1990 -680 {
-lab=dnb6}
-N 1960 -770 1960 -680 {
-lab=dnb5}
-N 1930 -770 1930 -680 {
-lab=dnb4}
-N 1900 -770 1900 -680 {
-lab=dnb3}
-N 1870 -770 1870 -680 {
-lab=dnb2}
-N 1840 -770 1840 -680 {
-lab=dnb1}
-N 1810 -770 1810 -680 {
-lab=dnb0}
 N 1700 -1490 1700 -1470 {
 lab=VREF}
 N 1740 -1490 1740 -1470 {
@@ -179,13 +165,34 @@ N 2200 -1090 2220 -1090 {
 lab=tah_vn}
 N 3140 -1120 3270 -1120 {
 lab=result[0:7]}
-N 1440 -690 1440 -670 {}
-N 1470 -690 1470 -670 {}
-N 1500 -690 1500 -670 {}
-N 1530 -690 1530 -670 {}
-N 1560 -690 1560 -670 {}
-N 1590 -690 1590 -670 {}
-N 1620 -690 1620 -670 {}
+N 1440 -690 1440 -670 {
+lab=result[6]}
+N 1470 -690 1470 -670 {
+lab=result[5]}
+N 1500 -690 1500 -670 {
+lab=result[4]}
+N 1530 -690 1530 -670 {
+lab=result[3]}
+N 1560 -690 1560 -670 {
+lab=result[2]}
+N 1590 -690 1590 -670 {
+lab=result[1]}
+N 1620 -690 1620 -670 {
+lab=result[0]}
+N 1810 -690 1810 -670 {
+lab=result[6]}
+N 1840 -690 1840 -670 {
+lab=result[5]}
+N 1870 -690 1870 -670 {
+lab=result[4]}
+N 1900 -690 1900 -670 {
+lab=result[3]}
+N 1930 -690 1930 -670 {
+lab=result[2]}
+N 1960 -690 1960 -670 {
+lab=result[1]}
+N 1990 -690 1990 -670 {
+lab=result[0]}
 C {/foss/designs/goss_test/module/cdac/cdac_half.sym} 890 -1110 0 0 {name=x1}
 C {/foss/designs/goss_test/module/cdac/cdac_half.sym} 890 -1130 2 1 {name=x2}
 C {devices/lab_wire.sym} 1740 -1490 0 0 {name=p2 sig_type=std_logic lab=VSS}
@@ -246,22 +253,6 @@ C {devices/lab_wire.sym} 1530 -1485 0 0 {name=p35 sig_type=std_logic lab=result[
 C {devices/lab_wire.sym} 1560 -1485 0 0 {name=p36 sig_type=std_logic lab=result[2]}
 C {devices/lab_wire.sym} 1590 -1485 0 0 {name=p37 sig_type=std_logic lab=result[1]}
 C {devices/lab_wire.sym} 1620 -1485 0 0 {name=p38 sig_type=std_logic lab=result[0]
-}
-C {devices/lab_wire.sym} 1990 -1485 0 1 {name=p46 sig_type=std_logic lab=dn6}
-C {devices/lab_wire.sym} 1960 -1485 0 1 {name=p47 sig_type=std_logic lab=dn5}
-C {devices/lab_wire.sym} 1930 -1485 0 1 {name=p48 sig_type=std_logic lab=dn4}
-C {devices/lab_wire.sym} 1900 -1485 0 1 {name=p49 sig_type=std_logic lab=dn3}
-C {devices/lab_wire.sym} 1870 -1485 0 1 {name=p50 sig_type=std_logic lab=dn2}
-C {devices/lab_wire.sym} 1840 -1485 0 1 {name=p51 sig_type=std_logic lab=dn1}
-C {devices/lab_wire.sym} 1810 -1485 0 1 {name=p52 sig_type=std_logic lab=dn0
-}
-C {devices/lab_wire.sym} 1990 -740 0 1 {name=p53 sig_type=std_logic lab=dnb6}
-C {devices/lab_wire.sym} 1960 -740 0 1 {name=p54 sig_type=std_logic lab=dnb5}
-C {devices/lab_wire.sym} 1930 -740 0 1 {name=p55 sig_type=std_logic lab=dnb4}
-C {devices/lab_wire.sym} 1900 -740 0 1 {name=p56 sig_type=std_logic lab=dnb3}
-C {devices/lab_wire.sym} 1870 -740 0 1 {name=p57 sig_type=std_logic lab=dnb2}
-C {devices/lab_wire.sym} 1840 -740 0 1 {name=p58 sig_type=std_logic lab=dnb1}
-C {devices/lab_wire.sym} 1810 -740 0 1 {name=p59 sig_type=std_logic lab=dnb0
 }
 C {devices/vsource.sym} 840 -1010 0 0 {name=V5 value=1.35}
 C {devices/gnd.sym} 840 -980 0 0 {name=l23 lab=GND}
@@ -336,4 +327,27 @@ C {devices/lab_wire.sym} 1530 -675 0 0 {name=p10 sig_type=std_logic lab=result[3
 C {devices/lab_wire.sym} 1560 -675 0 0 {name=p11 sig_type=std_logic lab=result[2]}
 C {devices/lab_wire.sym} 1590 -675 0 0 {name=p12 sig_type=std_logic lab=result[1]}
 C {devices/lab_wire.sym} 1620 -675 0 0 {name=p13 sig_type=std_logic lab=result[0]
+}
+C {devices/lab_wire.sym} 1990 -1485 0 1 {name=p14 sig_type=std_logic lab=result[6]}
+C {devices/lab_wire.sym} 1960 -1495 0 1 {name=p16 sig_type=std_logic lab=result[5]}
+C {devices/lab_wire.sym} 1930 -1485 0 1 {name=p17 sig_type=std_logic lab=result[4]}
+C {devices/lab_wire.sym} 1900 -1485 0 1 {name=p18 sig_type=std_logic lab=result[3]}
+C {devices/lab_wire.sym} 1870 -1485 0 1 {name=p19 sig_type=std_logic lab=result[2]}
+C {devices/lab_wire.sym} 1840 -1485 0 1 {name=p20 sig_type=std_logic lab=result[1]}
+C {devices/lab_wire.sym} 1810 -1485 0 1 {name=p21 sig_type=std_logic lab=result[0]
+}
+C {sky130_stdcells/inv_1.sym} 1810 -730 3 0 {name=x13 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1840 -730 3 0 {name=x14 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1870 -730 3 0 {name=x15 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1900 -730 3 0 {name=x16 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1930 -730 3 0 {name=x17 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1960 -730 3 0 {name=x18 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1990 -730 3 0 {name=x19 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_wire.sym} 1810 -675 0 0 {name=p22 sig_type=std_logic lab=result[6]}
+C {devices/lab_wire.sym} 1840 -675 0 0 {name=p23 sig_type=std_logic lab=result[5]}
+C {devices/lab_wire.sym} 1870 -675 0 0 {name=p24 sig_type=std_logic lab=result[4]}
+C {devices/lab_wire.sym} 1900 -675 0 0 {name=p28 sig_type=std_logic lab=result[3]}
+C {devices/lab_wire.sym} 1930 -675 0 0 {name=p46 sig_type=std_logic lab=result[2]}
+C {devices/lab_wire.sym} 1960 -675 0 0 {name=p47 sig_type=std_logic lab=result[1]}
+C {devices/lab_wire.sym} 1990 -675 0 0 {name=p48 sig_type=std_logic lab=result[0]
 }

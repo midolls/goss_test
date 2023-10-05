@@ -229,10 +229,9 @@ N 600 -200 600 -180 {
 lab=VSS}
 C {/foss/designs/goss_test/module/cdac/cdac_half.sym} -250 -540 0 0 {name=x1}
 C {/foss/designs/goss_test/module/cdac/cdac_half.sym} -250 -560 2 1 {name=x2}
-C {devices/vsource.sym} 300 -1020 0 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
+C {devices/vsource.sym} 300 -1020 2 0 {name=V1 value="PULSE(0 1.8 42.5n 1p 1p 157.5n 200n)"
 }
-C {devices/vsource.sym} 330 -1030 0 0 {name=V2 value="PULSE(0 1.8 65n 1p 1p 135n 200n)"}
-C {devices/lab_wire.sym} 600 -920 0 0 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 330 -1030 2 0 {name=V2 value="PULSE(0 1.8 65n 1p 1p 135n 200n)"}
 C {devices/lab_wire.sym} 600 -195 2 1 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/capa.sym} 980 -570 0 0 {name=C1
 m=1
@@ -255,7 +254,7 @@ C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 .control
 	run
         plot v(up6)+56 v(up5)+54 v(up4)+52 v(up3)+50 v(up2)+48 v(up1)+46 v(up0)+44 v(dn6)+42 v(dn5)+40 v(dn4)+38 v(dn3)+36 v(dn2)+34 v(dn1)+32 v(dn0)+30 v(upb6)+28 v(upb5)+26 v(upb4)+24 v(upb3)+22 v(upb2)+20 v(upb1)+18 v(upb0)+16 v(dnb6)+14 v(dnb5)+12 v(dnb4)+10 v(dnb3)+8 v(dnb2)+6 v(dnb1)+4 v(dnb0)+2
-	plot v(sw) v(tah_vp)-v(tah_vn)+0.9 vip vin
+	plot v(sw) v(tah_vp)-v(tah_vn) vip vin
 	 
 .endc
 "
@@ -297,18 +296,18 @@ C {devices/gnd.sym} -580 -810 0 0 {name=l27 lab=GND}
 C {devices/vdd.sym} -580 -900 0 0 {name=l28 lab=VDD}
 C {devices/lab_wire.sym} 560 -920 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_wire.sym} 560 -195 2 1 {name=p3 sig_type=std_logic lab=VREF}
-C {devices/vsource.sym} 360 -1030 0 0 {name=V3 value="PULSE(0 1.8 87.5n 1p 1p 112.5n 200n)"}
-C {devices/vsource.sym} 390 -1030 0 0 {name=V4 value="PULSE(0 1.8 110n 1p 1p 90n 200n)"}
-C {devices/vsource.sym} 420 -1030 0 0 {name=V7 value="PULSE(0 1.8 132.5n 1p 1p 67.5n 200n)"}
-C {devices/vsource.sym} 450 -1040 0 0 {name=V8 value="PULSE(0 1.8 155n 1p 1p 45n 200n)"}
-C {devices/vsource.sym} 480 -1050 0 0 {name=V9 value="PULSE(0 1.8 177.5n 1p 1p 22.5n 200n)"}
-C {devices/vsource.sym} 850 -1070 0 0 {name=V10 value=1.8}
-C {devices/vsource.sym} 820 -1060 0 0 {name=V15 value=1.8}
-C {devices/vsource.sym} 790 -1050 0 0 {name=V16 value=1.8}
-C {devices/vsource.sym} 760 -1040 0 0 {name=V18 value=1.8}
-C {devices/vsource.sym} 730 -1030 0 0 {name=V19 value=1.8}
-C {devices/vsource.sym} 700 -1030 0 0 {name=V20 value=1.8}
-C {devices/vsource.sym} 670 -1020 0 0 {name=V21 value=1.8}
+C {devices/vsource.sym} 360 -1030 2 0 {name=V3 value="PULSE(0 1.8 87.5n 1p 1p 112.5n 200n)"}
+C {devices/vsource.sym} 390 -1030 2 0 {name=V4 value="PULSE(0 1.8 110n 1p 1p 90n 200n)"}
+C {devices/vsource.sym} 420 -1030 2 0 {name=V7 value="PULSE(0 1.8 132.5n 1p 1p 67.5n 200n)"}
+C {devices/vsource.sym} 450 -1040 2 0 {name=V8 value="PULSE(0 1.8 155n 1p 1p 45n 200n)"}
+C {devices/vsource.sym} 480 -1050 2 0 {name=V9 value="PULSE(0 1.8 177.5n 1p 1p 22.5n 200n)"}
+C {devices/vsource.sym} 850 -1070 2 0 {name=V10 value=1.8}
+C {devices/vsource.sym} 820 -1060 2 0 {name=V15 value=1.8}
+C {devices/vsource.sym} 790 -1050 2 0 {name=V16 value=1.8}
+C {devices/vsource.sym} 760 -1040 2 0 {name=V18 value=1.8}
+C {devices/vsource.sym} 730 -1030 2 0 {name=V19 value=1.8}
+C {devices/vsource.sym} 700 -1030 2 0 {name=V20 value=1.8}
+C {devices/vsource.sym} 670 -1020 2 0 {name=V21 value=1.8}
 C {devices/lab_wire.sym} 600 -920 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 300 -1050 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 330 -1060 0 0 {name=p11 sig_type=std_logic lab=VSS}
@@ -324,14 +323,14 @@ C {devices/gnd.sym} 760 -1070 2 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 730 -1060 2 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 700 -1060 2 0 {name=l10 lab=GND}
 C {devices/gnd.sym} 670 -1050 2 0 {name=l11 lab=GND}
-C {devices/vsource.sym} 300 -80 2 1 {name=V22 value="PULSE(1.8 0 42.5n 1p 1p 157.5n 200n)"
+C {devices/vsource.sym} 300 -80 0 1 {name=V22 value="PULSE(1.8 0 42.5n 1p 1p 157.5n 200n)"
 }
-C {devices/vsource.sym} 330 -70 2 1 {name=V23 value="PULSE(1.8 0 65n 1p 1p 135n 200n)"}
-C {devices/vsource.sym} 360 -70 2 1 {name=V24 value="PULSE(1.8 0 87.5n 1p 1p 112.5n 200n)"}
-C {devices/vsource.sym} 390 -70 2 1 {name=V25 value="PULSE(1.8 0 110n 1p 1p 90n 200n)"}
-C {devices/vsource.sym} 420 -70 2 1 {name=V26 value="PULSE(1.8 0 132.5n 1p 1p 67.5n 200n)"}
-C {devices/vsource.sym} 450 -60 2 1 {name=V27 value="PULSE(1.8 0 155n 1p 1p 45n 200n)"}
-C {devices/vsource.sym} 480 -50 2 1 {name=V28 value="PULSE(1.8 0 177.5n 1p 1p 22.5n 200n)"}
+C {devices/vsource.sym} 330 -70 0 1 {name=V23 value="PULSE(1.8 0 65n 1p 1p 135n 200n)"}
+C {devices/vsource.sym} 360 -70 0 1 {name=V24 value="PULSE(1.8 0 87.5n 1p 1p 112.5n 200n)"}
+C {devices/vsource.sym} 390 -70 0 1 {name=V25 value="PULSE(1.8 0 110n 1p 1p 90n 200n)"}
+C {devices/vsource.sym} 420 -70 0 1 {name=V26 value="PULSE(1.8 0 132.5n 1p 1p 67.5n 200n)"}
+C {devices/vsource.sym} 450 -60 0 1 {name=V27 value="PULSE(1.8 0 155n 1p 1p 45n 200n)"}
+C {devices/vsource.sym} 480 -50 0 1 {name=V28 value="PULSE(1.8 0 177.5n 1p 1p 22.5n 200n)"}
 C {devices/lab_pin.sym} 300 -50 2 1 {name=p18 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 330 -40 2 1 {name=p19 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 360 -40 2 1 {name=p20 sig_type=std_logic lab=VSS}
@@ -339,13 +338,13 @@ C {devices/lab_pin.sym} 390 -40 2 1 {name=p21 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 420 -40 2 1 {name=p22 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 450 -30 2 1 {name=p23 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 480 -20 2 1 {name=p24 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 850 -30 2 1 {name=V29 value=0}
-C {devices/vsource.sym} 820 -40 2 1 {name=V30 value=0}
-C {devices/vsource.sym} 790 -50 2 1 {name=V31 value=0}
-C {devices/vsource.sym} 760 -60 2 1 {name=V32 value=0}
-C {devices/vsource.sym} 730 -70 2 1 {name=V33 value=0}
-C {devices/vsource.sym} 700 -70 2 1 {name=V34 value=0}
-C {devices/vsource.sym} 670 -80 2 1 {name=V35 value=0}
+C {devices/vsource.sym} 850 -30 0 1 {name=V29 value=0}
+C {devices/vsource.sym} 820 -40 0 1 {name=V30 value=0}
+C {devices/vsource.sym} 790 -50 0 1 {name=V31 value=0}
+C {devices/vsource.sym} 760 -60 0 1 {name=V32 value=0}
+C {devices/vsource.sym} 730 -70 0 1 {name=V33 value=0}
+C {devices/vsource.sym} 700 -70 0 1 {name=V34 value=0}
+C {devices/vsource.sym} 670 -80 0 1 {name=V35 value=0}
 C {devices/gnd.sym} 850 0 0 1 {name=l12 lab=GND}
 C {devices/gnd.sym} 820 -10 0 1 {name=l13 lab=GND}
 C {devices/gnd.sym} 790 -20 0 1 {name=l14 lab=GND}

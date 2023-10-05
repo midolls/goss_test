@@ -31,12 +31,9 @@ N -20 20 50 20 {
 lab=vin}
 N -20 20 -20 50 {
 lab=vin}
-<<<<<<< HEAD
 N -70 40 -70 100 {
 lab=vip}
 N -90 250 40 250 {
-lab=#net2}
-N -20 250 -20 310 {
 lab=#net2}
 N -20 370 -20 380 {
 lab=GND}
@@ -56,44 +53,10 @@ N 80 300 80 420 {
 lab=#net3}
 N -20 420 -20 450 {
 lab=#net3}
-N -130 220 -130 240 {
-lab=vip}
-N 80 220 80 240 {
-lab=vin}
-N -20 160 80 160 {
-lab=vin}
-N 80 160 80 220 {
-lab=vin}
-N -130 160 -70 160 {
-lab=vip}
-N -130 160 -130 220 {
-lab=vip}
-N -70 100 -70 160 {
-lab=vip}
-N -20 50 -20 160 {
-=======
-N -90 290 40 290 {
-lab=#net2}
 N -20 290 -20 350 {
 lab=#net2}
-N -20 410 -20 420 {
-lab=GND}
-N -90 330 -60 330 {
-lab=GND}
-N -60 330 -60 420 {
-lab=GND}
-N 20 330 40 330 {
-lab=GND}
-N 20 330 20 420 {
-lab=GND}
-N -130 340 -130 460 {
-lab=#net3}
-N -130 460 80 460 {
-lab=#net3}
-N 80 340 80 460 {
-lab=#net3}
 N -20 460 -20 490 {
-lab=#net3}
+lab=#net4}
 N -130 260 -130 280 {
 lab=vip}
 N 80 260 80 280 {
@@ -111,6 +74,8 @@ lab=vip}
 N -20 50 -20 200 {
 >>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
 lab=vin}
+N -20 250 -20 290 {
+lab=#net2}
 C {/foss/designs/goss_test/module/tah/tah.sym} 120 0 0 0 {name=x1}
 C {devices/vsource.sym} -240 -50 0 0 {name=V2 value=1.62
 }
@@ -162,13 +127,6 @@ value=0.4p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 310 130 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 90 -180 2 0 {name=V3 value="0 pulse(0 1.8 0 1p 1p 20n 200n)"
-}
-C {devices/vsource.sym} 160 -130 2 1 {name=V4 value="0 pulse(1.8 0 0 1p 1p 20n 200n)"
-=======
-value=10f
-footprint=1206
-device="ceramic capacitor"}
 C {devices/gnd.sym} 310 130 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 90 -180 2 0 {name=V3 value="0 pulse(0 1.62 0 1p 1p 30n 200n)"
 }
@@ -204,7 +162,6 @@ C {devices/lab_wire.sym} 40 20 0 0 {name=p9 sig_type=std_logic lab=vin
 }
 C {devices/gnd.sym} 190 80 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} 190 -80 0 0 {name=l2 lab=VDD}
-<<<<<<< HEAD
 C {devices/vsource.sym} -20 340 0 0 {name=V5 value="SIN(0 0.9 2.5MEG 120n)"}
 C {devices/vcvs.sym} -130 270 0 1 {name=E1 value=0.5
 }
@@ -221,21 +178,3 @@ C {devices/lab_wire.sym} -130 220 0 0 {name=p2 sig_type=std_logic lab=vip
 C {devices/lab_wire.sym} 80 230 0 0 {name=p10 sig_type=std_logic lab=vin
 
 }
-=======
-C {devices/vcvs.sym} -130 310 0 1 {name=E1 value=0.5
-}
-C {devices/vcvs.sym} 80 310 0 0 {name=E2 value=-0.5
-}
-C {devices/gnd.sym} -20 420 0 0 {name=l14 lab=GND}
-C {devices/gnd.sym} -60 420 0 0 {name=l15 lab=GND}
-C {devices/gnd.sym} 20 420 0 0 {name=l16 lab=GND}
-C {devices/vsource.sym} -20 520 0 0 {name=V1 value=0.81}
-C {devices/gnd.sym} -20 550 0 0 {name=l17 lab=GND}
-C {devices/lab_wire.sym} -130 260 0 0 {name=p2 sig_type=std_logic lab=vip
-
-}
-C {devices/lab_wire.sym} 80 270 0 0 {name=p10 sig_type=std_logic lab=vin
-
-}
-C {devices/vsource.sym} -20 380 0 0 {name=V7 value="PULSE(1.62 0 80n 1p 1p 200n 400n)"}
->>>>>>> 4f231f2f9f1129b750284bfaff4a6bab59eecdd6
