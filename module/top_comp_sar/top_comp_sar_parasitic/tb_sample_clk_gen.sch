@@ -15,15 +15,15 @@ C {devices/gnd.sym} 350 -140 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 350 -200 0 0 {name=p4 sig_type=std_logic lab=EXT_CLK}
 C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
 
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice ff
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
 .tran 10ps 400ns
 
 .control
-	option temp = 0
-	let vdd_act = 1.98
+	option temp = 25
+	let vdd_act = 1.8
       
 	alter V1 vdd_act
 
@@ -39,6 +39,14 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
         meas tran falling_s find time when V(Vout)=h_vdd FALL=1 TD=90n
         meas tran falling_e find time when V(Vout)=l_vdd FALL=1 TD=90n
         let falling_time = falling_e-falling_s
+
+        meas tran rising_s find time when V(Vout_b)=l_vdd RISE=1 TD=90n
+        meas tran rising_e find time when V(Vout_b)=h_vdd RISE=1 TD=90n
+        let rising_time_b = rising_e-rising_s
+        meas tran falling_s find time when V(Vout_b)=h_vdd FALL=1 TD=90n
+        meas tran falling_e find time when V(Vout_b)=l_vdd FALL=1 TD=90n
+        let falling_time_b = falling_e-falling_s
+
         meas tran IN find time when V(ext_clk)=m_vdd RISE=1 TD=90n
         meas tran OUT find time when V(Vout)=m_vdd RISE=1 TD=90n
         let rising_delay = OUT-IN
@@ -47,7 +55,7 @@ C {devices/code.sym} 30 -210 0 0 {name=spice1 only_toplevel=false value="
         meas tran OUT find time when V(Vout)=m_vdd FALL=1 TD=90n
         let on_time = OUT-IN
 
-	print rising_time falling_time rising_delay on_time
+	print rising_time falling_time rising_time_b falling_time_b rising_delay on_time
 .endc
 .save all
 
