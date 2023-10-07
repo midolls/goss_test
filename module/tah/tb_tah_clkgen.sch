@@ -113,6 +113,7 @@ run
         let max = svdd*0.8
         let min = svdd*0.2
         let mid = svdd*0.5
+	let input = vip-vin
         meas tran rising_s find time when V(tah_vp-tah_vn)=min RISE=1 TD=100n
         meas tran rising_e find time when V(tah_vp-tah_vn)=max RISE=1 TD=100n
         let rising_time = rising_e-rising_s
@@ -125,8 +126,10 @@ run
         meas tran fIN find time when V(sw)=mid RISE=1 TD=100n
         meas tran fOUT find time when V(tah_vp-tah_vn)=mid FALL=1 TD=100n
         let falling_delay = fOUT-fIN
+	meas tran holdval find input when V(sw)=mid FALL=1 TD=300n 
 
-        print rising_time falling_time rising_delay falling_delay
+
+        print holdval
 
 *plot v(sw)+2 v(sw) tah_vp tah_vn+2
 *plot v(sw) tah_vp-tah_vn vip-vin
@@ -236,4 +239,3 @@ C {devices/vsource.sym} -920 -370 0 0 {name=V10 value=1.8}
 C {devices/vdd.sym} -1020 -400 0 0 {name=l38 lab=VPWR}
 C {devices/gnd.sym} -870 -340 0 0 {name=l39 lab=GND}
 C {devices/vsource.sym} -870 -370 0 0 {name=V11 value=0}
-C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/sample_clk_gen.sym} -1080 -70 0 0 {name=x2}

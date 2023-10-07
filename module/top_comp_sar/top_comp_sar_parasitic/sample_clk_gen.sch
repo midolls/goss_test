@@ -48,8 +48,8 @@ lab=#net4}
 N 1310 -270 1340 -270 {
 lab=SAMPLE_CLK_b}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {clk_div.sym} 410 -290 0 0 {name=x1}
-C {delay.sym} 710 -300 0 0 {name=x2 DELAY_CAP=8f}
+C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/clk_div.sym} 410 -290 0 0 {name=x1}
+C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/delay.sym} 710 -300 0 0 {name=x2 DELAY_CAP=8f}
 C {devices/ipin.sym} 260 -380 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 260 -360 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} 560 -330 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -171,3 +171,5 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1310 -210 2 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1310 -330 2 0 {name=p18 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1070 -370 2 0 {name=p19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1070 -480 0 0 {name=p20 sig_type=std_logic lab=VDD}

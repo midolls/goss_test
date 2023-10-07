@@ -127,7 +127,7 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 610 -320 2 0 {name=p20 sig_type=std_logic lab=VSS}
 C {devices/capa.sym} 610 -450 2 0 {name=C2
 m=1
-value=250f
+value=40f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 610 -480 2 0 {name=p21 sig_type=std_logic lab=VSS}
