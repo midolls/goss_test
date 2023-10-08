@@ -27,9 +27,9 @@ N 530 -350 530 -270 {
 lab=sample_clk}
 N 510 -440 510 -420 {
 lab=EOB}
-C {async_clk_gen.sym} 710 -350 0 0 {name=x1}
-C {sample_clk_gen.sym} 330 -220 0 0 {name=x2}
-C {8bit_sar_logic.sym} 1130 -360 0 0 {name=x3 csize=0.001}
+C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/async_clk_gen.sym} 710 -350 0 0 {name=x1}
+C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/sample_clk_gen.sym} 330 -220 0 0 {name=x2}
+C {/foss/designs/goss_test/module/top_comp_sar/top_comp_sar_parasitic/8bit_sar_logic.sym} 1130 -340 0 0 {name=x3 csize=0.001}
 C {devices/lab_pin.sym} 180 -230 0 0 {name=p1 sig_type=std_logic lab=EXT_CLK}
 C {devices/lab_pin.sym} 180 -270 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 -250 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -50,12 +50,12 @@ C {devices/ipin.sym} 240 -390 0 0 {name=p12 lab=VSS}
 C {devices/ipin.sym} 240 -350 0 0 {name=p13 lab=COMP_RESULT}
 C {devices/ipin.sym} 240 -330 0 0 {name=p15 lab=READY}
 C {devices/ipin.sym} 240 -370 0 0 {name=p20 lab=EXT_CLK}
-C {devices/opin.sym} 270 -410 0 0 {name=p21 lab=sar_clk}
-C {devices/opin.sym} 270 -390 0 0 {name=p22 lab=EOB}
-C {devices/opin.sym} 270 -370 0 0 {name=p23 lab=sar_result[0:7]}
+C {devices/opin.sym} 270 -520 0 0 {name=p21 lab=sar_clk}
+C {devices/opin.sym} 270 -500 0 0 {name=p22 lab=EOB}
+C {devices/opin.sym} 270 -480 0 0 {name=p23 lab=sar_result[0:7]}
 C {devices/lab_pin.sym} 1280 -390 2 0 {name=p24 sig_type=std_logic lab=sar_result[0:7]}
-C {devices/opin.sym} 270 -350 0 0 {name=p25 lab=tempD[0:7]}
-C {devices/opin.sym} 270 -330 0 0 {name=p26 lab=sample_clk}
+C {devices/opin.sym} 270 -460 0 0 {name=p25 lab=tempD[0:7]}
+C {devices/opin.sym} 270 -440 0 0 {name=p26 lab=sample_clk}
 C {devices/ipin.sym} 240 -430 0 0 {name=p118 lab=sel_bit[0:1]}
 C {devices/lab_pin.sym} 980 -410 0 0 {name=p120 sig_type=std_logic lab=sel_bit[0:1]}
 C {devices/capa.sym} 760 -240 0 0 {name=C1
@@ -78,3 +78,11 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 720 -500 2 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 180 -170 0 0 {name=p30 sig_type=std_logic lab=cap_ctrl_code[0:7]}
 C {devices/ipin.sym} 230 -110 0 0 {name=p31 lab=cap_ctrl_code[0:7]}
+C {devices/opin.sym} 270 -420 0 0 {name=p32 lab=sample_clk_b}
+C {devices/lab_pin.sym} 480 -250 2 0 {name=p33 sig_type=std_logic lab=sample_clk_b}
+C {devices/lab_pin.sym} 1280 -350 2 0 {name=p34 sig_type=std_logic lab=sar_result_b[0:7]}
+C {devices/opin.sym} 270 -400 0 0 {name=p35 lab=sar_result_b[0:7]}
+C {devices/opin.sym} 1280 -330 0 0 {name=p54 lab=vdd_sw[1:7]}
+C {devices/opin.sym} 1280 -310 0 0 {name=p55 lab=vdd_sw_b[1:7]}
+C {devices/opin.sym} 1280 -290 0 0 {name=p56 lab=vss_sw[1:7]}
+C {devices/opin.sym} 1280 -270 0 0 {name=p57 lab=vss_sw_b[1:7]}
