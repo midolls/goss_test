@@ -15,9 +15,3 @@ C {devices/ipin.sym} 450 -220 0 0 {name=p3 lab=RESET}
 C {devices/ipin.sym} 530 -260 0 0 {name=p4 lab=CLK}
 C {devices/lab_pin.sym} 530 -240 0 0 {name=p47 sig_type=std_logic lab=D_loop}
 C {devices/lab_pin.sym} 710 -240 2 0 {name=p5 sig_type=std_logic lab=D_loop}
-C {devices/capa.sym} 710 -210 0 0 {name=C1
-m=1
-value=5f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 710 -180 0 0 {name=p27 sig_type=std_logic lab=VSS}

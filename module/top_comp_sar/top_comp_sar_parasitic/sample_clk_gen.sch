@@ -171,3 +171,5 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1310 -210 2 0 {name=p7 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1310 -330 2 0 {name=p18 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1070 -370 2 0 {name=p19 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1070 -480 0 0 {name=p20 sig_type=std_logic lab=VDD}
