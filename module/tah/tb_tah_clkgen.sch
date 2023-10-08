@@ -140,7 +140,7 @@ C {sky130_fd_pr/corner.sym} -645 -100 0 0 {name=CORNER only_toplevel=false corne
 C {devices/vdd.sym} -520 -250 0 0 {name=l3 lab=VDD}
 C {devices/capa.sym} 30 -40 0 0 {name=C2
 m=1
-value=0.5p
+value=1.7p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 30 -10 0 0 {name=l5 lab=GND}
@@ -156,7 +156,7 @@ C {devices/lab_wire.sym} 30 -90 0 0 {name=p7 sig_type=std_logic lab=tah_vn
 }
 C {devices/capa.sym} 70 -120 0 0 {name=C1
 m=1
-value=0.5p
+value=1.7p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 70 -90 0 0 {name=l8 lab=GND}
