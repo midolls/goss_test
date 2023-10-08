@@ -254,7 +254,7 @@ C {devices/code.sym} -165 -910 0 0 {name=s1 only_toplevel=false value="
 .control
 	run
         plot v(up6)+56 v(up5)+54 v(up4)+52 v(up3)+50 v(up2)+48 v(up1)+46 v(up0)+44 v(dn6)+42 v(dn5)+40 v(dn4)+38 v(dn3)+36 v(dn2)+34 v(dn1)+32 v(dn0)+30 v(upb6)+28 v(upb5)+26 v(upb4)+24 v(upb3)+22 v(upb2)+20 v(upb1)+18 v(upb0)+16 v(dnb6)+14 v(dnb5)+12 v(dnb4)+10 v(dnb3)+8 v(dnb2)+6 v(dnb1)+4 v(dnb0)+2
-	plot v(sw) v(tah_vp)-v(tah_vn) vip vin
+	plot v(sw) v(tah_vp)-v(tah_vn) vip vin v(tah_vp) v(tah_vn)
 	 
 .endc
 "
