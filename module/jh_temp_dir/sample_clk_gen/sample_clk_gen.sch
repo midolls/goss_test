@@ -30,8 +30,8 @@ lab=SAMPLE_CLKb}
 N 1150 -420 1230 -420 {
 lab=SAMPLE_CLKb}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="sample_clk_gen"}
-C {/foss/designs/goss_test/module/sample_clk_gen/clk_div.sym} 410 -270 0 0 {name=x1}
-C {/foss/designs/goss_test/module/sample_clk_gen/delay.sym} 710 -310 0 0 {name=x2 DELAY_CAP=173f}
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/clk_div.sym} 410 -270 0 0 {name=x1}
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/delay.sym} 710 -310 0 0 {name=x2 DELAY_CAP=173f}
 C {devices/ipin.sym} 260 -290 0 0 {name=p11 lab=VDD}
 C {devices/ipin.sym} 260 -270 0 0 {name=p12 lab=VSS}
 C {devices/lab_pin.sym} 560 -330 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -40,12 +40,12 @@ C {devices/ipin.sym} 260 -250 0 0 {name=p9 lab=SET}
 C {devices/ipin.sym} 260 -230 0 0 {name=p10 lab=RESET}
 C {devices/ipin.sym} 260 -310 0 0 {name=p14 lab=CLK}
 C {devices/opin.sym} 1370 -420 0 0 {name=p15 lab=SAMPLE_CLK}
-C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 1300 -420 0 0 {name=x6}
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/inverter.sym} 1300 -420 0 0 {name=x6}
 C {devices/lab_pin.sym} 1300 -380 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1300 -460 0 0 {name=p16 sig_type=std_logic lab=VDD}
 C {devices/opin.sym} 1260 -330 0 0 {name=p17 lab=SAMPLE_CLKb}
-C {/foss/designs/goss_test/module/sample_clk_gen/inverter.sym} 900 -330 0 0 {name=x3}
-C {/foss/designs/goss_test/module/sample_clk_gen/nand.sym} 1070 -420 0 0 {name=x4}
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/inverter.sym} 900 -330 0 0 {name=x3}
+C {/foss/designs/goss_test/module/jh_temp_dir/sample_clk_gen/nand.sym} 1070 -420 0 0 {name=x4}
 C {devices/lab_pin.sym} 900 -370 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 900 -290 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 1070 -480 0 0 {name=p5 sig_type=std_logic lab=VDD}

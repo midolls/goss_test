@@ -208,9 +208,9 @@ C {devices/lab_pin.sym} 610 0 3 0 {name=p14 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 950 0 1 0 {name=p16 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1070 0 1 0 {name=p27 sig_type=std_logic lab=VREF}
 C {/foss/designs/goss_test/module/tah/tah.sym} 80 -320 0 0 {name=x21}
-C {devices/vsource.sym} 50 -500 2 0 {name=V13 value="0 pulse(0 1.8 0 1p 1p 20n 200n)"
+C {devices/vsource.sym} 50 -500 2 0 {name=V13 value="0 pulse(0 1.8 0 80p 80p 20n 200n)"
 }
-C {devices/vsource.sym} 120 -450 2 1 {name=V14 value="0 pulse(1.8 0 0 1p 1p 20n 200n)"
+C {devices/vsource.sym} 120 -450 2 1 {name=V14 value="0 pulse(1.8 0 0 80p 80p 20n 200n)"
 }
 C {devices/gnd.sym} 50 -530 2 0 {name=l20 lab=GND}
 C {devices/gnd.sym} 120 -480 2 0 {name=l21 lab=GND}
