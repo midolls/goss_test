@@ -6,54 +6,54 @@ V {}
 S {}
 E {}
 N 120 -620 120 -580 {
-lab=#net1 bus=true}
+lab=#net1}
 N 180 -620 180 -580 {
-lab=#net2 bus=true}
+lab=#net2}
 N 240 -620 240 -580 {
-lab=#net3 bus=true}
+lab=#net3}
 N 300 -620 300 -580 {
-lab=#net4 bus=true}
+lab=#net4}
 N 360 -620 360 -580 {
-lab=#net5 bus=true}
+lab=#net5}
 N 420 -620 420 -580 {
-lab=#net6 bus=true}
+lab=#net6}
 N 470 -620 470 -580 {
 lab=#net7 }
 N 1240 -620 1240 -580 {
-lab=#net8 bus=true}
+lab=#net8}
 N 1180 -620 1180 -580 {
-lab=#net9 bus=true}
+lab=#net9}
 N 1120 -620 1120 -580 {
-lab=#net10 bus=true}
+lab=#net10}
 N 1060 -620 1060 -580 {
-lab=#net11 bus=true}
+lab=#net11}
 N 1000 -620 1000 -580 {
-lab=#net12 bus=true}
+lab=#net12}
 N 940 -620 940 -580 {
-lab=#net13 bus=true}
+lab=#net13}
 N 890 -620 890 -580 {
 lab=#net14}
 N 120 -810 120 -760 {
-lab=d<6> bus=true
+lab=d<6>
 }
 N 180 -810 180 -760 {
-lab=d<5> bus=true}
+lab=d<5>}
 N 240 -810 240 -760 {
-lab=d<4> bus=true}
+lab=d<4>}
 N 300 -810 300 -760 {
-lab=d<3> bus=true}
+lab=d<3>}
 N 360 -810 360 -760 {
-lab=d<2> bus=true}
+lab=d<2>}
 N 420 -810 420 -760 {
-lab=d<1> bus=true}
+lab=d<1>}
 N 470 -810 470 -760 {
 lab=d<0>}
 N 1240 -810 1240 -760 {
-lab=db<6>  bus=true}
+lab=db<6> }
 N 1000 -810 1000 -760 { 
-lab=db<2> bus=true}
+lab=db<2>}
 N 940 -810 940 -760 {
-lab=db<1> bus=true}
+lab=db<1>}
 N 890 -810 890 -760 {
 lab=db<0>}
 N 610 -580 610 -540 {
@@ -63,45 +63,45 @@ lab=VSS}
 N 750 -580 750 -540 {
 lab=VSS}
 N 120 -440 120 -390 {
-lab=t<6> bus=true}
+lab=t<6>}
 N 180 -440 180 -390 {
-lab=t<5> bus=true }
+lab=t<5>}
 N 240 -440 240 -390 {
-lab=t<4> bus=true}
+lab=t<4>}
 N 300 -440 300 -390 {
-lab=t<3> bus=true}
+lab=t<3>}
 N 360 -440 360 -390 {
-lab=t<2> bus=true}
+lab=t<2>}
 N 420 -440 420 -390 {
-lab=t<1> bus=true}
+lab=t<1>}
 N 470 -440 470 -390 {
 lab=t<0>}
 N 1240 -440 1240 -390 {
-lab=tb<6> bus=true}
+lab=tb<6>}
 N 1180 -440 1180 -390 {
-lab=tb<5> bus=true}
+lab=tb<5>}
 N 1120 -440 1120 -390 {
-lab=tb<4> bus=true}
+lab=tb<4>}
 N 1060 -440 1060 -390 {
-lab=tb<3> bus=true}
+lab=tb<3>}
 N 1000 -440 1000 -390 {
-lab=tb<2> bus=true}
+lab=tb<2>}
 N 940 -440 940 -390 {
-lab=tb<1> bus=true}
+lab=tb<1>}
 N 890 -440 890 -390 {
 lab=tb<0>}
 N 1060 -810 1060 -760 { 
-lab=db<3> bus=true}
+lab=db<3>}
 N 1120 -810 1120 -760 { 
-lab=db<4> bus=true}
+lab=db<4>}
 N 1180 -810 1180 -760 { 
-lab=db<5> bus=true}
-C {/foss/designs/goss_test/module/cdac/8bit_cdac_array.sym} 370 -420 0 0 {name=x1}
-C {/foss/designs/goss_test/module/cdac/cdac_drv.sym} 750 -690 0 0 {name=x2}
-C {/foss/designs/goss_test/module/cdac/8bit_cdac_array.sym} 990 -420 0 1 {name=x3}
-C {/foss/designs/goss_test/module/cdac/cdac_drv.sym} 610 -690 0 1 {name=x4}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
-C {/foss/designs/goss_test/module/cdac/cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
+lab=db<5>}
+C {/foss/designs/goss_test/module/cdac2/8bit_cdac_array.sym} 370 -420 0 0 {name=x1}
+C {/foss/designs/goss_test/module/cdac2/cdac_drv.sym} 750 -690 0 0 {name=x2}
+C {/foss/designs/goss_test/module/cdac2/8bit_cdac_array.sym} 990 -420 0 1 {name=x3}
+C {/foss/designs/goss_test/module/cdac2/cdac_drv.sym} 610 -690 0 1 {name=x4}
+C {/foss/designs/goss_test/module/cdac2/cdac_unit.sym} 610 -490 2 0 {name=x9 csize=1}
+C {/foss/designs/goss_test/module/cdac2/cdac_unit.sym} 750 -490 2 0 {name=x10 csize=1}
 C {devices/iopin.sym} 120 -810 3 0 {name=p2 lab=d<6>}
 C {devices/iopin.sym} 180 -810 3 0 {name=p3 lab=d<5>}
 C {devices/iopin.sym} 240 -810 3 0 {name=p4 lab=d<4>

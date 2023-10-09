@@ -34,7 +34,7 @@ lab=OUT}
 N 240 100 240 120 {
 lab=VSS}
 C {devices/ipin.sym} 130 20 0 0 {name=p4 lab=IN}
-C {devices/ipin.sym} 130 -90 0 0 {name=p5 lab=VREF}
+C {devices/ipin.sym} 130 -90 0 0 {name=p5 lab=VDD}
 C {devices/ipin.sym} 130 120 0 0 {name=p6 lab=VSS}
 C {devices/opin.sym} 320 20 0 0 {name=p1 lab=OUT}
 C {sky130_fd_pr/nfet_01v8.sym} 220 70 0 0 {name=M1
